@@ -1,0 +1,20 @@
+# deps
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Vercel
+.vercel/
+
+# Local env (contains KV credentials — never commit)
+.env
+.env.local
+.env*.local
+
+# Local submissions fallback (prod uses KV)
+submissions.json
+
+# OS
+.DS_Store
