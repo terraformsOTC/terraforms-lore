@@ -2,11 +2,19 @@ import { NextResponse } from 'next/server';
 
 const IS_PROD = !!process.env.KV_REST_API_URL;
 
-export async function GET() {
+export async function GET(request) {
+  // Protect with a secret token — set SUBMISSIONS_SECRET in Vercel env vars
+  const secret = process.env.SUBMISSIONS_SECRET;
+  if (secret) {
+    const auth = request.headers.get('authorization') ?? '';
+    if (auth !== `Bearer ${secret}`) {
+      return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+    }
+  }
+
   try {
     if (IS_PROD) {
       const { kv } = await import('@vercel/kv');
-      // lrange 0 -1 returns the full list
       const raw = await kv.lrange('submissions', 0, -1);
       const submissions = raw.map((item) =>
         typeof item === 'string' ? JSON.parse(item) : item
@@ -20,7 +28,7 @@ export async function GET() {
       try {
         submissions = JSON.parse(await readFile(file, 'utf-8'));
       } catch {
-        // no submissions yet
+        // no submissions file yet
       }
       return NextResponse.json({ submissions });
     }

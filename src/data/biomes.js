@@ -223,4 +223,3 @@ export const confirmedBiomes = biomes.filter(b => b.status === 'confirmed');
 export const guessBiomes     = biomes.filter(b => b.status === 'guess');
 export const unknownBiomes   = biomes.filter(b => b.status === 'unknown');
 
-export const TOTAL_BIOMES = 92;
