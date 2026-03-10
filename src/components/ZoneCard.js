@@ -39,7 +39,7 @@ export default function ZoneCard({ zone }) {
       <div className="p-4">
         {/* Palette swatch — only if palette has colors */}
         {zone.palette && zone.palette.length > 0 && (
-          <div className="flex mb-3" style={{ height: '3px' }}>
+          <div className="flex mb-3" style={{ height: '6px', gap: '1px' }}>
             {zone.palette.map((color, i) => (
               <div key={i} style={{ flex: 1, backgroundColor: color }} />
             ))}
