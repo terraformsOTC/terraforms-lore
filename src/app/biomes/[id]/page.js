@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { biomes, BIOME_CATEGORIES } from '@/data/biomes';
 
 export async function generateStaticParams() {
@@ -174,9 +175,7 @@ export default function BiomePage({ params }) {
         </div>
       </main>
 
-      <footer className="px-6 mt-8 mb-6 text-xs" style={{ opacity: 0.35 }}>
-        <span>terraforms lore is a community maintained resource built by <a href="https://x.com/TerraformsOTC" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>TerraformsOTC</a> and Claude</span>
-      </footer>
+      <Footer />
     </div>
   );
 }

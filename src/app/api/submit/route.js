@@ -3,6 +3,9 @@ import { NextResponse } from 'next/server';
 // Use Vercel KV in production; fall back to local JSON file in dev
 const IS_PROD = !!process.env.KV_REST_API_URL;
 
+// Max POST body: 8 KB — more than enough for a reference submission
+const MAX_BODY_BYTES = 8 * 1024;
+
 // Lazy-import so the module doesn't crash locally where KV env vars aren't set
 async function getKv() {
   const { kv } = await import('@vercel/kv');
@@ -26,6 +29,12 @@ async function saveLocally(entry) {
 
 export async function POST(request) {
   try {
+    // Reject oversized bodies before parsing
+    const contentLength = Number(request.headers.get('content-length') ?? 0);
+    if (contentLength > MAX_BODY_BYTES) {
+      return NextResponse.json({ error: 'request too large' }, { status: 413 });
+    }
+
     const body = await request.json();
     const { type, zone, reference, explanation, sourceLink, handle } = body;
 
@@ -34,7 +43,7 @@ export async function POST(request) {
     }
 
     const entry = {
-      id: Date.now(),
+      id: crypto.randomUUID(),
       submittedAt: new Date().toISOString(),
       type: type === 'biome' ? 'biome' : 'zone',
       zone:        String(zone).slice(0, 100),
@@ -46,7 +55,6 @@ export async function POST(request) {
 
     if (IS_PROD) {
       const kv = await getKv();
-      // lpush prepends to a Redis list — newest submissions first
       await kv.lpush('submissions', JSON.stringify(entry));
     } else {
       await saveLocally(entry);

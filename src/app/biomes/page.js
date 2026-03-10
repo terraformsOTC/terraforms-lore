@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import BiomeCard from '@/components/BiomeCard';
 import BiomeSubmitForm from '@/components/BiomeSubmitForm';
 import {
@@ -106,9 +107,7 @@ export default function BiomesPage() {
         <BiomeSubmitForm />
       </main>
 
-      <footer className="px-6 mt-8 mb-6 text-xs" style={{ opacity: 0.35 }}>
-        <span>terraforms lore is a community maintained resource built by <a href="https://x.com/TerraformsOTC" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>TerraformsOTC</a> and Claude</span>
-      </footer>
+      <Footer />
     </div>
   );
 }

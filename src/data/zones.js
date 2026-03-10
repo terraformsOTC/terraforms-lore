@@ -516,4 +516,3 @@ export const confirmedZones = zones.filter(z => z.status === 'confirmed');
 export const guessZones     = zones.filter(z => z.status === 'guess');
 export const unknownZones   = zones.filter(z => z.status === 'unknown');
 
-export const TOTAL_ZONES = 75;
