@@ -44,12 +44,6 @@ export default function ZonePage({ params }) {
         {/* Palette */}
         {zone.palette && zone.palette.length > 0 && (
           <div className="mb-8">
-            {/* Full-width accent bar */}
-            <div className="flex mb-4" style={{ height: '6px', gap: '1px' }}>
-              {zone.palette.map((color, i) => (
-                <div key={i} style={{ flex: 1, backgroundColor: color }} />
-              ))}
-            </div>
             {/* Labeled swatches */}
             <div className="flex flex-wrap" style={{ gap: '8px' }}>
               {zone.palette.map((color, i) => (
