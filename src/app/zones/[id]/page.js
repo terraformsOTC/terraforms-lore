@@ -41,12 +41,36 @@ export default function ZonePage({ params }) {
           ← zone references
         </a>
 
-        {/* Palette swatch */}
+        {/* Palette */}
         {zone.palette && zone.palette.length > 0 && (
-          <div className="flex mb-8" style={{ height: '10px' }}>
-            {zone.palette.map((color, i) => (
-              <div key={i} style={{ flex: 1, backgroundColor: color }} />
-            ))}
+          <div className="mb-8">
+            {/* Full-width accent bar */}
+            <div className="flex mb-4" style={{ height: '6px', gap: '1px' }}>
+              {zone.palette.map((color, i) => (
+                <div key={i} style={{ flex: 1, backgroundColor: color }} />
+              ))}
+            </div>
+            {/* Labeled swatches */}
+            <div className="flex flex-wrap" style={{ gap: '8px' }}>
+              {zone.palette.map((color, i) => (
+                <div key={i}>
+                  <div
+                    style={{
+                      width: '56px',
+                      height: '36px',
+                      backgroundColor: color,
+                      border: '1px solid rgba(232,232,232,0.08)',
+                    }}
+                  />
+                  <p className="text-xs mt-1" style={{ opacity: 0.4, letterSpacing: '0.02em' }}>
+                    {color}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs mt-3" style={{ opacity: 0.25 }}>
+              {zone.palette.length} colour{zone.palette.length !== 1 ? 's' : ''}
+            </p>
           </div>
         )}
 
