@@ -10,7 +10,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const biome = biomes.find((b) => b.id === params.id);
+  const { id } = await params;
+  const biome = biomes.find((b) => b.id === id);
   if (!biome) return {};
   const title = biome.nickname
     ? `${biome.name} — ${biome.nickname} — terraforms lore`
@@ -21,8 +22,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function BiomePage({ params }) {
-  const biome = biomes.find((b) => b.id === params.id);
+export default async function BiomePage({ params }) {
+  const { id } = await params;
+  const biome = biomes.find((b) => b.id === id);
 
   if (!biome || biome.status === 'unknown') notFound();
 

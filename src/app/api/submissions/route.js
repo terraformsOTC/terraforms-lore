@@ -5,11 +5,12 @@ const IS_PROD = !!process.env.KV_REST_API_URL;
 export async function GET(request) {
   // Protect with a secret token — set SUBMISSIONS_SECRET in Vercel env vars
   const secret = process.env.SUBMISSIONS_SECRET;
-  if (secret) {
-    const auth = request.headers.get('authorization') ?? '';
-    if (auth !== `Bearer ${secret}`) {
-      return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
-    }
+  if (!secret) {
+    return NextResponse.json({ error: 'server misconfigured' }, { status: 500 });
+  }
+  const auth = request.headers.get('authorization') ?? '';
+  if (auth !== `Bearer ${secret}`) {
+    return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   }
 
   try {

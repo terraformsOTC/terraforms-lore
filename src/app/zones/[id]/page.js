@@ -3,6 +3,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { zones, CATEGORIES } from '@/data/zones';
 
+function isLightColor(hex) {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return (r * 299 + g * 587 + b * 114) / 1000 > 128;
+}
+
 export async function generateStaticParams() {
   return zones
     .filter((z) => z.status !== 'unknown')
@@ -10,7 +17,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const zone = zones.find((z) => z.id === params.id);
+  const { id } = await params;
+  const zone = zones.find((z) => z.id === id);
   if (!zone) return {};
   return {
     title: `${zone.name} — terraforms lore`,
@@ -18,8 +26,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function ZonePage({ params }) {
-  const zone = zones.find((z) => z.id === params.id);
+export default async function ZonePage({ params }) {
+  const { id } = await params;
+  const zone = zones.find((z) => z.id === id);
 
   if (!zone || zone.status === 'unknown') notFound();
 
@@ -41,26 +50,34 @@ export default function ZonePage({ params }) {
           ← zone references
         </a>
 
-        {/* Palette */}
+        {/* Palette — explorer style */}
         {zone.palette && zone.palette.length > 0 && (
           <div className="mb-8">
-            {/* Labeled swatches */}
-            <div className="flex flex-wrap" style={{ gap: '8px' }}>
-              {zone.palette.map((color, i) => (
-                <div key={i}>
-                  <div
-                    style={{
-                      width: '56px',
-                      height: '36px',
-                      backgroundColor: color,
-                      border: '1px solid rgba(232,232,232,0.08)',
-                    }}
-                  />
-                  <p className="text-xs mt-1" style={{ opacity: 0.4, letterSpacing: '0.02em' }}>
-                    {color}
-                  </p>
-                </div>
-              ))}
+            <div className="flex flex-wrap" style={{ gap: '12px' }}>
+              {zone.palette.map((color, i) => {
+                const light = isLightColor(color);
+                return (
+                  <div key={i} className="group text-center">
+                    <div
+                      className="flex items-center justify-center"
+                      style={{ width: '60px', height: '60px', backgroundColor: color }}
+                    >
+                      <p
+                        className="text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-150"
+                        style={{ color: light ? '#000000' : '#ffffff', lineHeight: 1.2 }}
+                      >
+                        {color}
+                      </p>
+                    </div>
+                    <pre
+                      className="text-xs mt-2"
+                      style={{ opacity: 0.35, fontFamily: 'inherit', margin: '6px 0 0' }}
+                    >
+                      {i}
+                    </pre>
+                  </div>
+                );
+              })}
             </div>
             <p className="text-xs mt-3" style={{ opacity: 0.25 }}>
               {zone.palette.length} colour{zone.palette.length !== 1 ? 's' : ''}
