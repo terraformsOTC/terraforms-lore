@@ -6,6 +6,12 @@ const IS_PROD = !!process.env.KV_REST_API_URL;
 // Max POST body: 8 KB — more than enough for a reference submission
 const MAX_BODY_BYTES = 8 * 1024;
 
+// Allowed origins for CSRF protection
+const ALLOWED_ORIGINS = [
+  'https://terraformslore.xyz',
+  'https://www.terraformslore.xyz',
+];
+
 // Lazy-import so the module doesn't crash locally where KV env vars aren't set
 async function getKv() {
   const { kv } = await import('@vercel/kv');
@@ -29,13 +35,21 @@ async function saveLocally(entry) {
 
 export async function POST(request) {
   try {
-    // Reject oversized bodies before parsing
-    const contentLength = Number(request.headers.get('content-length') ?? 0);
-    if (contentLength > MAX_BODY_BYTES) {
+    // CSRF: verify origin in production
+    if (IS_PROD) {
+      const origin = request.headers.get('origin');
+      if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
+        return NextResponse.json({ error: 'forbidden' }, { status: 403 });
+      }
+    }
+
+    // Reject oversized bodies before parsing (read as text to enforce real size)
+    const raw = await request.text();
+    if (raw.length > MAX_BODY_BYTES) {
       return NextResponse.json({ error: 'request too large' }, { status: 413 });
     }
 
-    const body = await request.json();
+    const body = JSON.parse(raw);
     const { type, zone, reference, explanation, sourceLink, handle } = body;
 
     if (!zone || !reference || !explanation) {
@@ -49,7 +63,8 @@ export async function POST(request) {
       zone:        String(zone).slice(0, 100),
       reference:   String(reference).slice(0, 200),
       explanation: String(explanation).slice(0, 2000),
-      sourceLink:  sourceLink ? String(sourceLink).slice(0, 500) : null,
+      sourceLink:  sourceLink && /^https?:\/\//i.test(String(sourceLink))
+                     ? String(sourceLink).slice(0, 500) : null,
       handle:      handle     ? String(handle).slice(0, 50)      : null,
     };
 
