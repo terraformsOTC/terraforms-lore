@@ -33,6 +33,7 @@ export default async function ZonePage({ params }) {
   if (!zone || zone.status === 'unknown') notFound();
 
   const isGuess = zone.status === 'guess';
+  const isSuggestion = zone.status === 'suggestion';
   const cat = CATEGORIES[zone.category];
 
   return (
@@ -88,7 +89,14 @@ export default async function ZonePage({ params }) {
         {/* Title row */}
         <div className="flex justify-between items-start gap-4 mb-2">
           <h1 className="text-3xl">{zone.name}</h1>
-          {isGuess ? (
+          {isSuggestion ? (
+            <span
+              className="text-xs px-1 shrink-0 mt-2"
+              style={{ color: 'rgba(168,130,255,0.7)', border: '1px solid rgba(168,130,255,0.35)' }}
+            >
+              claude suggestion
+            </span>
+          ) : isGuess ? (
             <span
               className="text-xs px-1 shrink-0 mt-2"
               style={{ color: 'rgba(251,191,36,0.7)', border: '1px solid rgba(251,191,36,0.35)' }}
@@ -106,8 +114,8 @@ export default async function ZonePage({ params }) {
         </div>
 
         {/* Reference / theory subtitle */}
-        <p className="text-sm mb-8" style={{ opacity: isGuess ? 0.45 : 0.7 }}>
-          {isGuess ? zone.guess : zone.reference}
+        <p className="text-sm mb-8" style={{ opacity: (isGuess || isSuggestion) ? 0.45 : 0.7 }}>
+          {isSuggestion ? zone.suggestion : isGuess ? zone.guess : zone.reference}
         </p>
 
         {/* Description */}
@@ -139,7 +147,7 @@ export default async function ZonePage({ params }) {
             {zone.images.reference && (
               <div>
                 <p className="text-xs mb-2" style={{ opacity: 0.35 }}>
-                  {isGuess ? 'possible reference' : 'reference'}
+                  {(isGuess || isSuggestion) ? 'possible reference' : 'reference'}
                 </p>
                 <img
                   src={zone.images.reference}
@@ -153,7 +161,7 @@ export default async function ZonePage({ params }) {
         )}
 
         {/* Metadata */}
-        {!isGuess && (zone.referenceDetail || zone.rarity || zone.creditTo) && (
+        {!isGuess && !isSuggestion && (zone.referenceDetail || zone.rarity || zone.creditTo) && (
           <div className="mb-10" style={{ borderTop: '1px solid rgba(232,232,232,0.08)' }}>
             {zone.referenceDetail && (
               <div

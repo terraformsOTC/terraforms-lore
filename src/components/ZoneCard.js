@@ -23,6 +23,7 @@ export default function ZoneCard({ zone }) {
   }
 
   const isGuess = zone.status === 'guess';
+  const isSuggestion = zone.status === 'suggestion';
   const cat = CATEGORIES[zone.category];
 
   return (
@@ -48,7 +49,17 @@ export default function ZoneCard({ zone }) {
 
         <div className="flex justify-between items-start gap-2">
           <span className="text-sm">{zone.name}</span>
-          {isGuess ? (
+          {isSuggestion ? (
+            <span
+              className="text-xs px-1 shrink-0"
+              style={{
+                color: 'rgba(168,130,255,0.7)',
+                border: '1px solid rgba(168,130,255,0.35)',
+              }}
+            >
+              claude suggestion
+            </span>
+          ) : isGuess ? (
             <span
               className="text-xs px-1 shrink-0"
               style={{
@@ -69,7 +80,7 @@ export default function ZoneCard({ zone }) {
         </div>
 
         <p className="text-xs mt-1" style={{ opacity: 0.45 }}>
-          {isGuess ? zone.guess : zone.reference}
+          {isSuggestion ? zone.suggestion : isGuess ? zone.guess : zone.reference}
         </p>
 
         <p className="text-xs mt-2" style={{ opacity: 0.25 }}>→</p>
