@@ -586,10 +586,10 @@ export const zones = [
     status: 'suggestion',
     category: null,
     palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'],
-    suggestion: "Warp Records — Sheffield electronic music label (1989)",
+    suggestion: "WipEout 2097 — Psygnosis / Warp Records (1996)",
     description:
-      "Claude suggestion: 'Warp' is an exact name match to Warp Records, the legendary Sheffield electronic music label founded in 1989. Home to Aphex Twin, Autechre, and Boards of Canada. The purple (#8b3ede) matches Warp's brand colour, while the red (#e5291e) and greys reflect their minimalist graphic design.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/8/87/Warp_Records_logo.svg' },
+      "Claude suggestion: 'Warp' points to WipEout 2097, the iconic PS1 racing game whose soundtrack was curated entirely by Warp Records — Aphex Twin, The Chemical Brothers, Fluke, and Leftfield. The purple (#8b3ede) and red (#e5291e) directly echo the game's cover palette, and the Warp Records label branding was displayed in-game, making it one of the most celebrated music/game crossovers of the 1990s.",
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/f/f7/WipEout2097Cover.jpg' },
   },
   {
     id: 'pepo',
