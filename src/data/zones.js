@@ -16,8 +16,8 @@ export const CATEGORIES = {
   special:      { label: 'private ref',   color: '#a3a3a3' },
 };
 
-// status: 'confirmed' | 'guess' | 'unknown'
-// All 75 zones — 30 confirmed, 7 community guesses, 38 unknown
+// status: 'confirmed' | 'guess' | 'suggestion' | 'unknown'
+// All 75 zones — 29 confirmed, 15 suggestions, 7 community guesses, 24 unknown
 export const zones = [
 
   // ─── CONFIRMED ───────────────────────────────────────────────────────────
@@ -569,6 +569,72 @@ export const zones = [
       "Claude suggestion: 'Wen' is iconic crypto slang — a deliberate misspelling of 'when,' most famously in the phrase 'wen moon?' The warm parchment (#fffdf0) on dark navy (#1e1c32) gives a manuscript-like quality, as if the eternal crypto question has been inscribed on ancient paper. Fits alongside [HYCA] as a crypto-insider reference.",
     images: null,
   },
+  {
+    id: 'antenna',
+    name: 'Antenna',
+    status: 'suggestion',
+    category: null,
+    palette: ['#f4d35e', '#ee964b', '#f95738', '#083d77', '#ebebd3'],
+    suggestion: "FLCL (Fooly Cooly) — Gainax anime (2000)",
+    description:
+      "Claude suggestion: 'Antenna' is a central motif in FLCL — robots emerge from protagonist Naota's head through an N.O. channel, like antennas. The warm yellows (#f4d35e), oranges (#ee964b, #f95738), deep blue (#083d77), and cream (#ebebd3) match the anime's vibrant palette, especially Haruko's yellow Vespa and red jacket against blue skies.",
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/f/fe/FLCL_image.jpg' },
+  },
+  {
+    id: 'warp',
+    name: 'Warp',
+    status: 'suggestion',
+    category: null,
+    palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'],
+    suggestion: "Warp Records — Sheffield electronic music label (1989)",
+    description:
+      "Claude suggestion: 'Warp' is an exact name match to Warp Records, the legendary Sheffield electronic music label founded in 1989. Home to Aphex Twin, Autechre, and Boards of Canada. The purple (#8b3ede) matches Warp's brand colour, while the red (#e5291e) and greys reflect their minimalist graphic design.",
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/8/87/Warp_Records_logo.svg' },
+  },
+  {
+    id: 'pepo',
+    name: 'Pepo',
+    status: 'suggestion',
+    category: null,
+    palette: ['#d77c11', '#d3cac3', '#61785c', '#3f5c39', '#332a1d', '#303d2d'],
+    suggestion: "Rare Pepe — Bitcoin crypto art trading cards (2016)",
+    description:
+      "Claude suggestion: 'Pepo' is one letter from 'Pepe' — likely a nod to Rare Pepe, the pioneering crypto art project on Bitcoin's Counterparty protocol (2016). The amber (#d77c11), forest greens (#61785c, #3f5c39), and dark browns decompose classic Pepe the Frog colours into abstract earthy tones. 'Pepo' also means 'pumpkin berry' in botany — a fitting double meaning.",
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/6/63/Feels_good_man.jpg' },
+  },
+  {
+    id: 'sep',
+    name: '[SEP]',
+    status: 'suggestion',
+    category: null,
+    palette: ['#303030', '#9f82ff'],
+    suggestion: "Sepolia — Ethereum testnet",
+    description:
+      "Claude suggestion: [SEP] likely abbreviates Sepolia, Ethereum's primary testnet since Goerli's deprecation. The dark grey #303030 base (shared with [HYCA] and [HOME]) evokes developer tooling, while lavender purple #9f82ff aligns with Ethereum ecosystem branding. A self-referential nod from a fully on-chain Ethereum project to the network's testing infrastructure.",
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/471px-Ethereum_logo_2014.svg.png' },
+  },
+  {
+    id: 'moon',
+    name: '[MOON]',
+    status: 'suggestion',
+    category: null,
+    palette: ['#9cb7d4', '#35443b'],
+    suggestion: "Twin palette with [NEON] — moonlight over dark green",
+    description:
+      "Claude suggestion: [MOON] and [NEON] are mathematically precise twins — they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (blue 211° vs green 133°). This mirrors the confirmed Shiro/Treasure twin pair. The soft blue #9cb7d4 evokes moonlight.",
+    images: null,
+  },
+  {
+    id: 'neon',
+    name: '[NEON]',
+    status: 'suggestion',
+    category: null,
+    palette: ['#9cd4a8', '#35443b'],
+    suggestion: "Twin palette with [MOON] — neon glow over dark green",
+    description:
+      "Claude suggestion: [NEON] and [MOON] are mathematically precise twins — they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (green 133° vs blue 211°). This mirrors the confirmed Shiro/Treasure twin pair. The mint green #9cd4a8 evokes a neon sign glow.",
+    images: null,
+  },
 
   // ─── UNKNOWN ─────────────────────────────────────────────────────────────
 
@@ -577,23 +643,18 @@ export const zones = [
   { id: 'hyphae',       name: 'Hyphae',        status: 'unknown', category: null, palette: ['#328dfd', '#f0f0f0', '#e65700'], images: null },
   { id: 'dynacrypts',   name: 'Dynacrypts',    status: 'unknown', category: null, palette: ['#f98284', '#feaae4', '#b0a9e4', '#accce4', '#b3e3da', '#b0eb93', '#fff7a0', '#ffc384', '#dea38b', '#28282e'], images: null },
   { id: 'blood',        name: '[BLOOD]',       status: 'unknown', category: null, palette: ['#ee0000', '#202020'], images: null },
-  { id: 'sep',          name: '[SEP]',         status: 'unknown', category: null, palette: ['#303030', '#9f82ff'], images: null },
   { id: 'dark',         name: '[DARK]',        status: 'unknown', category: null, palette: ['#eeeeee', '#303030'], images: null },
-  { id: 'moon',         name: '[MOON]',        status: 'unknown', category: null, palette: ['#9cb7d4', '#35443b'], images: null },
   { id: 'cur2',         name: '[CUR2]',        status: 'unknown', category: null, palette: ['#8e918c', '#eff1f4'], images: null },
   { id: 'boss',         name: '[BOSS]',        status: 'unknown', category: null, palette: ['#f8f7ff', '#ee0000'], images: null },
   { id: 'zerinia',      name: 'Zerinia',       status: 'unknown', category: null, palette: ['#e6ceac', '#cdba94', '#bda583', '#a48d6a', '#8b7d62', '#73654a', '#524839', '#292418'], images: null },
   { id: 'calyx',        name: 'Calyx',         status: 'unknown', category: null, palette: ['#90f1ef', '#ed553f', '#419c87', '#f1bdd4', '#82cdef', '#20201e', '#846daf', '#fef9f5'], images: null },
-  { id: 'neon',         name: '[NEON]',        status: 'unknown', category: null, palette: ['#9cd4a8', '#35443b'], images: null },
   { id: 'linosim',      name: 'Linosim',       status: 'unknown', category: null, palette: ['#404040', '#29af3f', '#dcc729', '#26abd4', '#c3c3c3'], images: null },
   { id: 'toad',         name: 'Toad',          status: 'unknown', category: null, palette: ['#ffa8ee', '#eceb80', '#008080', '#ffe330', '#72b802', '#e85bcc', '#a28ef4', '#ff0e0e', '#b0e111', '#8ac163'], images: null },
   { id: 'home',         name: '[HOME]',        status: 'unknown', category: null, palette: ['#303030', '#fff5e6'], images: null },
   { id: 'pfpfpfpbbx80', name: 'Pfpfpfpbbx80', status: 'unknown', category: null, palette: ['#f772b5', '#435d5a', '#5a7b70', '#e83b3b', '#ccdf6d', '#aede6a', '#ffffff', '#e4dde7'], images: null },
   { id: 'muxtai-x1',    name: 'Muxtai X1',     status: 'unknown', category: null, palette: ['#ffcad5', '#082496', '#ed0e0a', '#f5f2e3', '#30a5ff'], images: null },
   { id: 'akileaf',      name: 'Akileaf',       status: 'unknown', category: null, palette: ['#453687', '#4899c4', '#b771b9', '#3c2b71', '#82c1c6', '#095474', '#96c7ce', '#f9fbd4', '#abe291'], images: null },
-  { id: 'pepo',         name: 'Pepo',          status: 'unknown', category: null, palette: ['#d77c11', '#d3cac3', '#61785c', '#3f5c39', '#332a1d', '#303d2d'], images: null },
   { id: 'blossom',      name: 'Blossom',       status: 'unknown', category: null, palette: ['#ef5ea1', '#efeded', '#a2b0e5', '#b65293', '#c7bfe3', '#2c3a8d', '#ca579e', '#4d334c', '#48358f', '#171717'], images: null },
-  { id: 'warp',         name: 'Warp',          status: 'unknown', category: null, palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'], images: null },
   { id: 'xleph',        name: 'Xleph',         status: 'unknown', category: null, palette: ['#c7c7c7', '#9ff240', '#6c6c6c', '#c9c9c9', '#202020'], images: null },
   { id: 'cradle',       name: 'Cradle',        status: 'unknown', category: null, palette: ['#efc201', '#104d28', '#e0632b', '#cec4be', '#43882f', '#90ad27', '#ffe7d3', '#de797d'], images: null },
   { id: 'mould',        name: 'Mould',         status: 'unknown', category: null, palette: ['#87e899', '#e2efed', '#edf6f7', '#ac7167', '#e93e5b', '#4c26c6', '#ff63e9', '#fefe82', '#4dcb7e', '#252525'], images: null },
@@ -601,7 +662,6 @@ export const zones = [
   { id: 'valeria',      name: 'Valeria',       status: 'unknown', category: null, palette: ['#fe004f', '#04a15c', '#fd8901', '#2c2827'], images: null },
   { id: 'mori',         name: 'Mori',          status: 'unknown', category: null, palette: ['#eac802', '#daa7ac', '#329160', '#3db7a9', '#16160f'], images: null },
   { id: 'nov',          name: '[NOV]',         status: 'unknown', category: null, palette: ['#303030', '#ff4538'], images: null },
-  { id: 'antenna',      name: 'Antenna',       status: 'unknown', category: null, palette: ['#f4d35e', '#ee964b', '#f95738', '#083d77', '#ebebd3'], images: null },
 ];
 
 export const confirmedZones    = zones.filter(z => z.status === 'confirmed');
