@@ -61,7 +61,7 @@ export const zones = [
     description:
       "The Alto zone references the Xerox Alto — one of the first personal computers to use a graphical user interface, developed at Xerox PARC in 1973. The Alto's greyscale aesthetic and pioneering interface design are reflected in the zone's palette.",
     referenceLink: 'https://en.wikipedia.org/wiki/Xerox_Alto',
-    images: null,
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Xero_Alto_Computer.jpg/600px-Xero_Alto_Computer.jpg' },
   },
   {
     id: 'riso',
@@ -74,7 +74,7 @@ export const zones = [
     description:
       "Riso zone references Risograph printing — a brand of digital duplicators manufactured by the Riso Kagaku Corporation, released in Japan in 1980. Designed for high-volume photocopying, it became beloved by zine and comic artists for its vivid, layered ink printing.",
     creditTo: '@neon_dao',
-    images: null,
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Riso_animacia2.jpg/600px-Riso_animacia2.jpg' },
   },
   {
     id: 'mecha',
@@ -87,7 +87,7 @@ export const zones = [
     description:
       "The Mecha zone references Neon Genesis Evangelion (新世紀エヴァンゲリオン). The creator confirmed this as a \"retroactive yes\" — the warm red-orange palette against dark tones echoes EVA's iconic visual identity.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: null,
+    images: { zone: null, reference: n('GzW03FqXkAAltpA') },
   },
   {
     id: 'grove',
@@ -150,7 +150,7 @@ export const zones = [
     description:
       "[HYCA] stands for HYperCAstle — a grand, fantastical architectural concept existing beyond ordinary scale or dimension.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: null,
+    images: { zone: null, reference: 'https://hypercastle-explorers.xyz/Hypercastle-PreRevealArt-sm-alpha.gif' },
   },
   {
     id: 'palace',
@@ -202,7 +202,7 @@ export const zones = [
     referenceDetail: "MTG Arabian Nights set",
     description:
       "Ouallada references the Juzam Djinn card from Magic: The Gathering's Arabian Nights expansion (1993) — one of the most iconic and valuable cards in MTG history.",
-    images: null,
+    images: { zone: null, reference: 'https://cards.scryfall.io/art_crop/front/3/1/31bf3f14-b5df-498b-a1bb-965885c82401.jpg?1562904228' },
   },
   {
     id: 'kippsunn',
@@ -238,7 +238,7 @@ export const zones = [
     referenceDetail: "Jadeite jade mineral",
     description:
       "The Jadeite zone references jadeite — a pyroxene mineral and one of the two types of jade, prized for its vivid greens. Jadeite is also associated with vintage jadeite glass kitchenware, which shares the zone's cool green palette.",
-    images: null,
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Jadeite_%28GeoDIL_number_-_1607%29.jpg/600px-Jadeite_%28GeoDIL_number_-_1607%29.jpg' },
   },
   {
     id: 'blushing',
@@ -275,7 +275,7 @@ export const zones = [
     referenceDetail: "Re:Zero − Starting Life in Another World",
     description:
       "The Uwo zone is the dark mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Gemina, is the light mode.",
-    images: null,
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/2/23/Rem_animepromo.png' },
   },
   {
     id: 'killscreen',
@@ -342,7 +342,7 @@ export const zones = [
       "The Dread zone references the Magic: The Gathering card Liliana, Dreadhorde General, with art by Yoshitaka Amano. The purple-black palette mirrors the card's dark, otherworldly aesthetic.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     creditTo: '@neon_dao',
-    images: null,
+    images: { zone: null, reference: 'https://cards.scryfall.io/art_crop/front/1/2/12919abc-5a4a-4cb1-ac95-cbc06c959232.jpg?1682644677' },
   },
   {
     id: 'aetherking',
@@ -355,7 +355,7 @@ export const zones = [
     description:
       "For the @XCOPYART fans, the Aetherking zone is for you. This palette was inspired by Guzzler, a 2021 edition from the artist. The neon green and teal on black is unmistakably XCOPY.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: null,
+    images: { zone: null, reference: 'https://admin.xcopy.art/media/original_images/GUZZLER_GREEN_-_XCOPY_2089_iefuzj.gif' },
   },
   {
     id: 'soon',
@@ -367,7 +367,7 @@ export const zones = [
     referenceDetail: "Track from Loveless (1991)",
     description:
       "[SOON] is a reference to \"Soon\" by My Bloody Valentine — the closing track of their landmark 1991 album Loveless. The gauzy pinks echo the hazy, distorted beauty of shoegaze.",
-    images: null,
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/4/4b/My_Bloody_Valentine_-_Loveless.png' },
   },
   {
     id: 'gemina',
@@ -379,7 +379,7 @@ export const zones = [
     referenceDetail: "Re:Zero − Starting Life in Another World (originally named Twinmade)",
     description:
       "Gemina (originally named Twinmade) is the light mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Uwo, is the dark mode.",
-    images: null,
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/2/23/Rem_animepromo.png' },
   },
   {
     id: 'shahra',
@@ -393,7 +393,7 @@ export const zones = [
       "Shahra is the rarest zone, with only 10 parcels. It references Shahrazad — a sorcery card from Magic: The Gathering's Arabian Nights set (1993), illustrated by Kaja Foglio, itself referencing the legendary storyteller of One Thousand and One Nights.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     rarity: 'rarest — 10 parcels',
-    images: null,
+    images: { zone: null, reference: n('G04eTlIWwAAg8XC', 'png') },
   },
 
   // ─── COMMUNITY GUESSES ───────────────────────────────────────────────────
