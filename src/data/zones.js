@@ -597,10 +597,10 @@ export const zones = [
     status: 'suggestion',
     category: null,
     palette: ['#d77c11', '#d3cac3', '#61785c', '#3f5c39', '#332a1d', '#303d2d'],
-    suggestion: "Rare Pepe — Bitcoin crypto art trading cards (2016)",
+    suggestion: "Pepo — botanical term for pumpkin / gourd berries (Cucurbitaceae)",
     description:
-      "Claude suggestion: 'Pepo' is one letter from 'Pepe' — likely a nod to Rare Pepe, the pioneering crypto art project on Bitcoin's Counterparty protocol (2016). The amber (#d77c11), forest greens (#61785c, #3f5c39), and dark browns decompose classic Pepe the Frog colours into abstract earthy tones. 'Pepo' also means 'pumpkin berry' in botany — a fitting double meaning.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/6/63/Feels_good_man.jpg' },
+      "Claude suggestion: 'Pepo' is the exact botanical term for the berry type of Cucurbitaceae — pumpkins, gourds, watermelons, and squash. All 6 colours map directly: amber #d77c11 = pumpkin skin, stone grey #d3cac3 = dried gourd shell, forest greens #61785c and #3f5c39 = vine and foliage, warm brown #332a1d = soil, dark #303d2d = shadow. Follows the pattern of Everglades and Jadeite as a nature reference.",
+    images: null,
   },
   {
     id: 'sep',
