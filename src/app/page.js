@@ -5,13 +5,14 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ZoneCard from '@/components/ZoneCard';
 import SubmitForm from '@/components/SubmitForm';
-import { zones, confirmedZones, guessZones, unknownZones, CATEGORIES } from '@/data/zones';
+import { zones, confirmedZones, guessZones, suggestionZones, unknownZones, CATEGORIES } from '@/data/zones';
 
 const FILTERS = [
-  { key: 'all',       label: 'all' },
-  { key: 'confirmed', label: 'confirmed' },
-  { key: 'guess',     label: 'community theories' },
-  { key: 'unknown',   label: 'unknown' },
+  { key: 'all',        label: 'all' },
+  { key: 'confirmed',  label: 'confirmed' },
+  { key: 'suggestion', label: 'claude suggestions' },
+  { key: 'guess',      label: 'community theories' },
+  { key: 'unknown',    label: 'unknown' },
 ];
 
 const CATEGORY_FILTERS = [
@@ -26,11 +27,12 @@ export default function Home() {
 
   const filtered = useMemo(() => {
     return zones.filter((z) => {
-      if (filter === 'confirmed' && z.status !== 'confirmed') return false;
-      if (filter === 'guess'     && z.status !== 'guess')     return false;
-      if (filter === 'unknown'   && z.status !== 'unknown')   return false;
+      if (filter === 'confirmed'  && z.status !== 'confirmed')  return false;
+      if (filter === 'suggestion' && z.status !== 'suggestion') return false;
+      if (filter === 'guess'      && z.status !== 'guess')      return false;
+      if (filter === 'unknown'    && z.status !== 'unknown')    return false;
       if (categoryFilter !== 'all' && z.category !== categoryFilter) return false;
-      const searchable = `${z.name} ${z.reference || ''} ${z.guess || ''}`.toLowerCase();
+      const searchable = `${z.name} ${z.reference || ''} ${z.guess || ''} ${z.suggestion || ''}`.toLowerCase();
       if (search && !searchable.includes(search.toLowerCase())) return false;
       return true;
     });
@@ -47,7 +49,7 @@ export default function Home() {
           Each and every Terraforms zone and biome is an Easter Egg. The community has been cataloging references for years — and there are still many open questions.
         </p>
         <p className="text-sm mb-10" style={{ opacity: 0.35 }}>
-          {confirmedZones.length} confirmed &nbsp;·&nbsp; {guessZones.length} theories &nbsp;·&nbsp; {unknownZones.length} unknown &nbsp;·&nbsp; 75 total zones
+          {confirmedZones.length} confirmed &nbsp;·&nbsp; {suggestionZones.length} claude suggestions &nbsp;·&nbsp; {guessZones.length} theories &nbsp;·&nbsp; {unknownZones.length} unknown &nbsp;·&nbsp; 75 total zones
         </p>
 
         {/* Filter row */}

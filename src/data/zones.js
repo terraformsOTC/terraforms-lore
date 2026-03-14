@@ -31,9 +31,8 @@ export const zones = [
     reference: "Radiohead — Kid A",
     referenceDetail: "Kid A album art (2000)",
     description:
-      "The red, blue, white, and black palette is a direct reference to Radiohead's Kid A album art. Confirmed by FingerprintsDAO in March 2024. The zone appears on 512 parcels.",
+      "The red, blue, white, and black palette is a direct reference to Radiohead's Kid A album art. The zone appears on 512 parcels.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    creditTo: '@FingerprintsDAO',
     images: { zone: n('GItpcOWWwAAS9D3'), reference: n('GItpcg0WIAAogmo') },
   },
   {
@@ -148,9 +147,9 @@ export const zones = [
     reference: "HYperCAstle",
     referenceDetail: "Abbreviation confirmed by @0x113d",
     description:
-      "[HYCA] stands for HYperCAstle — a grand, fantastical architectural concept existing beyond ordinary scale or dimension.",
+      "[HYCA] stands for HYperCAstle.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: null, reference: 'https://hypercastle-explorers.xyz/Hypercastle-PreRevealArt-sm-alpha.gif' },
+    images: null,
   },
   {
     id: 'palace',
@@ -164,7 +163,7 @@ export const zones = [
       "Palace, with its distinctive orange colours, is a reference to the Game Boy Advance box set Mother 1+2, released exclusively in Japan in 2003. The bold orange palette of the box art maps directly to the zone's colour scheme.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     creditTo: '@neon_dao',
-    images: { zone: null, reference: n('GzW03FqXkAAltpA') },
+    images: { zone: null, reference: 'https://cdn.wikibound.info/thumb/2/23/Mother_1and2_box.png/350px-Mother_1and2_box.png' },
   },
   {
     id: 'wastelands',
@@ -469,25 +468,120 @@ export const zones = [
     images: null,
   },
 
+  // ─── CLAUDE SUGGESTIONS ──────────────────────────────────────────────────
+
+  {
+    id: 'first-earth',
+    name: 'First Earth',
+    status: 'suggestion',
+    category: null,
+    palette: ['#cb8175', '#e2a97e', '#f0cf8e', '#f6edcd', '#a8c8a6', '#6d8d8a', '#655057', '#32282b'],
+    suggestion: "Pastel QT palette by polyphrog (Lospec)",
+    description:
+      "Claude suggestion: 7 of 8 hex codes are an exact byte-for-byte match to the Pastel QT palette on Lospec by polyphrog, in the same order. The 8th colour (#32282b) extends the palette with a dark anchor.",
+    images: { zone: null, reference: 'https://lospec.com/palette-list/pastel-qt-8x.png' },
+  },
+  {
+    id: 'ender',
+    name: 'Ender',
+    status: 'suggestion',
+    category: null,
+    palette: ['#ff4fe2', '#f8f7ff', '#0000ff'],
+    suggestion: "Minecraft — The End dimension",
+    description:
+      "Claude suggestion: the magenta #ff4fe2 differs by only 3 hex digits from Minecraft's default end portal particle colour (#ff4ce5). Pure blue #0000ff matches End Crystal beams, and near-white #f8f7ff matches End Stone. The name 'Ender' directly references Enderman, Ender Dragon, and Eye of Ender.",
+    images: null,
+  },
+  {
+    id: 'mirage',
+    name: 'Mirage',
+    status: 'suggestion',
+    category: null,
+    palette: ['#17742e', '#f53fad', '#f5eee8'],
+    suggestion: "Transformers G2 'Watermelon' Mirage (~1994 unreleased toy)",
+    description:
+      "Claude suggestion: the zone name is an exact match to the Transformers character Mirage. The dark green (#17742e) and hot pink (#f53fad) precisely match the cult-famous unreleased Generation 2 toy nicknamed 'Watermelon Mirage' for its neon green and pink deco. Hasbro finally released a modern version in 2023.",
+    images: null,
+  },
+  {
+    id: 'royal',
+    name: 'Royal',
+    status: 'suggestion',
+    category: null,
+    palette: ['#f9eddd', '#f2d3ab', '#c69fa5', '#8b6d9c', '#ffc7fc', '#700000', '#171616'],
+    suggestion: "GrafxKid's Oil 6 palette (Lospec)",
+    description:
+      "Claude suggestion: three hex values (#f2d3ab, #c69fa5, #8b6d9c) are byte-for-byte identical to GrafxKid's Oil 6 palette on Lospec, one of the most popular pixel art palettes with 62,000+ downloads. The remaining colours extend the palette with lavender pink, maroon, and black.",
+    images: { zone: null, reference: 'https://lospec.com/palette-list/oil-6-8x.png' },
+  },
+  {
+    id: 'yuna',
+    name: '[YUNA]',
+    status: 'suggestion',
+    category: null,
+    palette: ['#f1c8ff', '#000a1d'],
+    suggestion: "Final Fantasy X — Yuna",
+    description:
+      "Claude suggestion: the zone name is an exact match to Yuna, the lead character of Final Fantasy X (2001). The lavender #f1c8ff reflects her purple/lilac design, while the dark navy #000a1d evokes the deep night aesthetic of Spira. FFX would fit alongside the project's other JRPG references.",
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/7/71/Yuna.png' },
+  },
+  {
+    id: 'mt-zuka',
+    name: 'Mt Zuka',
+    status: 'suggestion',
+    category: null,
+    palette: ['#f0f6e8', '#93d4b5', '#f0dab1', '#e39aac', '#c45d9f', '#634b7d', '#2ba9b4', '#6461c2', '#221039'],
+    suggestion: "Osamu Tezuka / Takarazuka Revue",
+    description:
+      "Claude suggestion: 'Mt Zuka' is clearly derived from 'Tezuka' — Osamu Tezuka, the godfather of manga, took his pen name from his hometown Takarazuka. The Takarazuka Revue's troupe division colours (Flower=pink, Cosmos=purple, Snow=green, Star=blue) map directly to the palette gradient.",
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/1954-11_Takarazuka-Revue_Kimi-no-Na-ha.jpg/500px-1954-11_Takarazuka-Revue_Kimi-no-Na-ha.jpg' },
+  },
+  {
+    id: 'kairo',
+    name: 'Kairo',
+    status: 'suggestion',
+    category: null,
+    palette: ['#ffe596', '#ffad3b', '#c57938', '#975330', '#574729', '#313638'],
+    suggestion: "Kairo (2012 indie game by Richard Perrin)",
+    description:
+      "Claude suggestion: exact name match to Kairo, a 2012 indie exploration game set in brutalist architecture with Egyptian influences. The warm amber-to-dark gradient (#ffe596 → #313638) maps to the game's sunlit sandstone environments fading into shadow.",
+    images: { zone: null, reference: 'https://shared.steamstatic.com/store_item_assets/steam/apps/233230/header.jpg' },
+  },
+  {
+    id: 'exduo',
+    name: 'Exduo',
+    status: 'suggestion',
+    category: null,
+    palette: ['#0012b5', '#fff7f5', '#ffe6fe'],
+    suggestion: "Yves Klein — monochrome trinity (IKB + Monopink + white)",
+    description:
+      "Claude suggestion: 'Exduo' means 'from two' in Latin — Klein explored duality between the material and immaterial. The deep blue #0012b5 closely matches International Klein Blue (#002FA7), light pink #ffe6fe matches his Monopink works, and warm white #fff7f5 represents the canvas substrate. Klein's ex-voto at Saint Rita contained exactly these three pigments.",
+    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/IKB_191.jpg/400px-IKB_191.jpg' },
+  },
+  {
+    id: 'wen',
+    name: '[WEN]',
+    status: 'suggestion',
+    category: null,
+    palette: ['#fffdf0', '#1e1c32'],
+    suggestion: "'Wen moon' — crypto culture meme",
+    description:
+      "Claude suggestion: 'Wen' is iconic crypto slang — a deliberate misspelling of 'when,' most famously in the phrase 'wen moon?' The warm parchment (#fffdf0) on dark navy (#1e1c32) gives a manuscript-like quality, as if the eternal crypto question has been inscribed on ancient paper. Fits alongside [HYCA] as a crypto-insider reference.",
+    images: null,
+  },
+
   // ─── UNKNOWN ─────────────────────────────────────────────────────────────
 
   { id: 'holo',         name: 'Holo',          status: 'unknown', category: null, palette: ['#fc5602', '#f2d601', '#1182c0', '#fb71c9', '#761fa5', '#256006', '#0577bd', '#fcdf02', '#fc6e03', '#eee8de'], images: null },
-  { id: 'kairo',        name: 'Kairo',         status: 'unknown', category: null, palette: ['#ffe596', '#ffad3b', '#c57938', '#975330', '#574729', '#313638'], images: null },
   { id: 'arc',          name: 'Arc',           status: 'unknown', category: null, palette: ['#ec5526', '#f7f4e2', '#9ebbc1', '#f4ac12', '#1e1b1e'], images: null },
-  { id: 'exduo',        name: 'Exduo',         status: 'unknown', category: null, palette: ['#0012b5', '#fff7f5', '#ffe6fe'], images: null },
   { id: 'hyphae',       name: 'Hyphae',        status: 'unknown', category: null, palette: ['#328dfd', '#f0f0f0', '#e65700'], images: null },
-  { id: 'mirage',       name: 'Mirage',        status: 'unknown', category: null, palette: ['#17742e', '#f53fad', '#f5eee8'], images: null },
   { id: 'dynacrypts',   name: 'Dynacrypts',    status: 'unknown', category: null, palette: ['#f98284', '#feaae4', '#b0a9e4', '#accce4', '#b3e3da', '#b0eb93', '#fff7a0', '#ffc384', '#dea38b', '#28282e'], images: null },
   { id: 'blood',        name: '[BLOOD]',       status: 'unknown', category: null, palette: ['#ee0000', '#202020'], images: null },
   { id: 'sep',          name: '[SEP]',         status: 'unknown', category: null, palette: ['#303030', '#9f82ff'], images: null },
   { id: 'dark',         name: '[DARK]',        status: 'unknown', category: null, palette: ['#eeeeee', '#303030'], images: null },
-  { id: 'ender',        name: 'Ender',         status: 'unknown', category: null, palette: ['#ff4fe2', '#f8f7ff', '#0000ff'], images: null },
-  { id: 'yuna',         name: '[YUNA]',        status: 'unknown', category: null, palette: ['#f1c8ff', '#000a1d'], images: null },
   { id: 'moon',         name: '[MOON]',        status: 'unknown', category: null, palette: ['#9cb7d4', '#35443b'], images: null },
-  { id: 'wen',          name: '[WEN]',         status: 'unknown', category: null, palette: ['#fffdf0', '#1e1c32'], images: null },
   { id: 'cur2',         name: '[CUR2]',        status: 'unknown', category: null, palette: ['#8e918c', '#eff1f4'], images: null },
   { id: 'boss',         name: '[BOSS]',        status: 'unknown', category: null, palette: ['#f8f7ff', '#ee0000'], images: null },
-  { id: 'mt-zuka',      name: 'Mt Zuka',       status: 'unknown', category: null, palette: ['#f0f6e8', '#93d4b5', '#f0dab1', '#e39aac', '#c45d9f', '#634b7d', '#2ba9b4', '#6461c2', '#221039'], images: null },
   { id: 'zerinia',      name: 'Zerinia',       status: 'unknown', category: null, palette: ['#e6ceac', '#cdba94', '#bda583', '#a48d6a', '#8b7d62', '#73654a', '#524839', '#292418'], images: null },
   { id: 'calyx',        name: 'Calyx',         status: 'unknown', category: null, palette: ['#90f1ef', '#ed553f', '#419c87', '#f1bdd4', '#82cdef', '#20201e', '#846daf', '#fef9f5'], images: null },
   { id: 'neon',         name: '[NEON]',        status: 'unknown', category: null, palette: ['#9cd4a8', '#35443b'], images: null },
@@ -498,13 +592,11 @@ export const zones = [
   { id: 'muxtai-x1',    name: 'Muxtai X1',     status: 'unknown', category: null, palette: ['#ffcad5', '#082496', '#ed0e0a', '#f5f2e3', '#30a5ff'], images: null },
   { id: 'akileaf',      name: 'Akileaf',       status: 'unknown', category: null, palette: ['#453687', '#4899c4', '#b771b9', '#3c2b71', '#82c1c6', '#095474', '#96c7ce', '#f9fbd4', '#abe291'], images: null },
   { id: 'pepo',         name: 'Pepo',          status: 'unknown', category: null, palette: ['#d77c11', '#d3cac3', '#61785c', '#3f5c39', '#332a1d', '#303d2d'], images: null },
-  { id: 'royal',        name: 'Royal',         status: 'unknown', category: null, palette: ['#f9eddd', '#f2d3ab', '#c69fa5', '#8b6d9c', '#ffc7fc', '#700000', '#171616'], images: null },
   { id: 'blossom',      name: 'Blossom',       status: 'unknown', category: null, palette: ['#ef5ea1', '#efeded', '#a2b0e5', '#b65293', '#c7bfe3', '#2c3a8d', '#ca579e', '#4d334c', '#48358f', '#171717'], images: null },
   { id: 'warp',         name: 'Warp',          status: 'unknown', category: null, palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'], images: null },
   { id: 'xleph',        name: 'Xleph',         status: 'unknown', category: null, palette: ['#c7c7c7', '#9ff240', '#6c6c6c', '#c9c9c9', '#202020'], images: null },
   { id: 'cradle',       name: 'Cradle',        status: 'unknown', category: null, palette: ['#efc201', '#104d28', '#e0632b', '#cec4be', '#43882f', '#90ad27', '#ffe7d3', '#de797d'], images: null },
   { id: 'mould',        name: 'Mould',         status: 'unknown', category: null, palette: ['#87e899', '#e2efed', '#edf6f7', '#ac7167', '#e93e5b', '#4c26c6', '#ff63e9', '#fefe82', '#4dcb7e', '#252525'], images: null },
-  { id: 'first-earth',  name: 'First Earth',   status: 'unknown', category: null, palette: ['#cb8175', '#e2a97e', '#f0cf8e', '#f6edcd', '#a8c8a6', '#6d8d8a', '#655057', '#32282b'], images: null },
   { id: 'aria',         name: 'Aria',          status: 'unknown', category: null, palette: ['#93d1de', '#718dbc', '#f9a4cb', '#dad7cc', '#f8fefe', '#f6e518', '#ec7e15', '#292726'], images: null },
   { id: 'valeria',      name: 'Valeria',       status: 'unknown', category: null, palette: ['#fe004f', '#04a15c', '#fd8901', '#2c2827'], images: null },
   { id: 'mori',         name: 'Mori',          status: 'unknown', category: null, palette: ['#eac802', '#daa7ac', '#329160', '#3db7a9', '#16160f'], images: null },
@@ -512,7 +604,8 @@ export const zones = [
   { id: 'antenna',      name: 'Antenna',       status: 'unknown', category: null, palette: ['#f4d35e', '#ee964b', '#f95738', '#083d77', '#ebebd3'], images: null },
 ];
 
-export const confirmedZones = zones.filter(z => z.status === 'confirmed');
-export const guessZones     = zones.filter(z => z.status === 'guess');
-export const unknownZones   = zones.filter(z => z.status === 'unknown');
+export const confirmedZones    = zones.filter(z => z.status === 'confirmed');
+export const guessZones        = zones.filter(z => z.status === 'guess');
+export const suggestionZones   = zones.filter(z => z.status === 'suggestion');
+export const unknownZones      = zones.filter(z => z.status === 'unknown');
 
