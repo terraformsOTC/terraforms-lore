@@ -589,7 +589,7 @@ export const zones = [
     suggestion: "WipEout 2097 — Psygnosis / Warp Records (1996)",
     description:
       "Claude suggestion: 'Warp' points to WipEout 2097, the iconic PS1 racing game whose soundtrack was curated entirely by Warp Records — Aphex Twin, The Chemical Brothers, Fluke, and Leftfield. The purple (#8b3ede) and red (#e5291e) directly echo the game's cover palette, and the Warp Records label branding was displayed in-game, making it one of the most celebrated music/game crossovers of the 1990s.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/f/f7/WipEout2097Cover.jpg' },
+    images: { zone: null, reference: '/images/warp-reference.png' },
   },
   {
     id: 'pepo',
