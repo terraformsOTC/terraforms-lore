@@ -501,7 +501,7 @@ export const zones = [
     suggestion: "Transformers G2 'Watermelon' Mirage (~1994 unreleased toy)",
     description:
       "Claude suggestion: the zone name is an exact match to the Transformers character Mirage. The dark green (#17742e) and hot pink (#f53fad) precisely match the cult-famous unreleased Generation 2 toy nicknamed 'Watermelon Mirage' for its neon green and pink deco. Hasbro finally released a modern version in 2023.",
-    images: null,
+    images: { zone: null, reference: '/images/mirage-reference.jpg' },
   },
   {
     id: 'royal',
