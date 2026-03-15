@@ -403,8 +403,8 @@ export const zones = [
     status: 'guess',
     category: null,
     palette: ['#f6d903', '#eceff2', '#ff6650', '#f3b2e0', '#83dbf7', '#06917e', '#e0f2fa', '#cbeddf', '#e7e9ef', '#0dcdee'],
-    guess: "Labyrinth (1986 film)?",
-    description: "Community theory: the palette may reference Labyrinth, the 1986 Jim Henson / David Bowie fantasy film.",
+    guess: "TempleOS — Terry Davis (2003–2019)",
+    description: "Community theory: 'Angel' maps directly to Terry Davis's theology — he claimed God spoke to him and directed him to build TempleOS, with angels as divine messengers. The 10-colour palette of bright saturated primaries (yellow, red, cyan, pink, teal, green) echoes the VGA 16-colour limitation that TempleOS famously runs at (640×480, 16 colours). Davis specified these constraints because he believed God mandated them.",
     images: null,
   },
   {

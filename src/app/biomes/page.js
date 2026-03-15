@@ -3,14 +3,9 @@
 import { useState, useMemo } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import BiomeCard from '@/components/BiomeCard';
-import BiomeSubmitForm from '@/components/BiomeSubmitForm';
-import {
-  biomes,
-  confirmedBiomes,
-  guessBiomes,
-  unknownBiomes,
-} from '@/data/biomes';
+import ItemCard from '@/components/ItemCard';
+import SubmitForm from '@/components/SubmitForm';
+import { biomes, confirmedBiomes, guessBiomes, unknownBiomes, BIOME_CATEGORIES } from '@/data/biomes';
 
 const FILTERS = [
   { key: 'all',       label: 'all' },
@@ -25,11 +20,11 @@ export default function BiomesPage() {
 
   const filtered = useMemo(() => {
     return biomes.filter((b) => {
-      if (filter === 'confirmed' && b.status !== 'confirmed') return false;
-      if (filter === 'guess'     && b.status !== 'guess')     return false;
-      if (filter === 'unknown'   && b.status !== 'unknown')   return false;
-      const searchable = `${b.name} ${b.nickname || ''} ${b.reference || ''} ${b.guess || ''}`.toLowerCase();
-      if (search && !searchable.includes(search.toLowerCase())) return false;
+      if (filter !== 'all' && b.status !== filter) return false;
+      if (search) {
+        const searchable = `${b.name} ${b.nickname || ''} ${b.reference || ''} ${b.guess || ''}`.toLowerCase();
+        if (!searchable.includes(search.toLowerCase())) return false;
+      }
       return true;
     });
   }, [filter, search]);
@@ -37,76 +32,45 @@ export default function BiomesPage() {
   return (
     <div className="content-wrapper">
       <Header />
-
       <main className="flex-1 px-6">
-        {/* Page title */}
         <h1 className="text-3xl mb-2">biome references</h1>
-        <p className="text-sm mb-2" style={{ opacity: 0.55, lineHeight: '1.6' }}>
+        <p className="text-sm mb-2 dim-55" style={{ lineHeight: '1.6' }}>
           Each and every Terraforms zone and biome is an Easter Egg. The community has been cataloging references for years — and there are still many open questions.
         </p>
-        <p className="text-sm mb-10" style={{ opacity: 0.35 }}>
+        <p className="text-sm mb-10 dim-35">
           {confirmedBiomes.length} confirmed &nbsp;·&nbsp; {guessBiomes.length} theories &nbsp;·&nbsp; {unknownBiomes.length} unknown &nbsp;·&nbsp; 92 total biomes
         </p>
 
-        {/* Status filter row */}
         <div className="flex flex-wrap gap-3 mb-5">
           {FILTERS.map(({ key, label }) => (
-            <button
-              key={key}
-              onClick={() => setFilter(key)}
-              className="btn-primary btn-sm"
-              style={{ opacity: filter === key ? 1 : 0.35 }}
-            >
+            <button key={key} onClick={() => setFilter(key)}
+              className="btn-primary btn-sm" style={{ opacity: filter === key ? 1 : 0.35 }}>
               [{label}]
             </button>
           ))}
         </div>
 
-        {/* Search — hidden on unknown tab */}
         {filter !== 'unknown' && (
           <div className="mb-8" style={{ maxWidth: '360px' }}>
-            <input
-              type="search"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder="search biomes or references..."
-              className="w-full px-3 py-2"
-            />
+            <input type="search" value={search} onChange={(e) => setSearch(e.target.value)}
+              placeholder="search biomes or references..." className="w-full px-3 py-2" />
           </div>
         )}
 
-        {/* Results count */}
-        <p className="text-xs mb-6" style={{ opacity: 0.3 }}>
-          {filtered.length} {filtered.length === 1 ? 'result' : 'results'}
-        </p>
+        <p className="text-xs mb-6 dim-30">{filtered.length} {filtered.length === 1 ? 'result' : 'results'}</p>
 
-        {/* Biome grid */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-            borderTop:  '1px solid rgba(232,232,232,0.08)',
-            borderLeft: '1px solid rgba(232,232,232,0.08)',
-          }}
-        >
+        <div className="grid-border" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
           {filtered.map((biome) => (
-            <BiomeCard key={biome.id} biome={biome} />
+            <ItemCard key={biome.id} item={biome} href={`/biomes/${biome.id}`}
+              category={BIOME_CATEGORIES[biome.category]} subtitle={biome.nickname} />
           ))}
         </div>
 
-        {filtered.length === 0 && (
-          <p className="text-sm mt-8" style={{ opacity: 0.4 }}>
-            no results. try adjusting filters or search.
-          </p>
-        )}
+        {filtered.length === 0 && <p className="text-sm mt-8 dim-40">no results. try adjusting filters or search.</p>}
 
-        {/* Divider */}
-        <div className="mt-20 mb-0" style={{ borderBottom: '1px solid rgba(232,232,232,0.08)' }} />
-
-        {/* Submit form */}
-        <BiomeSubmitForm />
+        <div className="mt-20 divider" />
+        <SubmitForm type="biome" />
       </main>
-
       <Footer />
     </div>
   );
