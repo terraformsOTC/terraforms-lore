@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="z-10 px-6 py-4 md:py-6 md:mb-6 mb-3 sticky top-0 md:relative bg-primary">
       <nav className="flex flex-row justify-between items-center" style={{ minHeight: '36px' }}>
-        <a href="/" className="text-sm">[terraforms lore]</a>
+        <a href="/" className="text-lg">[terraform lore]</a>
         <div className="flex items-center gap-4 text-sm opacity-65">
           {onBiomes
             ? <a href="/">[zones]</a>
