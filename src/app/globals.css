@@ -6,7 +6,12 @@
   --bg-primary: #0a0a0a;
   --text-primary: #e8e8e8;
   --border-color: rgba(232, 232, 232, 0.12);
+  --border-dim: rgba(232, 232, 232, 0.15);
   --placeholder-bg: rgba(232, 232, 232, 0.05);
+  --badge-suggestion: rgba(168, 130, 255, 0.7);
+  --badge-suggestion-border: rgba(168, 130, 255, 0.35);
+  --badge-theory: rgba(251, 191, 36, 0.7);
+  --badge-theory-border: rgba(251, 191, 36, 0.35);
 }
 
 * { box-sizing: border-box; }
@@ -37,6 +42,7 @@ body {
 a { color: var(--text-primary); text-decoration: none; }
 a:hover { opacity: 0.7; }
 
+/* Buttons */
 .btn-primary {
   background: transparent;
   border: 1px solid var(--text-primary);
@@ -48,7 +54,16 @@ a:hover { opacity: 0.7; }
 .btn-primary:hover { opacity: 0.7; }
 .btn-primary:disabled { opacity: 0.3; cursor: not-allowed; }
 .btn-sm { padding: 4px 10px; font-size: 13px; }
+.btn-text {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
 
+/* Form inputs */
 input[type="text"],
 input[type="number"],
 input[type="search"],
@@ -71,5 +86,37 @@ textarea::placeholder { opacity: 0.35; }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
+/* Opacity utilities — replaces dozens of inline style={{ opacity: X }} */
+.dim-20 { opacity: 0.2; }
+.dim-25 { opacity: 0.25; }
+.dim-30 { opacity: 0.3; }
+.dim-35 { opacity: 0.35; }
+.dim-40 { opacity: 0.4; }
+.dim-45 { opacity: 0.45; }
+.dim-50 { opacity: 0.5; }
+.dim-55 { opacity: 0.55; }
+.dim-65 { opacity: 0.65; }
+.dim-70 { opacity: 0.7; }
+.dim-80 { opacity: 0.8; }
+.dim-85 { opacity: 0.85; }
+
+/* Border utilities — replaces repeated rgba border inline styles */
+.card-border {
+  border-bottom: 1px solid rgba(232, 232, 232, 0.08);
+  border-right: 1px solid rgba(232, 232, 232, 0.08);
+}
+.card-border-dim {
+  border-bottom: 1px solid rgba(232, 232, 232, 0.06);
+  border-right: 1px solid rgba(232, 232, 232, 0.06);
+}
+.border-top { border-top: 1px solid rgba(232, 232, 232, 0.08); }
+.border-bottom { border-bottom: 1px solid rgba(232, 232, 232, 0.08); }
+.divider { border-bottom: 1px solid rgba(232, 232, 232, 0.1); }
+.grid-border {
+  border-top: 1px solid rgba(232, 232, 232, 0.08);
+  border-left: 1px solid rgba(232, 232, 232, 0.08);
+}
+
 .bg-placeholder { background-color: var(--placeholder-bg); }
 .border-current { border-color: currentColor; }
+img.block, .block { display: block; }
