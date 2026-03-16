@@ -224,7 +224,7 @@ export const zones = [
     reference: "Classic anime / isekai — ~2 decades before Re:Zero",
     referenceDetail: "Early 2000s anime / isekai genre",
     description:
-      "The creator confirmed Blushing derives from something in a similar genre to Re:Zero, but approximately two decades older — pointing to a classic early-2000s anime or isekai title. The specific work has not been identified.",
+      "The creator confirmed Blushing derives from something in a similar genre to Re:Zero, but approximately two decades older — pointing to a classic early-2000s anime or isekai title. The specific work has not been identified.\n\nSome contenders for this zone could be:\n· Magic Knight Rayearth — 1994–1995\n· Fushigi Yûgi — 1995–1996\n· El-Hazard: The Wanderers — 1995–1996\n· The Vision of Escaflowne — 1996\n· Revolutionary Girl Utena — 1997\n· Now and Then, Here and There — 1999\n· Cardcaptor Sakura — 1998–2000\n· Haibane Renmei — 2002\n· The Twelve Kingdoms — 2002–2003\n· Texhnolyze — 2003",
     images: null,
   },
   {
