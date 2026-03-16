@@ -35,7 +35,7 @@ export default function BiomesPage() {
       <main className="flex-1 px-6">
         <h1 className="text-3xl mb-2">biome references</h1>
         <p className="text-sm mb-2 dim-55" style={{ lineHeight: '1.6' }}>
-          Each and every Terraforms zone and biome is an Easter Egg. The community has been cataloging references for years — and there are still many open questions.
+          Many Terraforms zones and biomes are references to popular culture, media, and artworks. The community has been cataloging these Easter Eggs for years, and many remain undiscovered.
         </p>
         <p className="text-sm mb-10 dim-35">
           {confirmedBiomes.length} confirmed &nbsp;·&nbsp; {guessBiomes.length} theories &nbsp;·&nbsp; {unknownBiomes.length} unknown &nbsp;·&nbsp; 92 total biomes
