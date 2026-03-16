@@ -70,7 +70,7 @@ export default async function ZonePage({ params }) {
         </div>
 
         <p className="text-sm mb-8" style={{ opacity: isTheory ? 0.65 : 0.85 }}>{ref}</p>
-        <p className="text-sm mb-10 dim-80" style={{ lineHeight: '1.8' }}>{zone.description}</p>
+        <p className="text-sm mb-10 dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{zone.description}</p>
 
         {/* Parcel + reference image side by side */}
         {(parcelIds || hasReference) && (
