@@ -49,7 +49,7 @@ export default function ItemCard({ item, href, category, subtitle, palette }) {
           <StatusBadge status={item.status} category={category} />
         </div>
 
-        <p className="text-xs mt-1 dim-45">{ref}</p>
+        <p className="text-xs mt-1 dim-65">{ref}</p>
         <p className="text-xs mt-2 dim-25">→</p>
       </div>
     </Link>
