@@ -399,9 +399,9 @@ export const zones = [
     status: 'guess',
     category: null,
     palette: ['#eb4034', '#eeeeee', '#202020'],
-    guess: "BloodRayne?",
-    description: "Community theory: Dhampir (a half-vampire in folklore) may reference the BloodRayne game series, whose protagonist is a dhampir.",
-    images: null,
+    guess: "BloodRayne (2002)?",
+    description: "BloodRayne is a cult-classic action-adventure video game franchise originating in 2002, featuring a dhampir (half-human, half-vampire) protagonist named Rayne who hunts Nazis and supernatural threats.",
+    images: { zone: null, reference: '/images/Bloodrayne-reference.jpg' },
   },
   {
     id: 'intro-forest',
@@ -545,17 +545,6 @@ export const zones = [
     description:
       "Claude suggestion: 'Exduo' means 'from two' in Latin — Klein explored duality between the material and immaterial. The deep blue #0012b5 closely matches International Klein Blue (#002FA7), light pink #ffe6fe matches his Monopink works, and warm white #fff7f5 represents the canvas substrate. Klein's ex-voto at Saint Rita contained exactly these three pigments.",
     images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/IKB_191.jpg/400px-IKB_191.jpg' },
-  },
-  {
-    id: 'wen',
-    name: '[WEN]',
-    status: 'suggestion',
-    category: null,
-    palette: ['#fffdf0', '#1e1c32'],
-    suggestion: "'Wen moon' — crypto culture meme",
-    description:
-      "Claude suggestion: 'Wen' is iconic crypto slang — a deliberate misspelling of 'when,' most famously in the phrase 'wen moon?' The warm parchment (#fffdf0) on dark navy (#1e1c32) gives a manuscript-like quality, as if the eternal crypto question has been inscribed on ancient paper. Fits alongside [HYCA] as a crypto-insider reference.",
-    images: null,
   },
   {
     id: 'antenna',
@@ -747,6 +736,7 @@ export const zones = [
   { id: 'mould',        name: 'Mould',         status: 'unknown', category: null, palette: ['#87e899', '#e2efed', '#edf6f7', '#ac7167', '#e93e5b', '#4c26c6', '#ff63e9', '#fefe82', '#4dcb7e', '#252525'], images: null },
   { id: 'valeria',      name: 'Valeria',       status: 'unknown', category: null, palette: ['#fe004f', '#04a15c', '#fd8901', '#2c2827'], images: null },
   { id: 'mori',         name: 'Mori',          status: 'unknown', category: null, palette: ['#eac802', '#daa7ac', '#329160', '#3db7a9', '#16160f'], images: null },
+  { id: 'wen',          name: '[WEN]',         status: 'unknown', category: null, palette: ['#fffdf0', '#1e1c32'], images: null },
 ];
 
 export const confirmedZones    = zones.filter(z => z.status === 'confirmed');
