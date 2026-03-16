@@ -224,8 +224,8 @@ export const zones = [
     reference: "Classic anime / isekai — ~2 decades before Re:Zero",
     referenceDetail: "Early 2000s anime / isekai genre",
     description:
-      "The creator confirmed Blushing derives from something in a similar genre to Re:Zero, but approximately two decades older — pointing to a classic early-2000s anime or isekai title. The specific work has not been identified.\n\nSome contenders for this zone could be:\n· Magic Knight Rayearth — 1994–1995\n· Fushigi Yûgi — 1995–1996\n· El-Hazard: The Wanderers — 1995–1996\n· The Vision of Escaflowne — 1996\n· Revolutionary Girl Utena — 1997\n· Now and Then, Here and There — 1999\n· Cardcaptor Sakura — 1998–2000\n· Haibane Renmei — 2002\n· The Twelve Kingdoms — 2002–2003\n· Texhnolyze — 2003",
-    images: null,
+      "The creator confirmed Blushing derives from something in a similar genre to Re:Zero, but approximately two decades older — pointing to a classic early-2000s anime or isekai title. The specific work has not been identified.\n\nClaude has identified Fushigi Yûgi (1995–1996) as the most plausible contender: it is a direct isekai (a girl pulled into a magical book), released almost exactly 20 years before Re:Zero, with a visual identity heavily built around pinks, roses, and lilacs — and the name 'Blushing' maps cleanly onto its romantic core.\n\nOther contenders:\n· Magic Knight Rayearth — 1994–1995\n· El-Hazard: The Wanderers — 1995–1996\n· The Vision of Escaflowne — 1996\n· Revolutionary Girl Utena — 1997\n· Now and Then, Here and There — 1999\n· Cardcaptor Sakura — 1998–2000\n· Haibane Renmei — 2002\n· The Twelve Kingdoms — 2002–2003\n· Texhnolyze — 2003",
+    images: { zone: null, reference: '/images/Fushigi-Yugi-reference.jpg' },
   },
   {
     id: 'promiselands',
