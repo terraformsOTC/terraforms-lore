@@ -465,6 +465,7 @@ export const zones = [
           text: "this palette is a personal favorite\n\nit's a sort of snowball i've been rolling, an earlier version was in Proscenium (see my profile pic)\n\nit draws from a combination of things, including Japanese woodblock printing and the First Earth palette in Terraforms\n\niso\nday 3",
           author: 'remnynt',
           date: 'Jan 3, 2026',
+          image: '/images/remnynt-tweet-image.jpeg',
         },
       },
     ],
