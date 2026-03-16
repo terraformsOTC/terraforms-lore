@@ -590,7 +590,7 @@ export const zones = [
     suggestion: "Sepolia — Ethereum testnet",
     description:
       "Claude suggestion: [SEP] likely abbreviates Sepolia, Ethereum's primary testnet since Goerli's deprecation. The dark grey #303030 base (shared with [HYCA] and [HOME]) evokes developer tooling, while lavender purple #9f82ff aligns with Ethereum ecosystem branding. A self-referential nod from a fully on-chain Ethereum project to the network's testing infrastructure.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/471px-Ethereum_logo_2014.svg.png' },
+    images: { zone: null, reference: '/images/sepolia-reference.png' },
   },
   {
     id: 'arc',
