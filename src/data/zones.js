@@ -456,6 +456,13 @@ export const zones = [
     description:
       "Claude suggestion: 7 of 8 hex codes are an exact byte-for-byte match to the Pastel QT palette on Lospec by polyphrog, in the same order. The 8th colour (#32282b) extends the palette with a dark anchor.",
     images: { zone: null, reference: '/images/pastel%20qt%20Palette-reference.png' },
+    referencedBy: [
+      {
+        description: "Remnynt's upcoming generative art collection attributes colours as being inspired, in part, by First Earth.",
+        sourceLink: 'https://x.com/remnynt/status/2007507979734790580?s=20',
+        handle: '@Sonoflasg',
+      },
+    ],
   },
   {
     id: 'ender',
