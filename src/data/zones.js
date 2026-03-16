@@ -461,6 +461,11 @@ export const zones = [
         description: "Remnynt's upcoming generative art collection attributes colours as being inspired, in part, by First Earth.",
         sourceLink: 'https://x.com/remnynt/status/2007507979734790580?s=20',
         handle: '@Sonoflasg',
+        tweet: {
+          text: "this palette is a personal favorite\n\nit's a sort of snowball i've been rolling, an earlier version was in Proscenium (see my profile pic)\n\nit draws from a combination of things, including Japanese woodblock printing and the First Earth palette in Terraforms\n\niso\nday 3",
+          author: 'remnynt',
+          date: 'Jan 3, 2026',
+        },
       },
     ],
   },
