@@ -479,6 +479,7 @@ export const zones = [
     suggestion: "Minecraft — The End dimension",
     description:
       "Claude suggestion: the magenta #ff4fe2 differs by only 3 hex digits from Minecraft's default end portal particle colour (#ff4ce5). Pure blue #0000ff matches End Crystal beams, and near-white #f8f7ff matches End Stone. The name 'Ender' directly references Enderman, Ender Dragon, and Eye of Ender.",
+    referenceLink: 'https://minecraft.wiki/w/Ender_Update',
     images: { zone: null, reference: '/images/Minecraftend-reference.webp' },
   },
   {
