@@ -115,9 +115,22 @@ export default async function ZonePage({ params }) {
             {zone.referencedBy.map((entry, i) => (
               <div key={i} className="border-top pt-4 pb-4">
                 <p className="text-sm dim-80" style={{ lineHeight: '1.7' }}>{entry.description}</p>
-                <div className="flex gap-4 mt-2" style={{ opacity: 0.35 }}>
-                  {entry.handle && <span className="text-xs">{entry.handle}</span>}
-                  {entry.sourceLink && (
+                {entry.tweet && (
+                  <div className="mt-4 p-4" style={{ border: '1px solid rgba(232,232,232,0.1)', maxWidth: '480px' }}>
+                    <p className="text-xs dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{entry.tweet.text}</p>
+                    <div className="flex gap-3 mt-3" style={{ opacity: 0.4 }}>
+                      <span className="text-xs">@{entry.tweet.author}</span>
+                      <span className="text-xs">{entry.tweet.date}</span>
+                      {entry.sourceLink && (
+                        <a href={entry.sourceLink} target="_blank" rel="noopener noreferrer"
+                          className="text-xs" style={{ color: 'inherit' }}>↗</a>
+                      )}
+                    </div>
+                  </div>
+                )}
+                <div className="flex gap-4 mt-3" style={{ opacity: 0.3 }}>
+                  {entry.handle && <span className="text-xs">submitted by {entry.handle}</span>}
+                  {!entry.tweet && entry.sourceLink && (
                     <a href={entry.sourceLink} target="_blank" rel="noopener noreferrer"
                       className="text-xs" style={{ color: 'inherit' }}>
                       source ↗
