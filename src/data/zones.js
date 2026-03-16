@@ -86,7 +86,7 @@ export const zones = [
     description:
       "The Mecha zone references Neon Genesis Evangelion (新世紀エヴァンゲリオン). The creator confirmed this as a \"retroactive yes\" — the warm red-orange palette against dark tones echoes EVA's iconic visual identity.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: null, reference: n('GzW03FqXkAAltpA') },
+    images: { zone: null, reference: '/images/neongenesis-reference.jpeg' },
   },
   {
     id: 'grove',
@@ -98,30 +98,6 @@ export const zones = [
     referenceDetail: "Creator note: sourced from a photo or palette online",
     description:
       "The creator noted: \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\". The specific source is uncertain, but the natural greens suggest a forest or woodland reference.",
-    images: null,
-  },
-  {
-    id: 'shiro',
-    name: 'Shiro',
-    status: 'confirmed',
-    category: 'twinPalette',
-    palette: ['#7ffcc4', '#ffe481', '#ffcfb7', '#505050', '#f2e7ea'],
-    reference: "Twin palette — light mode of Treasure",
-    referenceDetail: "Paired with zone: Treasure",
-    description:
-      "Shiro is the light mode twin of Treasure. The two zones form a paired set — light and dark versions of the same palette. Shiro (白) means \"white\" in Japanese.",
-    images: null,
-  },
-  {
-    id: 'treasure',
-    name: 'Treasure',
-    status: 'confirmed',
-    category: 'twinPalette',
-    palette: ['#323232', '#ffadde', '#7ffcc4', '#ffe481'],
-    reference: "Twin palette — dark mode of Shiro",
-    referenceDetail: "Paired with zone: Shiro",
-    description:
-      "Treasure is the dark mode twin of Shiro. The two zones form a paired set — dark and light versions of the same palette.",
     images: null,
   },
   {
@@ -149,7 +125,7 @@ export const zones = [
     description:
       "[HYCA] stands for HYperCAstle.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: null,
+    images: { zone: null, reference: '/images/Hypercastle-reference.png' },
   },
   {
     id: 'palace',
@@ -274,7 +250,7 @@ export const zones = [
     referenceDetail: "Re:Zero − Starting Life in Another World",
     description:
       "The Uwo zone is the dark mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Gemina, is the light mode.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/2/23/Rem_animepromo.png' },
+    images: { zone: null, reference: '/images/Remandram-reference.png' },
   },
   {
     id: 'killscreen',
@@ -378,7 +354,7 @@ export const zones = [
     referenceDetail: "Re:Zero − Starting Life in Another World (originally named Twinmade)",
     description:
       "Gemina (originally named Twinmade) is the light mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Uwo, is the dark mode.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/2/23/Rem_animepromo.png' },
+    images: { zone: null, reference: '/images/Remandram-reference.png' },
   },
   {
     id: 'shahra',
@@ -445,7 +421,7 @@ export const zones = [
     palette: ['#aec5ed', '#f1db65', '#e12e5d', '#f598c0', '#f9d8ee', '#eed2c0', '#ef2647', '#5cd3e5', '#248ac0', '#e0e0dd'],
     guess: "South Park?",
     description: "Community theory: the palette may be a reference to South Park.",
-    images: null,
+    images: { zone: null, reference: '/images/southpark-reference.webp' },
   },
   {
     id: 'sun',
@@ -512,7 +488,7 @@ export const zones = [
     suggestion: "GrafxKid's Oil 6 palette (Lospec)",
     description:
       "Claude suggestion: three hex values (#f2d3ab, #c69fa5, #8b6d9c) are byte-for-byte identical to GrafxKid's Oil 6 palette on Lospec, one of the most popular pixel art palettes with 62,000+ downloads. The remaining colours extend the palette with lavender pink, maroon, and black.",
-    images: { zone: null, reference: 'https://lospec.com/palette-list/oil-6-8x.png' },
+    images: { zone: null, reference: '/images/Oil%206%20Palette-reference.png' },
   },
   {
     id: 'yuna',
@@ -600,7 +576,7 @@ export const zones = [
     suggestion: "Pepo — botanical term for pumpkin / gourd berries (Cucurbitaceae)",
     description:
       "Claude suggestion: 'Pepo' is the exact botanical term for the berry type of Cucurbitaceae — pumpkins, gourds, watermelons, and squash. All 6 colours map directly: amber #d77c11 = pumpkin skin, stone grey #d3cac3 = dried gourd shell, forest greens #61785c and #3f5c39 = vine and foliage, warm brown #332a1d = soil, dark #303d2d = shadow. Follows the pattern of Everglades and Jadeite as a nature reference.",
-    images: null,
+    images: { zone: null, reference: '/images/Cucurbita-reference.jpg' },
   },
   {
     id: 'sep',
@@ -612,28 +588,6 @@ export const zones = [
     description:
       "Claude suggestion: [SEP] likely abbreviates Sepolia, Ethereum's primary testnet since Goerli's deprecation. The dark grey #303030 base (shared with [HYCA] and [HOME]) evokes developer tooling, while lavender purple #9f82ff aligns with Ethereum ecosystem branding. A self-referential nod from a fully on-chain Ethereum project to the network's testing infrastructure.",
     images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/471px-Ethereum_logo_2014.svg.png' },
-  },
-  {
-    id: 'moon',
-    name: '[MOON]',
-    status: 'suggestion',
-    category: null,
-    palette: ['#9cb7d4', '#35443b'],
-    suggestion: "Twin palette with [NEON] — moonlight over dark green",
-    description:
-      "Claude suggestion: [MOON] and [NEON] are mathematically precise twins — they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (blue 211° vs green 133°). This mirrors the confirmed Shiro/Treasure twin pair. The soft blue #9cb7d4 evokes moonlight.",
-    images: null,
-  },
-  {
-    id: 'neon',
-    name: '[NEON]',
-    status: 'suggestion',
-    category: null,
-    palette: ['#9cd4a8', '#35443b'],
-    suggestion: "Twin palette with [MOON] — neon glow over dark green",
-    description:
-      "Claude suggestion: [NEON] and [MOON] are mathematically precise twins — they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (green 133° vs blue 211°). This mirrors the confirmed Shiro/Treasure twin pair. The mint green #9cd4a8 evokes a neon sign glow.",
-    images: null,
   },
   {
     id: 'arc',
@@ -677,7 +631,7 @@ export const zones = [
     suggestion: "Aquilegia (columbine flower) — Ranunculaceae",
     description:
       "Claude suggestion: 'Akileaf' is a portmanteau of 'Aquilegia' (the botanical genus) + 'leaf'. Aquilegia (columbine) produces distinctive spurred flowers in purple, violet, blue, pink, and cream — the exact colour palette of this zone. The 9 colours map to: deep violet (#453687, #3c2b71) = dark petal base, cornflower blues (#4899c4, #095474) = blue varieties, mauve (#b771b9) = pink-purple hybrid, ice blues (#82c1c6, #96c7ce) = pale blue cultivars, pale cream (#f9fbd4) = white columbine, sage (#abe291) = leaf and stem. Follows the pattern of Everglades and Jadeite as a botanical/nature reference.",
-    images: null,
+    images: { zone: null, reference: '/images/aquilegia-reference.jpeg' },
   },
   {
     id: 'aria',
@@ -710,6 +664,55 @@ export const zones = [
     suggestion: "CUR2 — White Magic spell, Final Fantasy (NES, 1987)",
     description:
       "Claude suggestion: [CUR2] is the exact abbreviated name of the Cure 2 healing spell from the original Final Fantasy (NES, 1987). The NES used truncated 4-character spell names due to memory constraints — CURE became CUR, CURE2 became CUR2. The two-colour palette of warm grey (#8e918c) and near-white (#eff1f4) maps directly to the White Magic spell UI: clinical, light, healing tones. Sits alongside [MENU] (Final Fantasy III) as another Final Fantasy bracket-notation reference.",
+    images: null,
+  },
+
+  // ─── TWIN PALETTES ───────────────────────────────────────────────────────
+
+  {
+    id: 'shiro',
+    name: 'Shiro',
+    status: 'confirmed',
+    category: 'twinPalette',
+    palette: ['#7ffcc4', '#ffe481', '#ffcfb7', '#505050', '#f2e7ea'],
+    reference: "Twin palette — light mode of Treasure",
+    referenceDetail: "Paired with zone: Treasure",
+    description:
+      "Shiro is the light mode twin of Treasure. The two zones form a paired set — light and dark versions of the same palette. Shiro (白) means \"white\" in Japanese.",
+    images: null,
+  },
+  {
+    id: 'treasure',
+    name: 'Treasure',
+    status: 'confirmed',
+    category: 'twinPalette',
+    palette: ['#323232', '#ffadde', '#7ffcc4', '#ffe481'],
+    reference: "Twin palette — dark mode of Shiro",
+    referenceDetail: "Paired with zone: Shiro",
+    description:
+      "Treasure is the dark mode twin of Shiro. The two zones form a paired set — dark and light versions of the same palette.",
+    images: null,
+  },
+  {
+    id: 'moon',
+    name: '[MOON]',
+    status: 'suggestion',
+    category: null,
+    palette: ['#9cb7d4', '#35443b'],
+    suggestion: "Twin palette with [NEON] — moonlight over dark green",
+    description:
+      "Claude suggestion: [MOON] and [NEON] are mathematically precise twins — they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (blue 211° vs green 133°). This mirrors the confirmed Shiro/Treasure twin pair. The soft blue #9cb7d4 evokes moonlight.",
+    images: null,
+  },
+  {
+    id: 'neon',
+    name: '[NEON]',
+    status: 'suggestion',
+    category: null,
+    palette: ['#9cd4a8', '#35443b'],
+    suggestion: "Twin palette with [MOON] — neon glow over dark green",
+    description:
+      "Claude suggestion: [NEON] and [MOON] are mathematically precise twins — they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (green 133° vs blue 211°). This mirrors the confirmed Shiro/Treasure twin pair. The mint green #9cd4a8 evokes a neon sign glow.",
     images: null,
   },
 
