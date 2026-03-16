@@ -523,7 +523,7 @@ export const zones = [
     palette: ['#f0f6e8', '#93d4b5', '#f0dab1', '#e39aac', '#c45d9f', '#634b7d', '#2ba9b4', '#6461c2', '#221039'],
     suggestion: "Osamu Tezuka / Takarazuka Revue",
     description:
-      "Claude suggestion: 'Mt Zuka' is clearly derived from 'Tezuka' — Osamu Tezuka, the godfather of manga, took his pen name from his hometown Takarazuka. The Takarazuka Revue's troupe division colours (Flower=pink, Cosmos=purple, Snow=green, Star=blue) map directly to the palette gradient.",
+      "Claude suggestion: 'Mt Zuka' is clearly derived from 'Tezuka' — Osamu Tezuka, the godfather of manga, took his pen name from his hometown Takarazuka. The Takarazuka Revue's troupe division colours (Flower=pink, Cosmos=purple, Snow=green, Star=blue) map directly to the palette gradient.\n\nTakarazuka is also famous for its all-female musical theatre troupe, the Takarazuka Revue, founded in 1913 and still active today. Tezuka grew up attending performances and was profoundly influenced by the troupe's visual style — the large, expressive eyes that became the hallmark of his characters are widely attributed to the heavily stylised stage makeup worn by Revue performers. Without Takarazuka, manga and anime as we know them might look entirely different.",
     images: { zone: null, reference: '/images/osamu-tezuka.avif' },
   },
   {
