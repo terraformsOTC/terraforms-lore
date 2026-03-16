@@ -390,8 +390,8 @@ export const zones = [
     category: null,
     palette: ['#f5221f', '#fb72d9', '#f7c4de', '#ffffff', '#f23c19', '#fff21f', '#167833', '#2b24ad'],
     guess: "Bubble Bobble NES boxart / Bubblicious / Hubba Bubba?",
-    description: "Community theories include the Bubble Bobble NES box art, Bubblicious gum, or Hubba Bubba bubble gum packaging.",
-    images: null,
+    description: "Community theories include the Bubble Bobble NES box art, Bubblicious gum, or Hubba Bubba bubble gum packaging.\n\nBubble Bobble is the strongest candidate: the NES box art uses an almost identical combination of red, hot pink, yellow, green, and deep blue — all eight colours in this palette find a direct counterpart in the artwork. The name 'Bubble' seals it.",
+    images: { zone: null, reference: '/images/Bubblebobble-reference.webp' },
   },
   {
     id: 'dhampir',
