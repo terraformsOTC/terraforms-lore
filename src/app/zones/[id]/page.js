@@ -107,6 +107,27 @@ export default async function ZonePage({ params }) {
           explorerUrl="https://terraformexplorer.xyz/zones"
           sourceUrl={zone.sourceUrl}
         />
+
+        {/* Referenced by */}
+        {zone.referencedBy?.length > 0 && (
+          <div className="mt-10">
+            <p className="text-xs dim-35 mb-4">referenced by</p>
+            {zone.referencedBy.map((entry, i) => (
+              <div key={i} className="border-top pt-4 pb-4">
+                <p className="text-sm dim-80" style={{ lineHeight: '1.7' }}>{entry.description}</p>
+                <div className="flex gap-4 mt-2" style={{ opacity: 0.35 }}>
+                  {entry.handle && <span className="text-xs">{entry.handle}</span>}
+                  {entry.sourceLink && (
+                    <a href={entry.sourceLink} target="_blank" rel="noopener noreferrer"
+                      className="text-xs" style={{ color: 'inherit' }}>
+                      source ↗
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </main>
       <Footer />
     </div>
