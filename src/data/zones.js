@@ -17,7 +17,7 @@ export const CATEGORIES = {
 };
 
 // status: 'confirmed' | 'guess' | 'suggestion' | 'unknown'
-// All 75 zones — 29 confirmed, 15 suggestions, 7 community guesses, 24 unknown
+// All 75 zones — 29 confirmed, 20 suggestions, 7 community guesses, 19 unknown
 export const zones = [
 
   // ─── CONFIRMED ───────────────────────────────────────────────────────────
@@ -639,7 +639,17 @@ export const zones = [
   // ─── UNKNOWN ─────────────────────────────────────────────────────────────
 
   { id: 'holo',         name: 'Holo',          status: 'unknown', category: null, palette: ['#fc5602', '#f2d601', '#1182c0', '#fb71c9', '#761fa5', '#256006', '#0577bd', '#fcdf02', '#fc6e03', '#eee8de'], images: null },
-  { id: 'arc',          name: 'Arc',           status: 'unknown', category: null, palette: ['#ec5526', '#f7f4e2', '#9ebbc1', '#f4ac12', '#1e1b1e'], images: null },
+  {
+    id: 'arc',
+    name: 'Arc',
+    status: 'suggestion',
+    category: 'videoGame',
+    palette: ['#ec5526', '#f7f4e2', '#9ebbc1', '#f4ac12', '#1e1b1e'],
+    suggestion: "Arc System Works — Guilty Gear Strive (2021)",
+    description:
+      "Claude suggestion: Arc System Works is the developer behind Guilty Gear Strive. The signature orange-red (#ec5526), amber (#f4ac12), cream (#f7f4e2), slate blue (#9ebbc1), and near-black (#1e1b1e) directly echo GGS's iconic visual identity — the game's UI, character select screen, and promotional art all use this exact colour system. 'Arc' is also the studio abbreviation used by fans.",
+    images: null,
+  },
   { id: 'hyphae',       name: 'Hyphae',        status: 'unknown', category: null, palette: ['#328dfd', '#f0f0f0', '#e65700'], images: null },
   { id: 'dynacrypts',   name: 'Dynacrypts',    status: 'unknown', category: null, palette: ['#f98284', '#feaae4', '#b0a9e4', '#accce4', '#b3e3da', '#b0eb93', '#fff7a0', '#ffc384', '#dea38b', '#28282e'], images: null },
   { id: 'blood',        name: '[BLOOD]',       status: 'unknown', category: null, palette: ['#ee0000', '#202020'], images: null },
@@ -648,20 +658,70 @@ export const zones = [
   { id: 'boss',         name: '[BOSS]',        status: 'unknown', category: null, palette: ['#f8f7ff', '#ee0000'], images: null },
   { id: 'zerinia',      name: 'Zerinia',       status: 'unknown', category: null, palette: ['#e6ceac', '#cdba94', '#bda583', '#a48d6a', '#8b7d62', '#73654a', '#524839', '#292418'], images: null },
   { id: 'calyx',        name: 'Calyx',         status: 'unknown', category: null, palette: ['#90f1ef', '#ed553f', '#419c87', '#f1bdd4', '#82cdef', '#20201e', '#846daf', '#fef9f5'], images: null },
-  { id: 'linosim',      name: 'Linosim',       status: 'unknown', category: null, palette: ['#404040', '#29af3f', '#dcc729', '#26abd4', '#c3c3c3'], images: null },
-  { id: 'toad',         name: 'Toad',          status: 'unknown', category: null, palette: ['#ffa8ee', '#eceb80', '#008080', '#ffe330', '#72b802', '#e85bcc', '#a28ef4', '#ff0e0e', '#b0e111', '#8ac163'], images: null },
+  {
+    id: 'linosim',
+    name: 'Linosim',
+    status: 'suggestion',
+    category: 'videoGame',
+    palette: ['#404040', '#29af3f', '#dcc729', '#26abd4', '#c3c3c3'],
+    suggestion: "SimCity (1989) — Will Wright / Maxis",
+    description:
+      "Claude suggestion: 'Linosim' reads as 'lino-sim' — a linear / zoning simulation. The five colours are a direct match to SimCity's classic zoning system: green (#29af3f) = residential, yellow (#dcc729) = industrial, blue (#26abd4) = commercial, dark grey (#404040) = roads, light grey (#c3c3c3) = empty terrain. SimCity (1989) invented this colour-coded zoning language, which has been copied by every city-builder since.",
+    images: null,
+  },
+  {
+    id: 'toad',
+    name: 'Toad',
+    status: 'suggestion',
+    category: 'videoGame',
+    palette: ['#ffa8ee', '#eceb80', '#008080', '#ffe330', '#72b802', '#e85bcc', '#a28ef4', '#ff0e0e', '#b0e111', '#8ac163'],
+    suggestion: "Toad — Super Mario Bros. (Nintendo)",
+    description:
+      "Claude suggestion: Toad is a core Mario franchise character. The 10-colour palette maps to every known Toad variant: pink (#ffa8ee, #e85bcc) = Pink Toad, yellow (#eceb80, #ffe330) = Yellow Toad, teal (#008080) = Toad Brigade Captain, red (#ff0e0e) = classic Red-capped Toad, greens (#72b802, #b0e111, #8ac163) = Green Toad variants, lavender (#a28ef4) = Purple Toad. This breadth — covering all official colour variants — is consistent with how Terraforms references entire visual systems rather than single images.",
+    images: null,
+  },
   { id: 'home',         name: '[HOME]',        status: 'unknown', category: null, palette: ['#303030', '#fff5e6'], images: null },
   { id: 'pfpfpfpbbx80', name: 'Pfpfpfpbbx80', status: 'unknown', category: null, palette: ['#f772b5', '#435d5a', '#5a7b70', '#e83b3b', '#ccdf6d', '#aede6a', '#ffffff', '#e4dde7'], images: null },
   { id: 'muxtai-x1',    name: 'Muxtai X1',     status: 'unknown', category: null, palette: ['#ffcad5', '#082496', '#ed0e0a', '#f5f2e3', '#30a5ff'], images: null },
-  { id: 'akileaf',      name: 'Akileaf',       status: 'unknown', category: null, palette: ['#453687', '#4899c4', '#b771b9', '#3c2b71', '#82c1c6', '#095474', '#96c7ce', '#f9fbd4', '#abe291'], images: null },
+  {
+    id: 'akileaf',
+    name: 'Akileaf',
+    status: 'suggestion',
+    category: 'nature',
+    palette: ['#453687', '#4899c4', '#b771b9', '#3c2b71', '#82c1c6', '#095474', '#96c7ce', '#f9fbd4', '#abe291'],
+    suggestion: "Aquilegia (columbine flower) — Ranunculaceae",
+    description:
+      "Claude suggestion: 'Akileaf' is a portmanteau of 'Aquilegia' (the botanical genus) + 'leaf'. Aquilegia (columbine) produces distinctive spurred flowers in purple, violet, blue, pink, and cream — the exact colour palette of this zone. The 9 colours map to: deep violet (#453687, #3c2b71) = dark petal base, cornflower blues (#4899c4, #095474) = blue varieties, mauve (#b771b9) = pink-purple hybrid, ice blues (#82c1c6, #96c7ce) = pale blue cultivars, pale cream (#f9fbd4) = white columbine, sage (#abe291) = leaf and stem. Follows the pattern of Everglades and Jadeite as a botanical/nature reference.",
+    images: null,
+  },
   { id: 'blossom',      name: 'Blossom',       status: 'unknown', category: null, palette: ['#ef5ea1', '#efeded', '#a2b0e5', '#b65293', '#c7bfe3', '#2c3a8d', '#ca579e', '#4d334c', '#48358f', '#171717'], images: null },
   { id: 'xleph',        name: 'Xleph',         status: 'unknown', category: null, palette: ['#c7c7c7', '#9ff240', '#6c6c6c', '#c9c9c9', '#202020'], images: null },
   { id: 'cradle',       name: 'Cradle',        status: 'unknown', category: null, palette: ['#efc201', '#104d28', '#e0632b', '#cec4be', '#43882f', '#90ad27', '#ffe7d3', '#de797d'], images: null },
   { id: 'mould',        name: 'Mould',         status: 'unknown', category: null, palette: ['#87e899', '#e2efed', '#edf6f7', '#ac7167', '#e93e5b', '#4c26c6', '#ff63e9', '#fefe82', '#4dcb7e', '#252525'], images: null },
-  { id: 'aria',         name: 'Aria',          status: 'unknown', category: null, palette: ['#93d1de', '#718dbc', '#f9a4cb', '#dad7cc', '#f8fefe', '#f6e518', '#ec7e15', '#292726'], images: null },
+  {
+    id: 'aria',
+    name: 'Aria',
+    status: 'suggestion',
+    category: 'animeFilm',
+    palette: ['#93d1de', '#718dbc', '#f9a4cb', '#dad7cc', '#f8fefe', '#f6e518', '#ec7e15', '#292726'],
+    suggestion: "Aria the Animation (2005 anime) — set on terraformed Mars",
+    description:
+      "Claude suggestion: 'Aria' is the exact title of the 2005 iyashikei anime set in Neo-Venezia, a recreation of Venice on Aqua — a terraformed Mars. The palette maps precisely to the show's visual identity: canal blues #93d1de and #718dbc match the lagoon and reflected sky; pink #f9a4cb matches the undine gondoliers' uniforms; cream #dad7cc matches Neo-Venezia's stone architecture; near-white #f8fefe matches gondola hulls; warm yellow #f6e518 and orange #ec7e15 match the signature Venetian sunset glow; deep #292726 matches evening shadow. The terraforming setting is also a direct thematic echo of Terraforms itself.",
+    images: { zone: null, reference: '/images/aria-reference.jpg' },
+  },
   { id: 'valeria',      name: 'Valeria',       status: 'unknown', category: null, palette: ['#fe004f', '#04a15c', '#fd8901', '#2c2827'], images: null },
   { id: 'mori',         name: 'Mori',          status: 'unknown', category: null, palette: ['#eac802', '#daa7ac', '#329160', '#3db7a9', '#16160f'], images: null },
-  { id: 'nov',          name: '[NOV]',         status: 'unknown', category: null, palette: ['#303030', '#ff4538'], images: null },
+  {
+    id: 'nov',
+    name: '[NOV]',
+    status: 'suggestion',
+    category: 'animeFilm',
+    palette: ['#303030', '#ff4538'],
+    suggestion: "V for Vendetta — Guy Fawkes Night (November 5th)",
+    description:
+      "Claude suggestion: [NOV] almost certainly abbreviates November — specifically November 5th, Guy Fawkes Night. The two-colour palette is striking in its precision: deep charcoal (#303030) evokes the shadows and anonymity of V's world, while the single blood red (#ff4538) is the iconic colour of V for Vendetta's rose, cape lining, and propaganda imagery. 'Remember, remember, the fifth of November' — the name [NOV] is the bracket-notation hint.",
+    images: null,
+  },
 ];
 
 export const confirmedZones    = zones.filter(z => z.status === 'confirmed');

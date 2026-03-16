@@ -2,8 +2,10 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StatusBadge from '@/components/StatusBadge';
-import { ImageGrid, MetadataTable, ExternalLinks } from '@/components/DetailSections';
+import ParcelViewer from '@/components/ParcelViewer';
+import { MetadataTable, ExternalLinks } from '@/components/DetailSections';
 import { zones, CATEGORIES } from '@/data/zones';
+import { ZONE_PARCEL_IDS } from '@/data/parcelIds';
 
 function isLightColor(hex) {
   const r = parseInt(hex.slice(1, 3), 16);
@@ -31,11 +33,13 @@ export default async function ZonePage({ params }) {
   const isTheory = zone.status === 'guess' || zone.status === 'suggestion';
   const cat = CATEGORIES[zone.category];
   const ref = zone.suggestion || zone.guess || zone.reference;
+  const parcelIds = ZONE_PARCEL_IDS[id] || null;
+  const hasReference = zone.images?.reference;
 
   return (
     <div className="content-wrapper">
       <Header />
-      <main className="flex-1 px-6" style={{ maxWidth: '800px' }}>
+      <main className="flex-1 px-6" style={{ maxWidth: '900px' }}>
 
         <a href="/" className="text-xs dim-40 inline-block mb-8">← zone references</a>
 
@@ -68,7 +72,27 @@ export default async function ZonePage({ params }) {
         <p className="text-sm mb-8" style={{ opacity: isTheory ? 0.45 : 0.7 }}>{ref}</p>
         <p className="text-sm mb-10 dim-65" style={{ lineHeight: '1.8' }}>{zone.description}</p>
 
-        <ImageGrid images={zone.images} name={zone.name} altText={ref} isTheory={isTheory} />
+        {/* Parcel + reference image side by side */}
+        {(parcelIds || hasReference) && (
+          <div
+            className="grid gap-6 mb-10"
+            style={{ gridTemplateColumns: parcelIds && hasReference ? '277px 1fr' : '277px' }}
+          >
+            {parcelIds && (
+              <ParcelViewer parcelIds={parcelIds} zoneName={zone.name} />
+            )}
+            {hasReference && (
+              <div>
+                <p className="text-xs mb-2 dim-35">{isTheory ? 'possible reference' : 'reference'}</p>
+                <img
+                  src={zone.images.reference}
+                  alt={ref}
+                  style={{ display: 'block', width: '100%' }}
+                />
+              </div>
+            )}
+          </div>
+        )}
 
         {!isTheory && (
           <MetadataTable rows={[
