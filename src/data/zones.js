@@ -524,7 +524,7 @@ export const zones = [
     suggestion: "Osamu Tezuka / Takarazuka Revue",
     description:
       "Claude suggestion: 'Mt Zuka' is clearly derived from 'Tezuka' — Osamu Tezuka, the godfather of manga, took his pen name from his hometown Takarazuka. The Takarazuka Revue's troupe division colours (Flower=pink, Cosmos=purple, Snow=green, Star=blue) map directly to the palette gradient.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/1954-11_Takarazuka-Revue_Kimi-no-Na-ha.jpg/500px-1954-11_Takarazuka-Revue_Kimi-no-Na-ha.jpg' },
+    images: { zone: null, reference: '/images/osamu-tezuka.avif' },
   },
   {
     id: 'kairo',
