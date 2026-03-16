@@ -253,6 +253,18 @@ export const zones = [
     images: { zone: null, reference: '/images/Remandram-reference.png' },
   },
   {
+    id: 'gemina',
+    name: 'Gemina',
+    status: 'confirmed',
+    category: 'animeFilm',
+    palette: ['#1e1e1e', '#d0daeb', '#f6afbc', '#eae6df', '#b0d6fa', '#e6e8e5'],
+    reference: "Re:Zero — Rem & Ram (Light Mode)",
+    referenceDetail: "Re:Zero − Starting Life in Another World (originally named Twinmade)",
+    description:
+      "Gemina (originally named Twinmade) is the light mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Uwo, is the dark mode.",
+    images: { zone: null, reference: '/images/Remandram-reference.png' },
+  },
+  {
     id: 'killscreen',
     name: 'Killscreen',
     status: 'confirmed',
@@ -343,18 +355,6 @@ export const zones = [
     description:
       "[SOON] is a reference to \"Soon\" by My Bloody Valentine — the closing track of their landmark 1991 album Loveless. The gauzy pinks echo the hazy, distorted beauty of shoegaze.",
     images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/4/4b/My_Bloody_Valentine_-_Loveless.png' },
-  },
-  {
-    id: 'gemina',
-    name: 'Gemina',
-    status: 'confirmed',
-    category: 'animeFilm',
-    palette: ['#1e1e1e', '#d0daeb', '#f6afbc', '#eae6df', '#b0d6fa', '#e6e8e5'],
-    reference: "Re:Zero — Rem & Ram (Light Mode)",
-    referenceDetail: "Re:Zero − Starting Life in Another World (originally named Twinmade)",
-    description:
-      "Gemina (originally named Twinmade) is the light mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Uwo, is the dark mode.",
-    images: { zone: null, reference: '/images/Remandram-reference.png' },
   },
   {
     id: 'shahra',
