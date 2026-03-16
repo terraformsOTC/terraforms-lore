@@ -118,6 +118,9 @@ export default async function ZonePage({ params }) {
                 {entry.tweet && (
                   <div className="mt-4 p-4" style={{ border: '1px solid rgba(232,232,232,0.1)', maxWidth: '480px' }}>
                     <p className="text-xs dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{entry.tweet.text}</p>
+                    {entry.tweet.image && (
+                      <img src={entry.tweet.image} alt="" style={{ display: 'block', width: '100%', marginTop: '12px', maxHeight: '320px', objectFit: 'cover' }} />
+                    )}
                     <div className="flex gap-3 mt-3" style={{ opacity: 0.4 }}>
                       <span className="text-xs">@{entry.tweet.author}</span>
                       <span className="text-xs">{entry.tweet.date}</span>
