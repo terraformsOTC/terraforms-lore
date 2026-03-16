@@ -69,8 +69,8 @@ export default async function ZonePage({ params }) {
           <StatusBadge status={zone.status} category={cat} className="mt-2" />
         </div>
 
-        <p className="text-sm mb-8" style={{ opacity: isTheory ? 0.45 : 0.7 }}>{ref}</p>
-        <p className="text-sm mb-10 dim-65" style={{ lineHeight: '1.8' }}>{zone.description}</p>
+        <p className="text-sm mb-8" style={{ opacity: isTheory ? 0.65 : 0.85 }}>{ref}</p>
+        <p className="text-sm mb-10 dim-80" style={{ lineHeight: '1.8' }}>{zone.description}</p>
 
         {/* Parcel + reference image side by side */}
         {(parcelIds || hasReference) && (
