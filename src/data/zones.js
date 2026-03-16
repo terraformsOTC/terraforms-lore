@@ -17,7 +17,7 @@ export const CATEGORIES = {
 };
 
 // status: 'confirmed' | 'guess' | 'suggestion' | 'unknown'
-// All 75 zones — 29 confirmed, 20 suggestions, 7 community guesses, 19 unknown
+// All 75 zones — 29 confirmed, 22 suggestions, 7 community guesses, 17 unknown
 export const zones = [
 
   // ─── CONFIRMED ───────────────────────────────────────────────────────────
@@ -701,6 +701,17 @@ export const zones = [
       "Claude suggestion: [NOV] almost certainly abbreviates November — specifically November 5th, Guy Fawkes Night. The two-colour palette is striking in its precision: deep charcoal (#303030) evokes the shadows and anonymity of V's world, while the single blood red (#ff4538) is the iconic colour of V for Vendetta's rose, cape lining, and propaganda imagery. 'Remember, remember, the fifth of November' — the name [NOV] is the bracket-notation hint.",
     images: { zone: null, reference: '/images/vvendetta-reference.jpg' },
   },
+  {
+    id: 'cur2',
+    name: '[CUR2]',
+    status: 'suggestion',
+    category: 'videoGame',
+    palette: ['#8e918c', '#eff1f4'],
+    suggestion: "CUR2 — White Magic spell, Final Fantasy (NES, 1987)",
+    description:
+      "Claude suggestion: [CUR2] is the exact abbreviated name of the Cure 2 healing spell from the original Final Fantasy (NES, 1987). The NES used truncated 4-character spell names due to memory constraints — CURE became CUR, CURE2 became CUR2. The two-colour palette of warm grey (#8e918c) and near-white (#eff1f4) maps directly to the White Magic spell UI: clinical, light, healing tones. Sits alongside [MENU] (Final Fantasy III) as another Final Fantasy bracket-notation reference.",
+    images: null,
+  },
 
   // ─── UNKNOWN ─────────────────────────────────────────────────────────────
 
@@ -709,7 +720,6 @@ export const zones = [
   { id: 'dynacrypts',   name: 'Dynacrypts',    status: 'unknown', category: null, palette: ['#f98284', '#feaae4', '#b0a9e4', '#accce4', '#b3e3da', '#b0eb93', '#fff7a0', '#ffc384', '#dea38b', '#28282e'], images: null },
   { id: 'blood',        name: '[BLOOD]',       status: 'unknown', category: null, palette: ['#ee0000', '#202020'], images: null },
   { id: 'dark',         name: '[DARK]',        status: 'unknown', category: null, palette: ['#eeeeee', '#303030'], images: null },
-  { id: 'cur2',         name: '[CUR2]',        status: 'unknown', category: null, palette: ['#8e918c', '#eff1f4'], images: null },
   { id: 'boss',         name: '[BOSS]',        status: 'unknown', category: null, palette: ['#f8f7ff', '#ee0000'], images: null },
   { id: 'zerinia',      name: 'Zerinia',       status: 'unknown', category: null, palette: ['#e6ceac', '#cdba94', '#bda583', '#a48d6a', '#8b7d62', '#73654a', '#524839', '#292418'], images: null },
   { id: 'calyx',        name: 'Calyx',         status: 'unknown', category: null, palette: ['#90f1ef', '#ed553f', '#419c87', '#f1bdd4', '#82cdef', '#20201e', '#846daf', '#fef9f5'], images: null },
