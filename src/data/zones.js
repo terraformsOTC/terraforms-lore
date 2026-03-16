@@ -405,7 +405,7 @@ export const zones = [
     palette: ['#f6d903', '#eceff2', '#ff6650', '#f3b2e0', '#83dbf7', '#06917e', '#e0f2fa', '#cbeddf', '#e7e9ef', '#0dcdee'],
     guess: "TempleOS — Terry Davis (2003–2019)",
     description: "Community theory: 'Angel' maps directly to Terry Davis's theology — he claimed God spoke to him and directed him to build TempleOS, with angels as divine messengers. The 10-colour palette of bright saturated primaries (yellow, red, cyan, pink, teal, green) echoes the VGA 16-colour limitation that TempleOS famously runs at (640×480, 16 colours). Davis specified these constraints because he believed God mandated them.",
-    images: null,
+    images: { zone: null, reference: '/images/TempleOS-reference.webp' },
   },
   {
     id: 'bubble',
@@ -455,7 +455,7 @@ export const zones = [
     palette: ['#292c34', '#ff9a72'],
     guess: "Kanye West — The Life of Pablo cover art?",
     description: "Community theory: [SUN] may reference the cover art of Kanye West's The Life of Pablo (2016).",
-    images: null,
+    images: { zone: null, reference: '/images/Lifeofpablo-reference.webp' },
   },
   {
     id: 'rocket',
@@ -465,7 +465,7 @@ export const zones = [
     palette: ['#ed1111', '#f8f7ff', '#0012b5', '#30e7ff'],
     guess: "Rocket Pop (ice lolly)?",
     description: "Possible reference to a Rocket Pop — the classic red/white/blue ice lolly. The tricolour palette supports this theory.",
-    images: null,
+    images: { zone: null, reference: '/images/rocketpop-reference.jpg' },
   },
 
   // ─── CLAUDE SUGGESTIONS ──────────────────────────────────────────────────
@@ -479,7 +479,7 @@ export const zones = [
     suggestion: "Pastel QT palette by polyphrog (Lospec)",
     description:
       "Claude suggestion: 7 of 8 hex codes are an exact byte-for-byte match to the Pastel QT palette on Lospec by polyphrog, in the same order. The 8th colour (#32282b) extends the palette with a dark anchor.",
-    images: { zone: null, reference: 'https://lospec.com/palette-list/pastel-qt-8x.png' },
+    images: { zone: null, reference: '/images/pastel%20qt%20Palette-reference.png' },
   },
   {
     id: 'ender',
@@ -490,7 +490,7 @@ export const zones = [
     suggestion: "Minecraft — The End dimension",
     description:
       "Claude suggestion: the magenta #ff4fe2 differs by only 3 hex digits from Minecraft's default end portal particle colour (#ff4ce5). Pure blue #0000ff matches End Crystal beams, and near-white #f8f7ff matches End Stone. The name 'Ender' directly references Enderman, Ender Dragon, and Eye of Ender.",
-    images: null,
+    images: { zone: null, reference: '/images/Minecraftend-reference.webp' },
   },
   {
     id: 'mirage',
@@ -589,7 +589,7 @@ export const zones = [
     suggestion: "WipEout 2097 — Psygnosis / Warp Records (1996)",
     description:
       "Claude suggestion: 'Warp' points to WipEout 2097, the iconic PS1 racing game whose soundtrack was curated entirely by Warp Records — Aphex Twin, The Chemical Brothers, Fluke, and Leftfield. The purple (#8b3ede) and red (#e5291e) directly echo the game's cover palette, and the Warp Records label branding was displayed in-game, making it one of the most celebrated music/game crossovers of the 1990s.",
-    images: { zone: null, reference: '/images/warp-reference.png' },
+    images: { zone: null, reference: '/images/warprecords-reference.jpg' },
   },
   {
     id: 'pepo',
@@ -648,7 +648,7 @@ export const zones = [
     suggestion: "Arc System Works — Guilty Gear Strive (2021)",
     description:
       "Claude suggestion: Arc System Works is the developer behind Guilty Gear Strive. The signature orange-red (#ec5526), amber (#f4ac12), cream (#f7f4e2), slate blue (#9ebbc1), and near-black (#1e1b1e) directly echo GGS's iconic visual identity — the game's UI, character select screen, and promotional art all use this exact colour system. 'Arc' is also the studio abbreviation used by fans.",
-    images: null,
+    images: { zone: null, reference: '/images/guiltygear-reference.jpg' },
   },
   { id: 'hyphae',       name: 'Hyphae',        status: 'unknown', category: null, palette: ['#328dfd', '#f0f0f0', '#e65700'], images: null },
   { id: 'dynacrypts',   name: 'Dynacrypts',    status: 'unknown', category: null, palette: ['#f98284', '#feaae4', '#b0a9e4', '#accce4', '#b3e3da', '#b0eb93', '#fff7a0', '#ffc384', '#dea38b', '#28282e'], images: null },
@@ -667,7 +667,7 @@ export const zones = [
     suggestion: "SimCity (1989) — Will Wright / Maxis",
     description:
       "Claude suggestion: 'Linosim' reads as 'lino-sim' — a linear / zoning simulation. The five colours are a direct match to SimCity's classic zoning system: green (#29af3f) = residential, yellow (#dcc729) = industrial, blue (#26abd4) = commercial, dark grey (#404040) = roads, light grey (#c3c3c3) = empty terrain. SimCity (1989) invented this colour-coded zoning language, which has been copied by every city-builder since.",
-    images: null,
+    images: { zone: null, reference: '/images/simcity-reference.webp' },
   },
   {
     id: 'toad',
@@ -678,7 +678,7 @@ export const zones = [
     suggestion: "Toad — Super Mario Bros. (Nintendo)",
     description:
       "Claude suggestion: Toad is a core Mario franchise character. The 10-colour palette maps to every known Toad variant: pink (#ffa8ee, #e85bcc) = Pink Toad, yellow (#eceb80, #ffe330) = Yellow Toad, teal (#008080) = Toad Brigade Captain, red (#ff0e0e) = classic Red-capped Toad, greens (#72b802, #b0e111, #8ac163) = Green Toad variants, lavender (#a28ef4) = Purple Toad. This breadth — covering all official colour variants — is consistent with how Terraforms references entire visual systems rather than single images.",
-    images: null,
+    images: { zone: null, reference: '/images/toads-reference.png' },
   },
   { id: 'home',         name: '[HOME]',        status: 'unknown', category: null, palette: ['#303030', '#fff5e6'], images: null },
   { id: 'pfpfpfpbbx80', name: 'Pfpfpfpbbx80', status: 'unknown', category: null, palette: ['#f772b5', '#435d5a', '#5a7b70', '#e83b3b', '#ccdf6d', '#aede6a', '#ffffff', '#e4dde7'], images: null },
@@ -720,7 +720,7 @@ export const zones = [
     suggestion: "V for Vendetta — Guy Fawkes Night (November 5th)",
     description:
       "Claude suggestion: [NOV] almost certainly abbreviates November — specifically November 5th, Guy Fawkes Night. The two-colour palette is striking in its precision: deep charcoal (#303030) evokes the shadows and anonymity of V's world, while the single blood red (#ff4538) is the iconic colour of V for Vendetta's rose, cape lining, and propaganda imagery. 'Remember, remember, the fifth of November' — the name [NOV] is the bracket-notation hint.",
-    images: null,
+    images: { zone: null, reference: '/images/vvendetta-reference.jpg' },
   },
 ];
 

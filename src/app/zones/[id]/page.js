@@ -87,7 +87,7 @@ export default async function ZonePage({ params }) {
                 <img
                   src={zone.images.reference}
                   alt={ref}
-                  style={{ display: 'block', width: '100%' }}
+                  style={{ display: 'block', width: '100%', maxHeight: '400px', objectFit: 'contain', objectPosition: 'left top' }}
                 />
               </div>
             )}
