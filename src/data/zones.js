@@ -409,9 +409,9 @@ export const zones = [
     status: 'guess',
     category: null,
     palette: ['#399c42', '#307d39', '#005d1a', '#369e40', '#1a5425', '#00300f', '#33953e', '#1a1814'],
-    guess: "Obscure Super Famicom game — Bunko forest or Labyrinth?",
-    description: "Community theory: an obscure Super Famicom game, possibly involving a forest setting. Candidates include a Bunko-style title or a Labyrinth game.",
-    images: null,
+    guess: "Famicom Bunko: Hajimari no Mori (1999)?",
+    description: "An adventure video game developed by Pax Softnica and released by Nintendo for the Super Famicom in 1999 exclusively in Japan.",
+    images: { zone: null, reference: '/images/Famicom%20Bunko-%20Hajimari%20no%20Mori-reference.webp' },
   },
   {
     id: 'venmon',
