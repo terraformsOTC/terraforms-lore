@@ -107,7 +107,7 @@ export default async function ZonePage({ params }) {
 
         <ExternalLinks
           referenceLink={zone.referenceLink}
-          explorerUrl="https://terraformexplorer.xyz/zones"
+          explorerUrl={`https://terraformexplorer.xyz/zones/${encodeURIComponent(zone.name)}`}
           sourceUrl={zone.sourceUrl}
         />
 
