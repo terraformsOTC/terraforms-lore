@@ -8,8 +8,8 @@ const MAX_BODY_BYTES = 8 * 1024;
 
 // Allowed origins for CSRF protection
 const ALLOWED_ORIGINS = [
-  'https://terraformslore.xyz',
-  'https://www.terraformslore.xyz',
+  'https://terraformlore.xyz',
+  'https://www.terraformlore.xyz',
 ];
 
 // Lazy-import so the module doesn't crash locally where KV env vars aren't set
