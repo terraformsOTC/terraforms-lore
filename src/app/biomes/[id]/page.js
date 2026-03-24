@@ -64,12 +64,12 @@ export default async function BiomePage({ params }) {
           </div>
         )}
 
-        <div className="flex justify-between items-start gap-4 mb-2">
+        <div className="flex justify-between items-start gap-4 mb-6">
           <h1 className="text-3xl">{displayTitle}</h1>
           <StatusBadge status={biome.status} category={cat} className="mt-2" />
         </div>
 
-        <p className="text-xs dim-40 mb-4">mathcastles reference</p>
+        <p className="text-sm dim-40 mb-4">mathcastles reference</p>
         <p className="text-sm mb-8" style={{ opacity: isTheory ? 0.45 : 0.7 }}>{ref}</p>
         <p className="text-sm mb-10 dim-65" style={{ lineHeight: '1.8' }}>{biome.description}</p>
 
