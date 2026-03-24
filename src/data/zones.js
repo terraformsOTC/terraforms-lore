@@ -536,8 +536,20 @@ export const zones = [
     palette: ['#ffe596', '#ffad3b', '#c57938', '#975330', '#574729', '#313638'],
     suggestion: "Kairo (2012 indie game by Richard Perrin)",
     description:
-      "Claude suggestion: exact name match to Kairo, a 2012 indie exploration game set in brutalist architecture with Egyptian influences. The warm amber-to-dark gradient (#ffe596 → #313638) maps to the game's sunlit sandstone environments fading into shadow.",
+      "Claude suggestion: exact name match to Kairo, a 2012 indie exploration game set in brutalist architecture with Egyptian influences. The warm amber-to-dark gradient (#ffe596 → #313638) maps to the game's sunlit sandstone environments fading into shadow.\n\nThe name also resonates with Kairos — the ancient Greek concept of the \"right\" or \"opportune\" moment in time. Unlike Chronos (sequential, measured time), Kairos is qualitative: the appointed moment, the window that must be seized. As a fully on-chain artwork built to last 10,000 years, Terraforms is deeply concerned with time — and Kairo may quietly gesture at this philosophical thread running through the whole project.",
     images: { zone: null, reference: 'https://shared.steamstatic.com/store_item_assets/steam/apps/233230/header.jpg' },
+    referencedBy: [
+      {
+        description: "d347h.eth writes that Terraforms is a profound philosophical artwork about time, human temporality and computational achievement — and that the onchain maximalism and decay lore is just a surface.",
+        sourceLink: 'https://x.com/d347h_eth/status/1950575199063032183',
+        handle: '@d347h_eth',
+        tweet: {
+          text: "Terraforms by @mathcastles is a brilliant, profound and philosophical artwork about time, human temporality and computational achievement.\n\nTerraforms' \"onchain maximalism\" and \"10,000 years of decay\" lore one-shotted everyone back in 2021-2022, but it's just a surface and…",
+          author: 'd347h_eth',
+          date: 'Jul 30, 2025',
+        },
+      },
+    ],
   },
   {
     id: 'exduo',
