@@ -111,7 +111,7 @@ export default function SubmitForm({ type = 'zone' }) {
           </Field>
 
           <Field label="source link (optional)">
-            <input type="url" name="sourceLink" value={form.sourceLink} onChange={handleChange}
+            <input type="text" name="sourceLink" value={form.sourceLink} onChange={handleChange}
               placeholder="https://..." className="w-full px-3 py-2" />
           </Field>
 
