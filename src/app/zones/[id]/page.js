@@ -69,6 +69,7 @@ export default async function ZonePage({ params }) {
           <StatusBadge status={zone.status} category={cat} className="mt-2" />
         </div>
 
+        <p className="text-xs dim-40 mb-4">mathcastles reference</p>
         <p className="text-sm mb-8" style={{ opacity: isTheory ? 0.65 : 0.85 }}>{ref}</p>
         <p className="text-sm mb-10 dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{zone.description}</p>
 
@@ -108,10 +109,10 @@ export default async function ZonePage({ params }) {
           sourceUrl={zone.sourceUrl}
         />
 
-        {/* Referenced by */}
+        {/* Community references */}
         {zone.referencedBy?.length > 0 && (
           <div className="mt-10">
-            <p className="text-sm dim-55 mb-4">referenced by</p>
+            <p className="text-sm dim-55 mb-4">community references</p>
             {zone.referencedBy.map((entry, i) => (
               <div key={i} className="border-top pt-4 pb-4">
                 <p className="text-sm dim-80" style={{ lineHeight: '1.7' }}>{entry.description}</p>
