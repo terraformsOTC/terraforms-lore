@@ -10,7 +10,7 @@ const MAX_BODY_BYTES = 8 * 1024;
 const ALLOWED_ORIGINS = [
   'https://terraformlore.xyz',
   'https://www.terraformlore.xyz',
-  'https://terraforms-lore.vercel.app',
+  'https://terraform-lore.vercel.app',
 ];
 
 // Lazy-import so the module doesn't crash locally where KV env vars aren't set
