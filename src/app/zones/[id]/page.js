@@ -69,6 +69,8 @@ export default async function ZonePage({ params }) {
           <StatusBadge status={zone.status} category={cat} className="mt-2" />
         </div>
 
+        <hr style={{ border: 'none', borderTop: '1px solid rgba(232,232,232,0.12)', marginBottom: '24px' }} />
+
         <p className="text-sm dim-40 mb-4">mathcastles reference</p>
         <p className="text-sm mb-8" style={{ opacity: isTheory ? 0.65 : 0.85 }}>{ref}</p>
         <p className="text-sm mb-10 dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{zone.description}</p>
