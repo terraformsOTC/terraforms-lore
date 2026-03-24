@@ -119,20 +119,27 @@ export default async function ZonePage({ params }) {
               <div key={i} className="border-top pt-4 pb-4">
                 <p className="text-sm dim-80" style={{ lineHeight: '1.7' }}>{entry.description}</p>
                 {entry.tweet && (
-                  <div className="mt-4 p-4" style={{ border: '1px solid rgba(232,232,232,0.1)', maxWidth: '480px' }}>
+                  <a
+                    href={entry.sourceLink || '#'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 p-4 block"
+                    style={{ border: '1px solid rgba(232,232,232,0.1)', maxWidth: '480px', textDecoration: 'none', color: 'inherit' }}
+                  >
+                    <div className="flex justify-between items-start mb-3">
+                      <div style={{ opacity: 0.5 }}>
+                        <span className="text-xs">@{entry.tweet.author}</span>
+                        <span className="text-xs" style={{ marginLeft: '8px' }}>{entry.tweet.date}</span>
+                      </div>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style={{ opacity: 0.3, flexShrink: 0 }}>
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.733-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                      </svg>
+                    </div>
                     <p className="text-xs dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{entry.tweet.text}</p>
                     {entry.tweet.image && (
                       <img src={entry.tweet.image} alt="" style={{ display: 'block', width: '100%', marginTop: '12px', maxHeight: '320px', objectFit: 'cover' }} />
                     )}
-                    <div className="flex gap-3 mt-3" style={{ opacity: 0.4 }}>
-                      <span className="text-xs">@{entry.tweet.author}</span>
-                      <span className="text-xs">{entry.tweet.date}</span>
-                      {entry.sourceLink && (
-                        <a href={entry.sourceLink} target="_blank" rel="noopener noreferrer"
-                          className="text-xs" style={{ color: 'inherit' }}>↗</a>
-                      )}
-                    </div>
-                  </div>
+                  </a>
                 )}
                 <div className="flex gap-4 mt-3" style={{ opacity: 0.3 }}>
                   {entry.handle && <span className="text-xs">submitted by {entry.handle}</span>}
