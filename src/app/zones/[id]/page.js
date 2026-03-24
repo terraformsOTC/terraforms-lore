@@ -66,7 +66,7 @@ export default async function ZonePage({ params }) {
         {/* Title + badge */}
         <div className="flex justify-between items-start gap-4 mb-6">
           <h1 className="text-3xl">{zone.name}</h1>
-          <StatusBadge status={zone.status} category={cat} className="mt-2" />
+          <StatusBadge status={zone.status} category={cat} twin={zone.twin} className="mt-2" />
         </div>
 
         <hr style={{ border: 'none', borderTop: '1px solid rgba(232,232,232,0.12)', marginBottom: '24px' }} />

@@ -46,7 +46,7 @@ export default function ItemCard({ item, href, category, subtitle, palette }) {
             <span className="text-sm">{item.name}</span>
             {subtitle && <span className="text-xs ml-2 dim-35">— {subtitle}</span>}
           </div>
-          <StatusBadge status={item.status} category={category} />
+          <StatusBadge status={item.status} category={category} twin={item.twin} />
         </div>
 
         <p className="text-xs mt-1 dim-65">{ref}</p>
