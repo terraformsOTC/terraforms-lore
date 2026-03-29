@@ -1,6 +1,3 @@
-// nitter image proxy helper
-const n = (id, ext = 'jpg') =>
-  `https://nitter.net/pic/media%2F${id}.${ext}%3Fname%3Dsmall%26format%3Dwebp`;
 
 export const CATEGORIES = {
   music:        { label: 'music',         color: '#a78bfa' },
@@ -33,7 +30,7 @@ export const zones = [
     description:
       "The red, blue, white, and black palette is a direct reference to Radiohead's Kid A album art. The zone appears on 512 parcels.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: n('GItpcOWWwAAS9D3'), reference: n('GItpcg0WIAAogmo') },
+    images: { zone: '/images/hypermage-zone.jpg', reference: '/images/hypermage-reference.jpg' },
   },
   {
     id: 'nightrose',
@@ -47,7 +44,7 @@ export const zones = [
       "Nightrose is a reference to an artwork by @David_Rudnick, sold in 2021 on @zora. The blue and purple palette of the zone mirrors the deep tones of Rudnick's piece.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     referenceLink: 'https://decrypt.co/57782/david-rudnick-nft',
-    images: { zone: n('GyGMePQWMAAuePU'), reference: n('GyGMfmgWkAA8ZtJ') },
+    images: { zone: '/images/nightrose-zone.jpg', reference: '/images/nightrose-reference.jpg' },
   },
   {
     id: 'alto',
@@ -112,7 +109,7 @@ export const zones = [
       "The blue [MENU] zone is a reference to the iconic deep-blue menu interface of Final Fantasy III. Credit to @null_lines for identifying this reference.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     creditTo: '@null_lines',
-    images: { zone: null, reference: n('GzJWb40XsAAaVNA', 'png') },
+    images: { zone: null, reference: '/images/menu-reference.png' },
   },
   {
     id: 'hyca',
@@ -152,7 +149,7 @@ export const zones = [
     description:
       "A reference to @gremplin's CrypToadz pfp series. The dark, gritty colour palette — black, grey, red, and white — mirrors the distinctive visual language of the CrypToadz collection.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: n('GyGCd0cX0AANWNU'), reference: n('GyGClG8XgAA8twD') },
+    images: { zone: '/images/wastelands-zone.jpg', reference: '/images/wastelands-reference.jpg' },
   },
   {
     id: 'everglades',
@@ -165,7 +162,7 @@ export const zones = [
     description:
       "Some references are more literal. Everglades is inspired by the Everglades in Florida — one of the most distinctive natural landscapes in the US, known for its subtropical wetlands and diverse ecosystem.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: n('GyGMq-vXEAAbHHg'), reference: n('GyGMsNgWEAA_CfE') },
+    images: { zone: '/images/everglades-zone.jpg', reference: '/images/everglades-reference.jpg' },
   },
   {
     id: 'ouallada',
@@ -238,7 +235,7 @@ export const zones = [
     description:
       "For anyone who played Seiken Densetsu 3 on SNES, the Promiselands zone might look familiar. The vibrant green, pink, and yellow palette echoes the iconic art direction of this cult classic JRPG.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: n('GyGOY7eXgAAL0GQ'), reference: n('GyGOdbBWcAAwWpW', 'png') },
+    images: { zone: '/images/promiselands-zone.jpg', reference: '/images/promiselands-reference.png' },
   },
   {
     id: 'uwo',
@@ -278,7 +275,7 @@ export const zones = [
       "Killscreen references Ms. Pac-Man and a specific integer overflow glitch in the Pac-Man series. When Pac-Man reaches level 256, the counter overflows, corrupting half the screen — the infamous \"kill screen\".",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     referenceLink: 'https://pacman.fandom.com/wiki/Map_256_Glitch',
-    images: { zone: null, reference: n('GyvmF4rWAAAJld6', 'png') },
+    images: { zone: null, reference: '/images/killscreen-reference.png' },
   },
   {
     id: 'tetsu',
@@ -291,7 +288,7 @@ export const zones = [
     description:
       "In 1988, Akira was released. Often cited as one of the greatest films of all time, pivotal in cyberpunk and anime aesthetics. The main antagonist is named Tetsuo. The Tetsu zone pays homage to this character.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: n('GyGMAn0XcAA-VMM'), reference: n('GyGMDGAWUAACkFt') },
+    images: { zone: '/images/tetsu-zone.jpg', reference: '/images/tetsu-reference.jpg' },
   },
   {
     id: 'radiant',
@@ -304,7 +301,7 @@ export const zones = [
     description:
       "The Radiant zone takes its colours from @JamesJeanArt's work, \"Aurelians\" (2016). Discovering James Jean's practice was a happy consequence of going down this rabbit hole.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: n('GyGMTT_WMAALmda'), reference: n('GyGMUfUXkAAoKo6') },
+    images: { zone: '/images/radiant-zone.jpg', reference: '/images/radiant-reference.jpg' },
   },
   {
     id: 'avidana',
@@ -317,7 +314,7 @@ export const zones = [
     description:
       "Few know that the Avidana zone is a direct reference to the \"Rad\" palette in @tylerxhobbs' Fidenza — the landmark long-form generative art release on Art Blocks.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: n('GyGElL4WUAAkdch'), reference: n('GyGEm9KXIAADRse') },
+    images: { zone: '/images/avidana-zone.jpg', reference: '/images/avidana-reference.jpg' },
   },
   {
     id: 'dread',
@@ -370,7 +367,7 @@ export const zones = [
       "Shahra is the rarest zone, with only 10 parcels. It references Shahrazad — a sorcery card from Magic: The Gathering's Arabian Nights set (1993), illustrated by Kaja Foglio, itself referencing the legendary storyteller of One Thousand and One Nights.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     rarity: 'rarest — 10 parcels',
-    images: { zone: null, reference: n('G04eTlIWwAAg8XC', 'png') },
+    images: { zone: null, reference: '/images/shahra-reference.png' },
   },
 
   // ─── COMMUNITY GUESSES ───────────────────────────────────────────────────
