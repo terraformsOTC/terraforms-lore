@@ -341,7 +341,7 @@ export const zones = [
     description:
       "For the @XCOPYART fans, the Aetherking zone is for you. This palette was inspired by Guzzler, a 2021 edition from the artist. The neon green and teal on black is unmistakably XCOPY.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: null, reference: '/images/aetherking-reference.jpg' },
+    images: { zone: null, reference: '/images/aetherking-reference.gif' },
   },
   {
     id: 'soon',
