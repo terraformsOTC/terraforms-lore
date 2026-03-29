@@ -449,7 +449,7 @@ export const zones = [
     id: 'first-earth',
     name: 'First Earth',
     status: 'suggestion',
-    category: null,
+    category: 'cryptoArt',
     palette: ['#cb8175', '#e2a97e', '#f0cf8e', '#f6edcd', '#a8c8a6', '#6d8d8a', '#655057', '#32282b'],
     suggestion: "Pastel QT palette by polyphrog (Lospec)",
     description:
@@ -473,7 +473,7 @@ export const zones = [
     id: 'ender',
     name: 'Ender',
     status: 'suggestion',
-    category: null,
+    category: 'videoGame',
     palette: ['#ff4fe2', '#f8f7ff', '#0000ff'],
     suggestion: "Minecraft — The End dimension",
     description:
@@ -496,7 +496,7 @@ export const zones = [
     id: 'royal',
     name: 'Royal',
     status: 'suggestion',
-    category: null,
+    category: 'cryptoArt',
     palette: ['#f9eddd', '#f2d3ab', '#c69fa5', '#8b6d9c', '#ffc7fc', '#700000', '#171616'],
     suggestion: "GrafxKid's Oil 6 palette (Lospec)",
     description:
@@ -507,7 +507,7 @@ export const zones = [
     id: 'yuna',
     name: '[YUNA]',
     status: 'suggestion',
-    category: null,
+    category: 'videoGame',
     palette: ['#f1c8ff', '#000a1d'],
     suggestion: "Final Fantasy X — Yuna",
     description:
@@ -518,7 +518,7 @@ export const zones = [
     id: 'mt-zuka',
     name: 'Mt Zuka',
     status: 'suggestion',
-    category: null,
+    category: 'animeFilm',
     palette: ['#f0f6e8', '#93d4b5', '#f0dab1', '#e39aac', '#c45d9f', '#634b7d', '#2ba9b4', '#6461c2', '#221039'],
     suggestion: "Osamu Tezuka / Takarazuka Revue",
     description:
@@ -529,7 +529,7 @@ export const zones = [
     id: 'kairo',
     name: 'Kairo',
     status: 'suggestion',
-    category: null,
+    category: 'videoGame',
     palette: ['#ffe596', '#ffad3b', '#c57938', '#975330', '#574729', '#313638'],
     suggestion: "Kairo (2012 indie game by Richard Perrin)",
     description:
@@ -552,7 +552,7 @@ export const zones = [
     id: 'exduo',
     name: 'Exduo',
     status: 'suggestion',
-    category: null,
+    category: 'cryptoArt',
     palette: ['#0012b5', '#fff7f5', '#ffe6fe'],
     suggestion: "Yves Klein — monochrome trinity (IKB + Monopink + white)",
     description:
@@ -563,7 +563,7 @@ export const zones = [
     id: 'antenna',
     name: 'Antenna',
     status: 'suggestion',
-    category: null,
+    category: 'animeFilm',
     palette: ['#f4d35e', '#ee964b', '#f95738', '#083d77', '#ebebd3'],
     suggestion: "FLCL (Fooly Cooly) — Gainax anime (2000)",
     description:
@@ -574,7 +574,7 @@ export const zones = [
     id: 'warp',
     name: 'Warp',
     status: 'suggestion',
-    category: null,
+    category: 'videoGame',
     palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'],
     suggestion: "WipEout 2097 — Psygnosis / Warp Records (1996)",
     description:
@@ -585,7 +585,7 @@ export const zones = [
     id: 'pepo',
     name: 'Pepo',
     status: 'suggestion',
-    category: null,
+    category: 'nature',
     palette: ['#d77c11', '#d3cac3', '#61785c', '#3f5c39', '#332a1d', '#303d2d'],
     suggestion: "Pepo — botanical term for pumpkin / gourd berries (Cucurbitaceae)",
     description:
@@ -596,7 +596,7 @@ export const zones = [
     id: 'sep',
     name: '[SEP]',
     status: 'suggestion',
-    category: null,
+    category: 'technology',
     palette: ['#303030', '#9f82ff'],
     suggestion: "Sepolia — Ethereum testnet",
     description:
@@ -711,7 +711,7 @@ export const zones = [
     id: 'moon',
     name: '[MOON]',
     status: 'suggestion',
-    category: null,
+    category: 'twinPalette',
     palette: ['#9cb7d4', '#35443b'],
     suggestion: "Twin palette with [NEON] — moonlight over dark green",
     description:
@@ -722,7 +722,7 @@ export const zones = [
     id: 'neon',
     name: '[NEON]',
     status: 'suggestion',
-    category: null,
+    category: 'twinPalette',
     palette: ['#9cd4a8', '#35443b'],
     suggestion: "Twin palette with [MOON] — neon glow over dark green",
     description:
