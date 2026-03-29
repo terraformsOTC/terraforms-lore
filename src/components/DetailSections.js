@@ -14,13 +14,13 @@ export function ImageGrid({ images, name, altText, isTheory, sampleLabel = 'zone
       {images.zone && (
         <div>
           <p className="text-xs mb-2 dim-35">{sampleLabel}</p>
-          <img src={images.zone} alt={`${name} ${sampleLabel}`} className="w-full block" />
+          <img src={images.zone} alt={`${name} ${sampleLabel}`} className="w-full block" loading="lazy" />
         </div>
       )}
       {images.reference && (
         <div>
           <p className="text-xs mb-2 dim-35">{isTheory ? 'possible reference' : 'reference'}</p>
-          <img src={images.reference} alt={altText} className="w-full block" />
+          <img src={images.reference} alt={altText} className="w-full block" loading="lazy" />
         </div>
       )}
     </div>

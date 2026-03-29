@@ -22,7 +22,31 @@ export async function generateMetadata({ params }) {
   const { id } = await params;
   const zone = zones.find((z) => z.id === id);
   if (!zone) return {};
-  return { title: `${zone.name} — terraforms lore`, description: zone.description?.slice(0, 160) };
+  const title = `${zone.name} — terraforms lore`;
+  const description = zone.description?.slice(0, 160) ?? '';
+  const ref = zone.reference ?? zone.guess ?? zone.suggestion ?? '';
+  const ogDescription = ref ? `${zone.name}: ${ref}. ${description}`.slice(0, 200) : description;
+  const ogImage = zone.images?.reference?.startsWith('/images/')
+    ? [{ url: zone.images.reference }]
+    : undefined;
+  return {
+    title,
+    description,
+    openGraph: {
+      type: 'article',
+      title,
+      description: ogDescription,
+      url: `https://terraformlore.xyz/zones/${id}`,
+      siteName: 'terraforms lore',
+      ...(ogImage && { images: ogImage }),
+    },
+    twitter: {
+      card: ogImage ? 'summary_large_image' : 'summary',
+      title,
+      description: ogDescription,
+      ...(ogImage && { images: ogImage }),
+    },
+  };
 }
 
 export default async function ZonePage({ params }) {
@@ -90,6 +114,7 @@ export default async function ZonePage({ params }) {
                 <img
                   src={zone.images.reference}
                   alt={ref}
+                  loading="lazy"
                   style={{ display: 'block', width: '100%', maxHeight: '400px', objectFit: 'contain', objectPosition: 'left top' }}
                 />
               </div>
@@ -137,7 +162,7 @@ export default async function ZonePage({ params }) {
                     </div>
                     <p className="text-xs dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{entry.tweet.text}</p>
                     {entry.tweet.image && (
-                      <img src={entry.tweet.image} alt="" style={{ display: 'block', width: '100%', marginTop: '12px', maxHeight: '320px', objectFit: 'cover' }} />
+                      <img src={entry.tweet.image} alt="" loading="lazy" style={{ display: 'block', width: '100%', marginTop: '12px', maxHeight: '320px', objectFit: 'cover' }} />
                     )}
                   </a>
                 )}
