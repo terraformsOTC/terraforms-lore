@@ -678,7 +678,7 @@ export const zones = [
     suggestion: "CUR2 — White Magic spell, Final Fantasy (NES, 1987)",
     description:
       "Claude suggestion: [CUR2] is the exact abbreviated name of the Cure 2 healing spell from the original Final Fantasy (NES, 1987). The NES used truncated 4-character spell names due to memory constraints — CURE became CUR, CURE2 became CUR2. The two-colour palette of warm grey (#8e918c) and near-white (#eff1f4) maps directly to the White Magic spell UI: clinical, light, healing tones. Sits alongside [MENU] (Final Fantasy III) as another Final Fantasy bracket-notation reference.",
-    images: null,
+    images: { zone: null, reference: '/images/FF1%20white%20mage.webp' },
   },
 
   // ─── TWIN PALETTES ───────────────────────────────────────────────────────
