@@ -3,6 +3,24 @@ import { NextResponse } from 'next/server';
 // Use Vercel KV in production; fall back to local JSON file in dev
 const IS_PROD = !!process.env.KV_REST_API_URL;
 
+// In-memory rate limiter: 5 submissions per IP per 60 seconds
+const rateLimitMap = new Map();
+const RATE_LIMIT = 5;
+const RATE_WINDOW_MS = 60 * 1000;
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip) || { count: 0, windowStart: now };
+  if (now - entry.windowStart > RATE_WINDOW_MS) {
+    // Window expired — reset
+    rateLimitMap.set(ip, { count: 1, windowStart: now });
+    return false;
+  }
+  if (entry.count >= RATE_LIMIT) return true;
+  rateLimitMap.set(ip, { count: entry.count + 1, windowStart: entry.windowStart });
+  return false;
+}
+
 // Max POST body: 8 KB — more than enough for a reference submission
 const MAX_BODY_BYTES = 8 * 1024;
 
@@ -42,6 +60,15 @@ export async function POST(request) {
       if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
         return NextResponse.json({ error: 'forbidden' }, { status: 403 });
       }
+    }
+
+    // Rate limiting: 5 submissions per IP per 60s
+    const ip =
+      request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
+      request.headers.get('x-real-ip') ||
+      'unknown';
+    if (isRateLimited(ip)) {
+      return NextResponse.json({ error: 'too many requests' }, { status: 429 });
     }
 
     // Reject oversized bodies before parsing (read as text to enforce real size)
