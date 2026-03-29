@@ -49,7 +49,7 @@ export default async function BiomePage({ params }) {
                       height: '60px',
                       border: '1px solid rgba(232,232,232,0.12)',
                       fontSize: '28px',
-                      fontFamily: "'Noto Sans Symbols 2', 'Courier New', monospace",
+                      fontFamily: "var(--font-noto-symbols), 'Courier New', monospace",
                     }}
                   >
                     {char}
@@ -101,7 +101,7 @@ export default async function BiomePage({ params }) {
                   <div className="mt-4 p-4" style={{ border: '1px solid rgba(232,232,232,0.1)', maxWidth: '480px' }}>
                     <p className="text-xs dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{entry.tweet.text}</p>
                     {entry.tweet.image && (
-                      <img src={entry.tweet.image} alt="" style={{ display: 'block', width: '100%', marginTop: '12px', maxHeight: '320px', objectFit: 'cover' }} />
+                      <img src={entry.tweet.image} alt="" loading="lazy" style={{ display: 'block', width: '100%', marginTop: '12px', maxHeight: '320px', objectFit: 'cover' }} />
                     )}
                     <div className="flex gap-3 mt-3" style={{ opacity: 0.4 }}>
                       <span className="text-xs">@{entry.tweet.author}</span>

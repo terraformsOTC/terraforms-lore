@@ -57,7 +57,7 @@ export const zones = [
     description:
       "The Alto zone references the Xerox Alto — one of the first personal computers to use a graphical user interface, developed at Xerox PARC in 1973. The Alto's greyscale aesthetic and pioneering interface design are reflected in the zone's palette.",
     referenceLink: 'https://en.wikipedia.org/wiki/Xerox_Alto',
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Xero_Alto_Computer.jpg/600px-Xero_Alto_Computer.jpg' },
+    images: { zone: null, reference: '/images/alto-reference.jpg' },
   },
   {
     id: 'riso',
@@ -70,7 +70,7 @@ export const zones = [
     description:
       "Riso zone references Risograph printing — a brand of digital duplicators manufactured by the Riso Kagaku Corporation, released in Japan in 1980. Designed for high-volume photocopying, it became beloved by zine and comic artists for its vivid, layered ink printing.",
     creditTo: '@neon_dao',
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Riso_animacia2.jpg/600px-Riso_animacia2.jpg' },
+    images: { zone: null, reference: '/images/riso-reference.jpg' },
   },
   {
     id: 'mecha',
@@ -136,7 +136,7 @@ export const zones = [
       "Palace, with its distinctive orange colours, is a reference to the Game Boy Advance box set Mother 1+2, released exclusively in Japan in 2003. The bold orange palette of the box art maps directly to the zone's colour scheme.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     creditTo: '@neon_dao',
-    images: { zone: null, reference: 'https://cdn.wikibound.info/thumb/2/23/Mother_1and2_box.png/350px-Mother_1and2_box.png' },
+    images: { zone: null, reference: '/images/palace-reference.png' },
   },
   {
     id: 'wastelands',
@@ -174,7 +174,7 @@ export const zones = [
     referenceDetail: "MTG Arabian Nights set",
     description:
       "Ouallada references the Juzam Djinn card from Magic: The Gathering's Arabian Nights expansion (1993) — one of the most iconic and valuable cards in MTG history.",
-    images: { zone: null, reference: 'https://cards.scryfall.io/art_crop/front/3/1/31bf3f14-b5df-498b-a1bb-965885c82401.jpg?1562904228' },
+    images: { zone: null, reference: '/images/ouallada-reference.jpg' },
   },
   {
     id: 'kippsunn',
@@ -210,7 +210,7 @@ export const zones = [
     referenceDetail: "Jadeite jade mineral",
     description:
       "The Jadeite zone references jadeite — a pyroxene mineral and one of the two types of jade, prized for its vivid greens. Jadeite is also associated with vintage jadeite glass kitchenware, which shares the zone's cool green palette.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Jadeite_%28GeoDIL_number_-_1607%29.jpg/600px-Jadeite_%28GeoDIL_number_-_1607%29.jpg' },
+    images: { zone: null, reference: '/images/jadeite-reference.jpg' },
   },
   {
     id: 'blushing',
@@ -328,7 +328,7 @@ export const zones = [
       "The Dread zone references the Magic: The Gathering card Liliana, Dreadhorde General, with art by Yoshitaka Amano. The purple-black palette mirrors the card's dark, otherworldly aesthetic.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     creditTo: '@neon_dao',
-    images: { zone: null, reference: 'https://cards.scryfall.io/art_crop/front/1/2/12919abc-5a4a-4cb1-ac95-cbc06c959232.jpg?1682644677' },
+    images: { zone: null, reference: '/images/dread-reference.jpg' },
   },
   {
     id: 'aetherking',
@@ -341,7 +341,7 @@ export const zones = [
     description:
       "For the @XCOPYART fans, the Aetherking zone is for you. This palette was inspired by Guzzler, a 2021 edition from the artist. The neon green and teal on black is unmistakably XCOPY.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    images: { zone: null, reference: 'https://admin.xcopy.art/media/original_images/GUZZLER_GREEN_-_XCOPY_2089_iefuzj.gif' },
+    images: { zone: null, reference: '/images/aetherking-reference.jpg' },
   },
   {
     id: 'soon',
@@ -353,7 +353,7 @@ export const zones = [
     referenceDetail: "Track from Loveless (1991)",
     description:
       "[SOON] is a reference to \"Soon\" by My Bloody Valentine — the closing track of their landmark 1991 album Loveless. The gauzy pinks echo the hazy, distorted beauty of shoegaze.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/4/4b/My_Bloody_Valentine_-_Loveless.png' },
+    images: { zone: null, reference: '/images/soon-reference.png' },
   },
   {
     id: 'shahra',
@@ -512,7 +512,7 @@ export const zones = [
     suggestion: "Final Fantasy X — Yuna",
     description:
       "Claude suggestion: the zone name is an exact match to Yuna, the lead character of Final Fantasy X (2001). The lavender #f1c8ff reflects her purple/lilac design, while the dark navy #000a1d evokes the deep night aesthetic of Spira. FFX would fit alongside the project's other JRPG references.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/7/71/Yuna.png' },
+    images: { zone: null, reference: '/images/yuna-reference.png' },
   },
   {
     id: 'mt-zuka',
@@ -534,7 +534,7 @@ export const zones = [
     suggestion: "Kairo (2012 indie game by Richard Perrin)",
     description:
       "Claude suggestion: exact name match to Kairo, a 2012 indie exploration game set in brutalist architecture with Egyptian influences. The warm amber-to-dark gradient (#ffe596 → #313638) maps to the game's sunlit sandstone environments fading into shadow.\n\nThe name also resonates with Kairos — the ancient Greek concept of the \"right\" or \"opportune\" moment in time. Unlike Chronos (sequential, measured time), Kairos is qualitative: the appointed moment, the window that must be seized. As a fully on-chain artwork built to last 10,000 years, Terraforms is deeply concerned with time — and Kairo may quietly gesture at this philosophical thread running through the whole project.",
-    images: { zone: null, reference: 'https://shared.steamstatic.com/store_item_assets/steam/apps/233230/header.jpg' },
+    images: { zone: null, reference: '/images/kairo-reference.jpg' },
     referencedBy: [
       {
         description: "d347h.eth writes that Terraforms is a profound philosophical artwork about time, human temporality and computational achievement — and that the onchain maximalism and decay lore is just a surface.",
@@ -557,7 +557,7 @@ export const zones = [
     suggestion: "Yves Klein — monochrome trinity (IKB + Monopink + white)",
     description:
       "Claude suggestion: 'Exduo' means 'from two' in Latin — Klein explored duality between the material and immaterial. The deep blue #0012b5 closely matches International Klein Blue (#002FA7), light pink #ffe6fe matches his Monopink works, and warm white #fff7f5 represents the canvas substrate. Klein's ex-voto at Saint Rita contained exactly these three pigments.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/IKB_191.jpg/400px-IKB_191.jpg' },
+    images: { zone: null, reference: '/images/exduo-reference.jpg' },
   },
   {
     id: 'antenna',
@@ -568,7 +568,7 @@ export const zones = [
     suggestion: "FLCL (Fooly Cooly) — Gainax anime (2000)",
     description:
       "Claude suggestion: 'Antenna' is a central motif in FLCL — robots emerge from protagonist Naota's head through an N.O. channel, like antennas. The warm yellows (#f4d35e), oranges (#ee964b, #f95738), deep blue (#083d77), and cream (#ebebd3) match the anime's vibrant palette, especially Haruko's yellow Vespa and red jacket against blue skies.",
-    images: { zone: null, reference: 'https://upload.wikimedia.org/wikipedia/en/f/fe/FLCL_image.jpg' },
+    images: { zone: null, reference: '/images/antenna-reference.jpg' },
   },
   {
     id: 'warp',
