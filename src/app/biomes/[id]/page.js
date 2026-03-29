@@ -32,7 +32,7 @@ export default async function BiomePage({ params }) {
   return (
     <div className="content-wrapper">
       <Header />
-      <main className="flex-1 px-6" style={{ maxWidth: '800px' }}>
+      <main className="flex-1 px-6" style={{ maxWidth: '900px' }}>
 
         <a href="/biomes" className="text-xs dim-40 inline-block mb-8">← biome references</a>
 

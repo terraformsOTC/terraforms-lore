@@ -14,7 +14,10 @@ export const metadata = {
   description: 'Every Terraform zone is an Easter Egg. Community-cataloged colour palette references across all 75 zones.',
   metadataBase: new URL('https://terraformlore.xyz'),
   icons: {
-    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+    ],
   },
   openGraph: {
     type: 'website',

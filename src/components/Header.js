@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const pathname = usePathname();
-  const onBiomes = pathname === '/biomes';
+  const onBiomes = pathname.startsWith('/biomes');
 
   return (
     <header className="z-10 px-6 py-4 md:py-6 md:mb-6 mb-3 sticky top-0 md:relative bg-primary">

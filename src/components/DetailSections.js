@@ -3,6 +3,8 @@
  * Eliminates ~120 lines of duplication between zones/[id] and biomes/[id].
  */
 
+// Used by biome detail pages (two static images, equal columns).
+// Zone detail pages use ParcelViewer + inline reference instead (fixed 277px parcel column).
 export function ImageGrid({ images, name, altText, isTheory, sampleLabel = 'zone parcel' }) {
   if (!images || (!images.zone && !images.reference)) return null;
 
