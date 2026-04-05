@@ -42,9 +42,13 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: ogImage ? 'summary_large_image' : 'summary',
+      site: '@TerraformsOTC',
       title,
       description: ogDescription,
       ...(ogImage && { images: ogImage }),
+    },
+    alternates: {
+      canonical: `https://terraformlore.xyz/zones/${id}`,
     },
   };
 }

@@ -16,7 +16,11 @@ export async function generateMetadata({ params }) {
   const title = biome.nickname
     ? `${biome.name} — ${biome.nickname} — terraforms lore`
     : `${biome.name} — terraforms lore`;
-  return { title, description: biome.description?.slice(0, 160) };
+  return {
+    title,
+    description: biome.description?.slice(0, 160),
+    alternates: { canonical: `https://terraformlore.xyz/biomes/${id}` },
+  };
 }
 
 export default async function BiomePage({ params }) {

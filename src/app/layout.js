@@ -28,8 +28,12 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
+    site: '@TerraformsOTC',
     title: 'terraforms lore',
     description: 'Every Terraform zone is an Easter Egg. Community-cataloged colour palette references across all 75 zones.',
+  },
+  alternates: {
+    canonical: 'https://terraformlore.xyz',
   },
 };
 
