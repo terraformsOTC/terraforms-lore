@@ -64,8 +64,23 @@ export default async function ZonePage({ params }) {
   const parcelIds = ZONE_PARCEL_IDS[id] || null;
   const hasReference = zone.images?.reference;
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `${zone.name} — ${ref}`,
+    description: zone.description?.slice(0, 200) ?? '',
+    url: `https://terraformlore.xyz/zones/${id}`,
+    isPartOf: { '@type': 'WebSite', name: 'terraforms lore', url: 'https://terraformlore.xyz' },
+    about: { '@type': 'Thing', name: zone.name },
+    ...(zone.creditTo && { author: { '@type': 'Person', name: zone.creditTo } }),
+  };
+
   return (
     <div className="content-wrapper">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <main className="flex-1 px-6" style={{ maxWidth: '900px' }}>
 

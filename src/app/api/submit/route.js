@@ -3,22 +3,34 @@ import { NextResponse } from 'next/server';
 // Use Vercel KV in production; fall back to local JSON file in dev
 const IS_PROD = !!process.env.KV_REST_API_URL;
 
-// In-memory rate limiter: 5 submissions per IP per 60 seconds
-const rateLimitMap = new Map();
+// Rate limit: 5 submissions per IP per 60 seconds
 const RATE_LIMIT = 5;
-const RATE_WINDOW_MS = 60 * 1000;
+const RATE_WINDOW_SECS = 60;
 
-function isRateLimited(ip) {
+// In-memory fallback for local dev (per-process, not shared across workers)
+const rateLimitMap = new Map();
+
+function isRateLimitedLocal(ip) {
   const now = Date.now();
   const entry = rateLimitMap.get(ip) || { count: 0, windowStart: now };
-  if (now - entry.windowStart > RATE_WINDOW_MS) {
-    // Window expired — reset
+  if (now - entry.windowStart > RATE_WINDOW_SECS * 1000) {
     rateLimitMap.set(ip, { count: 1, windowStart: now });
     return false;
   }
   if (entry.count >= RATE_LIMIT) return true;
   rateLimitMap.set(ip, { count: entry.count + 1, windowStart: entry.windowStart });
   return false;
+}
+
+// KV-backed rate limiter — survives cold starts; uses Redis INCR + EXPIRE
+async function isRateLimitedKv(ip, kv) {
+  const key = `rl:${ip}`;
+  const count = await kv.incr(key);
+  if (count === 1) {
+    // First hit in this window — set the TTL
+    await kv.expire(key, RATE_WINDOW_SECS);
+  }
+  return count > RATE_LIMIT;
 }
 
 // Max POST body: 8 KB — more than enough for a reference submission
@@ -67,7 +79,15 @@ export async function POST(request) {
       request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
       request.headers.get('x-real-ip') ||
       'unknown';
-    if (isRateLimited(ip)) {
+
+    let limited;
+    if (IS_PROD) {
+      const kv = await getKv();
+      limited = await isRateLimitedKv(ip, kv);
+    } else {
+      limited = isRateLimitedLocal(ip);
+    }
+    if (limited) {
       return NextResponse.json({ error: 'too many requests' }, { status: 429 });
     }
 
