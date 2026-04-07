@@ -25,6 +25,7 @@ export const metadata = {
     title: 'terraform lore',
     description: 'A community maintained repository of zone & biome references in the Terraforms collection',
     url: 'https://terraformlore.xyz',
+    images: [{ url: '/images/og-home.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
