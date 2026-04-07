@@ -11,7 +11,7 @@ const notoSymbols = Noto_Sans_Symbols_2({
 
 export const metadata = {
   title: 'terraforms lore',
-  description: 'Every Terraform zone is an Easter Egg. Community-cataloged colour palette references across all 75 zones.',
+  description: 'A community maintained repository of zone & biome references in the Terraforms collection',
   metadataBase: new URL('https://terraformlore.xyz'),
   icons: {
     icon: [
@@ -23,14 +23,14 @@ export const metadata = {
     type: 'website',
     siteName: 'terraforms lore',
     title: 'terraforms lore',
-    description: 'Every Terraform zone is an Easter Egg. Community-cataloged colour palette references across all 75 zones.',
+    description: 'A community maintained repository of zone & biome references in the Terraforms collection',
     url: 'https://terraformlore.xyz',
   },
   twitter: {
     card: 'summary_large_image',
     site: '@TerraformsOTC',
     title: 'terraforms lore',
-    description: 'Every Terraform zone is an Easter Egg. Community-cataloged colour palette references across all 75 zones.',
+    description: 'A community maintained repository of zone & biome references in the Terraforms collection',
   },
   alternates: {
     canonical: 'https://terraformlore.xyz',
