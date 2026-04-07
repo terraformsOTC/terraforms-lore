@@ -2,7 +2,46 @@ import { NextResponse } from 'next/server';
 
 const IS_PROD = !!process.env.KV_REST_API_URL;
 
+// Rate limit: 10 reads per IP per 60s (guards against token brute-force)
+const RATE_LIMIT = 10;
+const RATE_WINDOW_SECS = 60;
+const rateLimitMap = new Map();
+
+function isRateLimitedLocal(ip) {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip) || { count: 0, windowStart: now };
+  if (now - entry.windowStart > RATE_WINDOW_SECS * 1000) {
+    rateLimitMap.set(ip, { count: 1, windowStart: now });
+    return false;
+  }
+  if (entry.count >= RATE_LIMIT) return true;
+  rateLimitMap.set(ip, { count: entry.count + 1, windowStart: entry.windowStart });
+  return false;
+}
+
+async function isRateLimitedKv(ip, kv) {
+  const key = `rl:admin:${ip}`;
+  const count = await kv.incr(key);
+  if (count === 1) await kv.expire(key, RATE_WINDOW_SECS);
+  return count > RATE_LIMIT;
+}
+
 export async function GET(request) {
+  // Rate limiting — before auth check to prevent token brute-force
+  const ip =
+    request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
+    request.headers.get('x-real-ip') ||
+    'unknown';
+
+  if (IS_PROD) {
+    const { kv } = await import('@vercel/kv');
+    if (await isRateLimitedKv(ip, kv)) {
+      return NextResponse.json({ error: 'too many requests' }, { status: 429 });
+    }
+  } else if (isRateLimitedLocal(ip)) {
+    return NextResponse.json({ error: 'too many requests' }, { status: 429 });
+  }
+
   // Protect with a secret token — set SUBMISSIONS_SECRET in Vercel env vars
   const secret = process.env.SUBMISSIONS_SECRET;
   if (!secret) {
