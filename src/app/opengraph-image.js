@@ -6,7 +6,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
 export default function Image() {
-  const imgData = readFileSync(join(process.cwd(), 'public/images/og-home.png.png'));
+  const imgData = readFileSync(join(process.cwd(), 'public/images/og-home.png'));
   const base64 = `data:image/png;base64,${imgData.toString('base64')}`;
 
   return new ImageResponse(
