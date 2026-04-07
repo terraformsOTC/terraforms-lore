@@ -14,8 +14,8 @@ export async function generateMetadata({ params }) {
   const biome = biomes.find((b) => b.id === id);
   if (!biome) return {};
   const title = biome.nickname
-    ? `${biome.name} — ${biome.nickname} — terraforms lore`
-    : `${biome.name} — terraforms lore`;
+    ? `${biome.name} — ${biome.nickname} — terraform lore`
+    : `${biome.name} — terraform lore`;
   return {
     title,
     description: biome.description?.slice(0, 160),

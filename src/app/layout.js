@@ -10,7 +10,7 @@ const notoSymbols = Noto_Sans_Symbols_2({
 });
 
 export const metadata = {
-  title: 'terraforms lore',
+  title: 'terraform lore',
   description: 'A community maintained repository of zone & biome references in the Terraforms collection',
   metadataBase: new URL('https://terraformlore.xyz'),
   icons: {
@@ -21,15 +21,15 @@ export const metadata = {
   },
   openGraph: {
     type: 'website',
-    siteName: 'terraforms lore',
-    title: 'terraforms lore',
+    siteName: 'terraform lore',
+    title: 'terraform lore',
     description: 'A community maintained repository of zone & biome references in the Terraforms collection',
     url: 'https://terraformlore.xyz',
   },
   twitter: {
     card: 'summary_large_image',
     site: '@TerraformsOTC',
-    title: 'terraforms lore',
+    title: 'terraform lore',
     description: 'A community maintained repository of zone & biome references in the Terraforms collection',
   },
   alternates: {

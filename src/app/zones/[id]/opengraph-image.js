@@ -73,7 +73,7 @@ export default function Image({ params }) {
           letterSpacing: '0.05em',
         }}
       >
-        terraforms lore
+        terraform lore
       </div>
     </div>,
     {
