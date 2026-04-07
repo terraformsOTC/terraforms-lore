@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
   const { id } = await params;
   const zone = zones.find((z) => z.id === id);
   if (!zone) return {};
-  const title = `${zone.name} — terraforms lore`;
+  const title = `${zone.name} — terraform lore`;
   const description = zone.description?.slice(0, 160) ?? '';
   const ref = zone.reference ?? zone.guess ?? zone.suggestion ?? '';
   const ogDescription = ref ? `${zone.name}: ${ref}. ${description}`.slice(0, 200) : description;
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
       title,
       description: ogDescription,
       url: `https://terraformlore.xyz/zones/${id}`,
-      siteName: 'terraforms lore',
+      siteName: 'terraform lore',
     },
     twitter: {
       card: 'summary_large_image',
@@ -66,7 +66,7 @@ export default async function ZonePage({ params }) {
     headline: `${zone.name} — ${ref}`,
     description: zone.description?.slice(0, 200) ?? '',
     url: `https://terraformlore.xyz/zones/${id}`,
-    isPartOf: { '@type': 'WebSite', name: 'terraforms lore', url: 'https://terraformlore.xyz' },
+    isPartOf: { '@type': 'WebSite', name: 'terraform lore', url: 'https://terraformlore.xyz' },
     about: { '@type': 'Thing', name: zone.name },
     ...(zone.creditTo && { author: { '@type': 'Person', name: zone.creditTo } }),
   };
