@@ -23,9 +23,21 @@ export async function generateMetadata({ params }) {
   const zone = zones.find((z) => z.id === id);
   if (!zone) return {};
   const title = `${zone.name} — terraform lore`;
-  const description = zone.description?.slice(0, 160) ?? '';
   const ref = zone.reference ?? zone.guess ?? zone.suggestion ?? '';
-  const ogDescription = ref ? `${zone.name}: ${ref}. ${description}`.slice(0, 200) : description;
+
+  // Extract first 1–2 complete sentences, never cutting mid-sentence
+  function firstSentences(text, max = 200) {
+    if (!text) return '';
+    const sentences = text.split(/(?<=[.!?])\s+/);
+    let out = sentences[0];
+    if (out.length < 100 && sentences[1] && out.length + sentences[1].length + 1 <= max) {
+      out += ' ' + sentences[1];
+    }
+    return out.length <= max ? out : out.slice(0, max);
+  }
+
+  const description = firstSentences(zone.description);
+  const ogDescription = ref ? `${zone.name}: ${ref}. ${firstSentences(zone.description, 160)}` : description;
   // OG image is handled by opengraph-image.js (palette swatches + zone name)
   return {
     title,
