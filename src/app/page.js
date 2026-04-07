@@ -84,7 +84,7 @@ export default function Home() {
         {/* Search */}
         {filter !== 'unknown' && (
           <div className="mb-8" style={{ maxWidth: '360px' }}>
-            <input type="search" value={search} onChange={(e) => setSearch(e.target.value)}
+            <input type="search" name="search" id="zone-search" value={search} onChange={(e) => setSearch(e.target.value)}
               placeholder="search zones or references..." className="w-full px-3 py-2" />
           </div>
         )}
