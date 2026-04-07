@@ -26,9 +26,7 @@ export async function generateMetadata({ params }) {
   const description = zone.description?.slice(0, 160) ?? '';
   const ref = zone.reference ?? zone.guess ?? zone.suggestion ?? '';
   const ogDescription = ref ? `${zone.name}: ${ref}. ${description}`.slice(0, 200) : description;
-  const ogImage = zone.images?.reference?.startsWith('/images/')
-    ? [{ url: zone.images.reference }]
-    : undefined;
+  // OG image is handled by opengraph-image.js (palette swatches + zone name)
   return {
     title,
     description,
@@ -38,14 +36,12 @@ export async function generateMetadata({ params }) {
       description: ogDescription,
       url: `https://terraformlore.xyz/zones/${id}`,
       siteName: 'terraforms lore',
-      ...(ogImage && { images: ogImage }),
     },
     twitter: {
-      card: ogImage ? 'summary_large_image' : 'summary',
+      card: 'summary_large_image',
       site: '@TerraformsOTC',
       title,
       description: ogDescription,
-      ...(ogImage && { images: ogImage }),
     },
     alternates: {
       canonical: `https://terraformlore.xyz/zones/${id}`,
