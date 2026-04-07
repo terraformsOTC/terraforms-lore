@@ -215,7 +215,7 @@ export const zones = [
   {
     id: 'blushing',
     name: 'Blushing',
-    status: 'confirmed',
+    status: 'guess',
     category: 'animeFilm',
     palette: ['#9c89b8', '#f0a6ca', '#efc3e6', '#b8bedd', '#f0e6ef'],
     reference: "Classic anime / isekai — ~2 decades before Re:Zero",
