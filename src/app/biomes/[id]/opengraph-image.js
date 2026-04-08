@@ -14,8 +14,9 @@ export default function Image({ params }) {
   const biome = biomes.find((b) => b.id === params.id);
   if (!biome) return new ImageResponse(<div>Not found</div>, { ...size });
 
-  const fontData = readFileSync(join(process.cwd(), 'public/fonts/NotoSansSymbols2-Regular.ttf'));
-  const monoData = readFileSync(join(process.cwd(), 'public/fonts/SpaceMono-Regular.ttf'));
+  const fontData  = readFileSync(join(process.cwd(), 'public/fonts/NotoSansSymbols2-Regular.ttf'));
+  const fontData2 = readFileSync(join(process.cwd(), 'public/fonts/NotoSansMono-Regular.ttf'));
+  const monoData  = readFileSync(join(process.cwd(), 'public/fonts/SpaceMono-Regular.ttf'));
 
   const chars = biome.characterSet ?? '';
   const label = biome.nickname ?? biome.name;
@@ -43,7 +44,7 @@ export default function Image({ params }) {
             fontSize: '96px',
             letterSpacing: '12px',
             marginBottom: '48px',
-            fontFamily: 'NotoSymbols',
+            fontFamily: 'NotoSymbols2, NotoMono',
             opacity: 0.9,
           }}
         >
@@ -89,8 +90,9 @@ export default function Image({ params }) {
     {
       ...size,
       fonts: [
-        { name: 'NotoSymbols', data: fontData, weight: 400, style: 'normal' },
-        { name: 'SpaceMono',   data: monoData,  weight: 400, style: 'normal' },
+        { name: 'NotoSymbols2', data: fontData,  weight: 400, style: 'normal' },
+        { name: 'NotoMono',     data: fontData2, weight: 400, style: 'normal' },
+        { name: 'SpaceMono',    data: monoData,  weight: 400, style: 'normal' },
       ],
     }
   );
