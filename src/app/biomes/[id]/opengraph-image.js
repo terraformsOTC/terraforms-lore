@@ -19,7 +19,7 @@ export default function Image({ params }) {
   const monoData  = readFileSync(join(process.cwd(), 'public/fonts/SpaceMono-Regular.ttf'));
 
   const chars = biome.characterSet ?? '';
-  const label = biome.nickname ?? biome.name;
+  const label = biome.name;
   const ref = biome.guess ?? biome.reference ?? '';
 
   return new ImageResponse(
