@@ -604,7 +604,7 @@ export const zones = [
     palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'],
     suggestion: "Warp Records",
     description:
-      "Warp Records is a British independent record label founded in Sheffield in 1989 by Steve Beckett, Robert Mitchell and Robert Gordon. It specialises in electronic, indie rock and experimental music, and has released records by acts including Aphex Twin, Autechre, Boards of Canada, Squarepusher, Brian Eno, Broadcast, Flying Lotus, Maxïmo Park, !!!, Battles and Grizzly Bear.",
+      "Warp Records\n\nClaude suggestion: Warp Records is a British independent record label founded in Sheffield in 1989 by Steve Beckett, Robert Mitchell and Robert Gordon. It specialises in electronic, indie rock and experimental music, and has released records by acts including Aphex Twin, Autechre, Boards of Canada, Squarepusher, and Brian Eno.",
     images: { zone: null, reference: '/images/warprecords-reference.jpg' },
   },
   {
