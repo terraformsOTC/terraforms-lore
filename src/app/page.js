@@ -69,7 +69,7 @@ export default function Home() {
                 <button key={key} onClick={() => setCategoryFilter(key)}
                   className="text-xs btn-text"
                   style={{
-                    padding: '6px 14px',
+                    padding: '3px 7px',
                     border: `1px solid ${isActive && cat ? cat.color : 'rgba(232,232,232,0.2)'}`,
                     color: isActive && cat ? cat.color : 'rgba(232,232,232,0.5)',
                     opacity: isActive ? 1 : 0.6,
