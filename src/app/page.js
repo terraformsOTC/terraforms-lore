@@ -10,8 +10,8 @@ import { zones, confirmedZones, uncertainZones, llmZones, unknownZones, CATEGORI
 const FILTERS = [
   { key: 'all',       label: 'all' },
   { key: 'confirmed', label: 'confirmed' },
-  { key: 'llm',       label: 'LLM suggestions' },
   { key: 'uncertain', label: 'uncertain' },
+  { key: 'llm',       label: 'LLM suggestions' },
   { key: 'unknown',   label: 'unknown' },
 ];
 
