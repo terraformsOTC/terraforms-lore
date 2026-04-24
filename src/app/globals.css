@@ -86,7 +86,7 @@ textarea::placeholder { opacity: 0.35; }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
-/* Opacity utilities — replaces dozens of inline style={{ opacity: X }} */
+/* Opacity utilities - replaces dozens of inline style={{ opacity: X }} */
 .dim-20 { opacity: 0.2; }
 .dim-25 { opacity: 0.25; }
 .dim-30 { opacity: 0.3; }
@@ -100,7 +100,7 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; marg
 .dim-80 { opacity: 0.8; }
 .dim-85 { opacity: 0.85; }
 
-/* Border utilities — replaces repeated rgba border inline styles */
+/* Border utilities - replaces repeated rgba border inline styles */
 .card-border {
   border-bottom: 1px solid rgba(232, 232, 232, 0.08);
   border-right: 1px solid rgba(232, 232, 232, 0.08);

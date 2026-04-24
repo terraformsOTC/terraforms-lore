@@ -27,7 +27,7 @@ async function isRateLimitedKv(ip, kv) {
 }
 
 export async function GET(request) {
-  // Rate limiting — before auth check to prevent token brute-force
+  // Rate limiting - before auth check to prevent token brute-force
   const ip =
     request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
     request.headers.get('x-real-ip') ||
@@ -42,7 +42,7 @@ export async function GET(request) {
     return NextResponse.json({ error: 'too many requests' }, { status: 429 });
   }
 
-  // Protect with a secret token — set SUBMISSIONS_SECRET in Vercel env vars
+  // Protect with a secret token - set SUBMISSIONS_SECRET in Vercel env vars
   const secret = process.env.SUBMISSIONS_SECRET;
   if (!secret) {
     return NextResponse.json({ error: 'server misconfigured' }, { status: 500 });

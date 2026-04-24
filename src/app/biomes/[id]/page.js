@@ -14,8 +14,8 @@ export async function generateMetadata({ params }) {
   const biome = biomes.find((b) => b.id === id);
   if (!biome) return {};
   const title = biome.nickname
-    ? `${biome.name} — ${biome.nickname} — terraform lore`
-    : `${biome.name} — terraform lore`;
+    ? `${biome.name} - ${biome.nickname} - terraform lore`
+    : `${biome.name} - terraform lore`;
   return {
     title,
     description: biome.description?.slice(0, 160),
@@ -31,7 +31,7 @@ export default async function BiomePage({ params }) {
   const isTheory = biome.status === 'guess';
   const cat = BIOME_CATEGORIES[biome.category];
   const ref = biome.guess || biome.reference;
-  const displayTitle = biome.nickname ? `${biome.name} — ${biome.nickname}` : biome.name;
+  const displayTitle = biome.nickname ? `${biome.name} - ${biome.nickname}` : biome.name;
 
   return (
     <div className="content-wrapper">
@@ -40,7 +40,7 @@ export default async function BiomePage({ params }) {
 
         <a href="/biomes" className="text-xs dim-40 inline-block mb-8">← biome references</a>
 
-        {/* Character set — mirrors the palette swatch on zone pages */}
+        {/* Character set - mirrors the palette swatch on zone pages */}
         {biome.characterSet && (
           <div className="mb-8">
             <div className="flex flex-wrap" style={{ gap: '12px' }}>

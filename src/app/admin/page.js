@@ -216,7 +216,7 @@ export default function AdminPage() {
                       </span>
                     </div>
 
-                    {/* Explanation — truncated or expanded */}
+                    {/* Explanation - truncated or expanded */}
                     <div className="mt-2">
                       <p
                         className="text-xs"

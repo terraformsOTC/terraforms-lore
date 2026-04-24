@@ -53,7 +53,7 @@ export async function generateMetadata({ params }) {
   const { id } = await params;
   const zone = zones.find((z) => z.id === id);
   if (!zone) return {};
-  const title = `${zone.name} — terraform lore`;
+  const title = `${zone.name} - terraform lore`;
   const ref = zone.reference ?? zone.guess ?? zone.suggestion ?? '';
 
   const description = firstSentences(zone.description);
@@ -95,7 +95,7 @@ export default async function ZonePage({ params }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: `${zone.name} — ${ref}`,
+    headline: `${zone.name} - ${ref}`,
     description: zone.description?.slice(0, 200) ?? '',
     url: `https://terraformlore.xyz/zones/${id}`,
     isPartOf: { '@type': 'WebSite', name: 'terraform lore', url: 'https://terraformlore.xyz' },
@@ -105,7 +105,7 @@ export default async function ZonePage({ params }) {
 
   return (
     <div className="content-wrapper">
-      {/* Safe: all jsonLd values come from hardcoded zones.js — never user input */}
+      {/* Safe: all jsonLd values come from hardcoded zones.js - never user input */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
