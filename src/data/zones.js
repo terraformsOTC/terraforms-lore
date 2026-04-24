@@ -118,7 +118,7 @@ export const zones = [
     status: 'confirmed',
     category: 'videoGame',
     palette: ['#c1c6cc', '#bbac69', '#e24e32', '#262523', '#e04f34', '#beaf6e'],
-    reference: "Mother 1+2 GBA Box Set, Japan, 2003",
+    reference: "Mother 1+2 GBA Box Set, 2003",
     referenceDetail: "Game Boy Advance / Nintendo - Japan exclusive",
     description:
       "Palace, with its distinctive orange colours, is a reference to the Game Boy Advance box set Mother 1+2, released exclusively in Japan in 2003.",
@@ -330,9 +330,9 @@ export const zones = [
     status: 'uncertain',
     category: 'uncertain',
     palette: ['#fb8b01', '#399c42', '#0b704e', '#f34509', '#6f9d80', '#fb7712', '#10151b'],
-    reference: "Uncertain",
+    reference: "Potentially lost",
     description:
-      "113 has commented on this zone in the past, saying \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\".",
+      "Potentially lost\n\n113 has commented on this zone in the past, saying \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\".",
     images: null,
   },
   {
@@ -454,8 +454,8 @@ export const zones = [
     status: 'uncertain',
     category: null,
     palette: ['#292c34', '#ff9a72'],
-    guess: "Kanye West - The Life of Pablo cover art?",
-    description: "Community theory: [SUN] may reference the cover art of Kanye West's The Life of Pablo (2016).",
+    guess: "Kanye West - The Life of Pablo, 2016",
+    description: "Community theory: [SUN] may reference the cover art of Kanye West's The Life of Pablo.",
     images: { zone: null, reference: '/images/Lifeofpablo-reference.webp' },
   },
   {
@@ -535,7 +535,7 @@ export const zones = [
     status: 'llm',
     category: 'videoGame',
     palette: ['#f1c8ff', '#000a1d'],
-    suggestion: "Final Fantasy X - Yuna",
+    suggestion: "Final Fantasy X, 2001",
     description:
       "Claude suggestion: the zone name is an exact match to Yuna, the lead character of Final Fantasy X (2001). The lavender #f1c8ff reflects her purple/lilac design, while the dark navy #000a1d evokes the deep night aesthetic of Spira. FFX would fit alongside the project's other JRPG references.",
     images: { zone: null, reference: '/images/yuna-reference.png' },
@@ -600,11 +600,11 @@ export const zones = [
     id: 'warp',
     name: 'Warp',
     status: 'llm',
-    category: 'videoGame',
+    category: 'music',
     palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'],
-    suggestion: "WipEout 2097 - Psygnosis / Warp Records, 1996",
+    suggestion: "Warp Records",
     description:
-      "Claude suggestion: 'Warp' points to WipEout 2097, the iconic PS1 racing game whose soundtrack was curated entirely by Warp Records - Aphex Twin, The Chemical Brothers, Fluke, and Leftfield. The purple (#8b3ede) and red (#e5291e) directly echo the game's cover palette, and the Warp Records label branding was displayed in-game, making it one of the most celebrated music/game crossovers of the 1990s.",
+      "Warp Records is a British independent record label founded in Sheffield in 1989 by Steve Beckett, Robert Mitchell and Robert Gordon. It specialises in electronic, indie rock and experimental music, and has released records by acts including Aphex Twin, Autechre, Boards of Canada, Squarepusher, Brian Eno, Broadcast, Flying Lotus, Maxïmo Park, !!!, Battles and Grizzly Bear.",
     images: { zone: null, reference: '/images/warprecords-reference.jpg' },
   },
   {
