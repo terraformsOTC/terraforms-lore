@@ -18,23 +18,23 @@ export async function generateStaticParams() {
   return zones.filter((z) => z.status !== 'unknown').map((z) => ({ id: z.id }));
 }
 
+// Extract first 1–2 complete sentences, never cutting mid-sentence
+function firstSentences(text, max = 200) {
+  if (!text) return '';
+  const sentences = text.split(/(?<=[.!?])\s+/);
+  let out = sentences[0];
+  if (out.length < 100 && sentences[1] && out.length + sentences[1].length + 1 <= max) {
+    out += ' ' + sentences[1];
+  }
+  return out.length <= max ? out : out.slice(0, max);
+}
+
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const zone = zones.find((z) => z.id === id);
   if (!zone) return {};
   const title = `${zone.name} — terraform lore`;
   const ref = zone.reference ?? zone.guess ?? zone.suggestion ?? '';
-
-  // Extract first 1–2 complete sentences, never cutting mid-sentence
-  function firstSentences(text, max = 200) {
-    if (!text) return '';
-    const sentences = text.split(/(?<=[.!?])\s+/);
-    let out = sentences[0];
-    if (out.length < 100 && sentences[1] && out.length + sentences[1].length + 1 <= max) {
-      out += ' ' + sentences[1];
-    }
-    return out.length <= max ? out : out.slice(0, max);
-  }
 
   const description = firstSentences(zone.description);
   const ogDescription = ref ? `${zone.name}: ${ref}. ${firstSentences(zone.description, 160)}` : description;
@@ -85,6 +85,7 @@ export default async function ZonePage({ params }) {
 
   return (
     <div className="content-wrapper">
+      {/* Safe: all jsonLd values come from hardcoded zones.js — never user input */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
