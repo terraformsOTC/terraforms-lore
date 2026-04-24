@@ -14,8 +14,7 @@ export const CATEGORIES = {
   uncertain:    { label: 'uncertain',     color: '#9ca3af' },
 };
 
-// status: 'confirmed' | 'guess' | 'suggestion' | 'unknown'
-// All 75 zones - 29 confirmed, 22 suggestions, 7 community guesses, 17 unknown
+// status: 'confirmed' | 'uncertain' | 'llm' | 'unknown'
 export const zones = [
 
   // ─── CONFIRMED ───────────────────────────────────────────────────────────
@@ -29,7 +28,7 @@ export const zones = [
     reference: "Radiohead - Kid A",
     referenceDetail: "Kid A album art (2000)",
     description:
-      "The red, blue, white, and black palette is a direct reference to Radiohead's Kid A album art.",
+      "The red, blue, white, and black palette is a direct reference to Radiohead's Kid A album art. The fourth studio album by the English rock band, it is recognised today as one of the greatest albums of all time, and a defining cultural touchstone of the 2000's.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     images: { zone: '/images/hypermage-zone.jpg', reference: '/images/hypermage-reference.jpg' },
   },
@@ -42,7 +41,7 @@ export const zones = [
     reference: "David Rudnick - Stem NFT, 2021",
     referenceDetail: "Artwork by David Rudnick",
     description:
-      "Nightrose is a reference to an [artwork](https://x.com/David_Rudnick/status/1361183679582773248?) by @David_Rudnick, sold in 2021 on Zora to celebrate Valentine's day.",
+      "Nightrose is a reference to an artwork by David Rudnick, a UK-born, American-raised, self-taught graphic designer. Stem was sold in 2021 on the Zora platform to celebrate Valentine's day.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     referenceLink: 'https://decrypt.co/57782/david-rudnick-nft',
     images: { zone: '/images/nightrose-zone.jpg', reference: '/images/nightrose-reference.jpg' },
@@ -89,12 +88,12 @@ export const zones = [
   {
     id: 'grove',
     name: 'Grove',
-    status: 'confirmed',
+    status: 'uncertain',
     category: 'uncertain',
     palette: ['#fb8b01', '#399c42', '#0b704e', '#f34509', '#6f9d80', '#fb7712', '#10151b'],
     reference: "Uncertain",
     description:
-      "113 in the past has commented on this zone, saying \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\".",
+      "113 has commented on this zone in the past, saying \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\".",
     images: null,
   },
   {
@@ -160,7 +159,7 @@ export const zones = [
     reference: "The Everglades, Florida",
     referenceDetail: "Natural wetland, Florida USA",
     description:
-      "Some references are more literal. Everglades is inspired by the Everglades in Florida - one of the most distinctive natural landscapes in the US, known for its subtropical wetlands and diverse ecosystem.",
+      "Some zone references are more literal. Everglades is inspired by the Everglades in Florida - one of the most distinctive natural landscapes in the US, known for its subtropical wetlands and diverse ecosystem.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     images: { zone: '/images/everglades-zone.jpg', reference: '/images/everglades-reference.jpg' },
   },
@@ -179,25 +178,25 @@ export const zones = [
   {
     id: 'kippsunn',
     name: 'Kippsunn',
-    status: 'confirmed',
+    status: 'uncertain',
     category: 'special',
+    twin: true,
     palette: ['#045939', '#e2b8d1', '#6390b5', '#fff4c0', '#60a278', '#b1becd', '#66aeb6', '#a0a9b8', '#081612'],
     reference: "Special private / personal reference",
-    referenceDetail: "For a very early collector",
     description:
-      "Kippsunn contains a special private reference made for a very early collector of Terraforms. The specific reference has not been made public.",
+      "Kippsunn contains a special private reference made for a very early collector of Terraforms. The specific reference has not been made public. There appears to be a connection with the Greysunn zone as they both share the same suffix.",
     images: null,
   },
   {
     id: 'greysunn',
     name: 'Greysunn',
-    status: 'confirmed',
+    status: 'uncertain',
     category: 'special',
+    twin: true,
     palette: ['#bbbbbb', '#282828', '#292929', '#242424', '#393939', '#323232', '#313131', '#343434', '#202020'],
     reference: "Special private / personal reference",
-    referenceDetail: "For a very early collector",
     description:
-      "Greysunn contains a special private reference made for a very early collector of Terraforms. The specific reference has not been made public.",
+      "Greysunn contains a special private reference made for a very early collector of Terraforms. The specific reference has not been made public. There appears to be a connection with the Kippsunn zone as they both share the same suffix.\n\nSome in the community have speculated that it may refer to The Black Sun, an exclusive, high-tech nightclub located within the Metaverse of Neal Stephenson's 1992 novel Snow Crash.",
     images: null,
   },
   {
@@ -206,22 +205,22 @@ export const zones = [
     status: 'confirmed',
     category: 'nature',
     palette: ['#5f9644', '#32523a', '#c4a675', '#7bb03e', '#cad795', '#e2dfd4'],
-    reference: "Jadeite - mineral / kitchenware",
+    reference: "Jadeite - precious stone and kitchenware",
     referenceDetail: "Jadeite jade mineral",
     description:
-      "The Jadeite zone references jadeite - a pyroxene mineral and one of the two types of jade, prized for its vivid greens. Jadeite is also associated with vintage jadeite glass kitchenware, which shares the zone's cool green palette.",
+      "This zone references a rare pyroxene mineral and one of the two types of jade, prized for its vivid green colour. The name is also associated with vintage jadeite glass kitchenware, which was produced in the early to mid-20th century.",
     images: { zone: null, reference: '/images/jadeite-reference.jpg' },
   },
   {
     id: 'blushing',
     name: 'Blushing',
-    status: 'guess',
+    status: 'uncertain',
     category: 'animeFilm',
     palette: ['#9c89b8', '#f0a6ca', '#efc3e6', '#b8bedd', '#f0e6ef'],
     reference: "Classic anime / isekai - ~2 decades before Re:Zero",
     referenceDetail: "Early 2000s anime / isekai genre",
     description:
-      "The creator confirmed Blushing derives from something in a similar genre to Re:Zero, but approximately two decades older - pointing to a classic early-2000s anime or isekai title. The specific work has not been identified.\n\nClaude has identified Fushigi Yûgi (1995–1996) as the most plausible contender: it is a direct isekai (a girl pulled into a magical book), released almost exactly 20 years before Re:Zero, with a visual identity heavily built around pinks, roses, and lilacs - and the name 'Blushing' maps cleanly onto its romantic core.\n\nOther contenders:\n· Magic Knight Rayearth - 1994–1995\n· El-Hazard: The Wanderers - 1995–1996\n· The Vision of Escaflowne - 1996\n· Revolutionary Girl Utena - 1997\n· Now and Then, Here and There - 1999\n· Cardcaptor Sakura - 1998–2000\n· Haibane Renmei - 2002\n· The Twelve Kingdoms - 2002–2003\n· Texhnolyze - 2003",
+      "We know this about the Blushing zone, it is a reference to a classic isekai anime work, which was released 2 decades before the well known Re:Zero anime series.\n\nClaude has identified Fushigi Yûgi (1995-1996) as the most plausible contender: it is an isekai work, released almost exactly 20 years before Re:Zero, with a visual identity heavily built around pinks, roses, and lilacs.\n\nGiven the uncertainty, there are other contenders:\n· Magic Knight Rayearth - 1994-1995\n· El-Hazard: The Wanderers - 1995-1996\n· The Vision of Escaflowne - 1996\n· Revolutionary Girl Utena - 1997\n· Now and Then, Here and There - 1999\n· Cardcaptor Sakura - 1998-2000\n· Haibane Renmei - 2002\n· The Twelve Kingdoms - 2002-2003\n· Texhnolyze - 2003",
     images: { zone: null, reference: '/images/Fushigi-Yugi-reference.jpg' },
   },
   {
@@ -233,7 +232,7 @@ export const zones = [
     reference: "Seiken Densetsu 3 (1995)",
     referenceDetail: "Nintendo SNES",
     description:
-      "For anyone who played Seiken Densetsu 3 on SNES, the Promiselands zone might look familiar. The vibrant green, pink, and yellow palette echoes the iconic art direction of this cult classic JRPG.",
+      "Also known as Trials of Mana, this action role-playing game was developed and published by Square for the Super Nintendo Entertainment System console. The vibrant green, pink, and yellow palette echoes the iconic graphics of this classic JRPG.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     images: { zone: '/images/promiselands-zone.jpg', reference: '/images/promiselands-reference.png' },
   },
@@ -375,7 +374,7 @@ export const zones = [
   {
     id: 'angel',
     name: 'Angel',
-    status: 'guess',
+    status: 'uncertain',
     category: null,
     palette: ['#f6d903', '#eceff2', '#ff6650', '#f3b2e0', '#83dbf7', '#06917e', '#e0f2fa', '#cbeddf', '#e7e9ef', '#0dcdee'],
     guess: "TempleOS - Terry Davis (2003–2019)",
@@ -385,7 +384,7 @@ export const zones = [
   {
     id: 'bubble',
     name: 'Bubble',
-    status: 'guess',
+    status: 'uncertain',
     category: null,
     palette: ['#f5221f', '#fb72d9', '#f7c4de', '#ffffff', '#f23c19', '#fff21f', '#167833', '#2b24ad'],
     guess: "Bubble Bobble NES boxart / Bubblicious / Hubba Bubba?",
@@ -395,7 +394,7 @@ export const zones = [
   {
     id: 'dhampir',
     name: 'Dhampir',
-    status: 'guess',
+    status: 'uncertain',
     category: null,
     palette: ['#eb4034', '#eeeeee', '#202020'],
     guess: "BloodRayne (2002)?",
@@ -405,7 +404,7 @@ export const zones = [
   {
     id: 'intro-forest',
     name: 'Intro Forest',
-    status: 'guess',
+    status: 'uncertain',
     category: null,
     palette: ['#399c42', '#307d39', '#005d1a', '#369e40', '#1a5425', '#00300f', '#33953e', '#1a1814'],
     guess: "Famicom Bunko: Hajimari no Mori (1999)?",
@@ -415,7 +414,7 @@ export const zones = [
   {
     id: 'venmon',
     name: 'Venmon',
-    status: 'guess',
+    status: 'uncertain',
     category: null,
     palette: ['#aec5ed', '#f1db65', '#e12e5d', '#f598c0', '#f9d8ee', '#eed2c0', '#ef2647', '#5cd3e5', '#248ac0', '#e0e0dd'],
     guess: "South Park?",
@@ -425,7 +424,7 @@ export const zones = [
   {
     id: 'sun',
     name: '[SUN]',
-    status: 'guess',
+    status: 'uncertain',
     category: null,
     palette: ['#292c34', '#ff9a72'],
     guess: "Kanye West - The Life of Pablo cover art?",
@@ -435,7 +434,7 @@ export const zones = [
   {
     id: 'rocket',
     name: 'Rocket',
-    status: 'guess',
+    status: 'uncertain',
     category: null,
     palette: ['#ed1111', '#f8f7ff', '#0012b5', '#30e7ff'],
     guess: "Rocket Pop (ice lolly)?",
@@ -448,7 +447,7 @@ export const zones = [
   {
     id: 'first-earth',
     name: 'First Earth',
-    status: 'suggestion',
+    status: 'llm',
     category: 'cryptoArt',
     palette: ['#cb8175', '#e2a97e', '#f0cf8e', '#f6edcd', '#a8c8a6', '#6d8d8a', '#655057', '#32282b'],
     suggestion: "Pastel QT palette by polyphrog (Lospec)",
@@ -472,7 +471,7 @@ export const zones = [
   {
     id: 'ender',
     name: 'Ender',
-    status: 'suggestion',
+    status: 'llm',
     category: 'videoGame',
     palette: ['#ff4fe2', '#f8f7ff', '#0000ff'],
     suggestion: "Minecraft - The End dimension",
@@ -484,7 +483,7 @@ export const zones = [
   {
     id: 'mirage',
     name: 'Mirage',
-    status: 'suggestion',
+    status: 'llm',
     category: null,
     palette: ['#17742e', '#f53fad', '#f5eee8'],
     suggestion: "Transformers G2 'Watermelon' Mirage (~1994 unreleased toy)",
@@ -495,7 +494,7 @@ export const zones = [
   {
     id: 'royal',
     name: 'Royal',
-    status: 'suggestion',
+    status: 'llm',
     category: 'cryptoArt',
     palette: ['#f9eddd', '#f2d3ab', '#c69fa5', '#8b6d9c', '#ffc7fc', '#700000', '#171616'],
     suggestion: "GrafxKid's Oil 6 palette (Lospec)",
@@ -506,7 +505,7 @@ export const zones = [
   {
     id: 'yuna',
     name: '[YUNA]',
-    status: 'suggestion',
+    status: 'llm',
     category: 'videoGame',
     palette: ['#f1c8ff', '#000a1d'],
     suggestion: "Final Fantasy X - Yuna",
@@ -517,7 +516,7 @@ export const zones = [
   {
     id: 'mt-zuka',
     name: 'Mt Zuka',
-    status: 'suggestion',
+    status: 'llm',
     category: 'animeFilm',
     palette: ['#f0f6e8', '#93d4b5', '#f0dab1', '#e39aac', '#c45d9f', '#634b7d', '#2ba9b4', '#6461c2', '#221039'],
     suggestion: "Osamu Tezuka / Takarazuka Revue",
@@ -528,7 +527,7 @@ export const zones = [
   {
     id: 'kairo',
     name: 'Kairo',
-    status: 'suggestion',
+    status: 'llm',
     category: 'videoGame',
     palette: ['#ffe596', '#ffad3b', '#c57938', '#975330', '#574729', '#313638'],
     suggestion: "Kairo (2012 indie game by Richard Perrin)",
@@ -551,7 +550,7 @@ export const zones = [
   {
     id: 'exduo',
     name: 'Exduo',
-    status: 'suggestion',
+    status: 'llm',
     category: 'cryptoArt',
     palette: ['#0012b5', '#fff7f5', '#ffe6fe'],
     suggestion: "Yves Klein - monochrome trinity (IKB + Monopink + white)",
@@ -562,7 +561,7 @@ export const zones = [
   {
     id: 'antenna',
     name: 'Antenna',
-    status: 'suggestion',
+    status: 'llm',
     category: 'animeFilm',
     palette: ['#f4d35e', '#ee964b', '#f95738', '#083d77', '#ebebd3'],
     suggestion: "FLCL (Fooly Cooly) - Gainax anime (2000)",
@@ -573,7 +572,7 @@ export const zones = [
   {
     id: 'warp',
     name: 'Warp',
-    status: 'suggestion',
+    status: 'llm',
     category: 'videoGame',
     palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'],
     suggestion: "WipEout 2097 - Psygnosis / Warp Records (1996)",
@@ -584,7 +583,7 @@ export const zones = [
   {
     id: 'pepo',
     name: 'Pepo',
-    status: 'suggestion',
+    status: 'llm',
     category: 'nature',
     palette: ['#d77c11', '#d3cac3', '#61785c', '#3f5c39', '#332a1d', '#303d2d'],
     suggestion: "Pepo - botanical term for pumpkin / gourd berries (Cucurbitaceae)",
@@ -595,7 +594,7 @@ export const zones = [
   {
     id: 'sep',
     name: '[SEP]',
-    status: 'suggestion',
+    status: 'llm',
     category: 'technology',
     palette: ['#303030', '#9f82ff'],
     suggestion: "Sepolia - Ethereum testnet",
@@ -606,7 +605,7 @@ export const zones = [
   {
     id: 'arc',
     name: 'Arc',
-    status: 'suggestion',
+    status: 'llm',
     category: 'videoGame',
     palette: ['#ec5526', '#f7f4e2', '#9ebbc1', '#f4ac12', '#1e1b1e'],
     suggestion: "Arc System Works - Guilty Gear Strive (2021)",
@@ -617,7 +616,7 @@ export const zones = [
   {
     id: 'linosim',
     name: 'Linosim',
-    status: 'suggestion',
+    status: 'llm',
     category: 'videoGame',
     palette: ['#404040', '#29af3f', '#dcc729', '#26abd4', '#c3c3c3'],
     suggestion: "SimCity (1989) - Will Wright / Maxis",
@@ -628,7 +627,7 @@ export const zones = [
   {
     id: 'toad',
     name: 'Toad',
-    status: 'suggestion',
+    status: 'llm',
     category: 'videoGame',
     palette: ['#ffa8ee', '#eceb80', '#008080', '#ffe330', '#72b802', '#e85bcc', '#a28ef4', '#ff0e0e', '#b0e111', '#8ac163'],
     suggestion: "Toad - Super Mario Bros. (Nintendo)",
@@ -639,7 +638,7 @@ export const zones = [
   {
     id: 'akileaf',
     name: 'Akileaf',
-    status: 'suggestion',
+    status: 'llm',
     category: 'nature',
     palette: ['#453687', '#4899c4', '#b771b9', '#3c2b71', '#82c1c6', '#095474', '#96c7ce', '#f9fbd4', '#abe291'],
     suggestion: "Aquilegia (columbine flower) - Ranunculaceae",
@@ -650,7 +649,7 @@ export const zones = [
   {
     id: 'aria',
     name: 'Aria',
-    status: 'suggestion',
+    status: 'llm',
     category: 'animeFilm',
     palette: ['#93d1de', '#718dbc', '#f9a4cb', '#dad7cc', '#f8fefe', '#f6e518', '#ec7e15', '#292726'],
     suggestion: "Aria the Animation (2005 anime) - set on terraformed Mars",
@@ -661,7 +660,7 @@ export const zones = [
   {
     id: 'nov',
     name: '[NOV]',
-    status: 'suggestion',
+    status: 'llm',
     category: 'animeFilm',
     palette: ['#303030', '#ff4538'],
     suggestion: "V for Vendetta - Guy Fawkes Night (November 5th)",
@@ -672,7 +671,7 @@ export const zones = [
   {
     id: 'cur2',
     name: '[CUR2]',
-    status: 'suggestion',
+    status: 'llm',
     category: 'videoGame',
     palette: ['#8e918c', '#eff1f4'],
     suggestion: "CUR2 - White Magic spell, Final Fantasy (NES, 1987)",
@@ -686,7 +685,7 @@ export const zones = [
   {
     id: 'shiro',
     name: 'Shiro',
-    status: 'confirmed',
+    status: 'uncertain',
     category: 'twinPalette',
     palette: ['#7ffcc4', '#ffe481', '#ffcfb7', '#505050', '#f2e7ea'],
     reference: "Twin palette - light mode of Treasure",
@@ -698,7 +697,7 @@ export const zones = [
   {
     id: 'treasure',
     name: 'Treasure',
-    status: 'confirmed',
+    status: 'uncertain',
     category: 'twinPalette',
     palette: ['#323232', '#ffadde', '#7ffcc4', '#ffe481'],
     reference: "Twin palette - dark mode of Shiro",
@@ -710,8 +709,9 @@ export const zones = [
   {
     id: 'moon',
     name: '[MOON]',
-    status: 'suggestion',
+    status: 'llm',
     category: 'twinPalette',
+    twin: true,
     palette: ['#9cb7d4', '#35443b'],
     suggestion: "Twin palette with [NEON] - moonlight over dark green",
     description:
@@ -721,8 +721,9 @@ export const zones = [
   {
     id: 'neon',
     name: '[NEON]',
-    status: 'suggestion',
+    status: 'llm',
     category: 'twinPalette',
+    twin: true,
     palette: ['#9cd4a8', '#35443b'],
     suggestion: "Twin palette with [MOON] - neon glow over dark green",
     description:
@@ -752,8 +753,8 @@ export const zones = [
   { id: 'wen',          name: '[WEN]',         status: 'unknown', category: null, palette: ['#fffdf0', '#1e1c32'], images: null },
 ];
 
-export const confirmedZones    = zones.filter(z => z.status === 'confirmed');
-export const guessZones        = zones.filter(z => z.status === 'guess');
-export const suggestionZones   = zones.filter(z => z.status === 'suggestion');
-export const unknownZones      = zones.filter(z => z.status === 'unknown');
+export const confirmedZones  = zones.filter(z => z.status === 'confirmed');
+export const uncertainZones  = zones.filter(z => z.status === 'uncertain');
+export const llmZones        = zones.filter(z => z.status === 'llm');
+export const unknownZones    = zones.filter(z => z.status === 'unknown');
 
