@@ -25,7 +25,7 @@ export const zones = [
     status: 'confirmed',
     category: 'music',
     palette: ['#e40513', '#fefefe', '#c9cdc3', '#0173b8', '#272022', '#1a1a1a'],
-    reference: "Radiohead - Kid A",
+    reference: "Radiohead - Kid A, 2000",
     referenceDetail: "Kid A album art (2000)",
     description:
       "The red, blue, white, and black palette is a direct reference to Radiohead's Kid A album art. The fourth studio album by the English rock band, it is recognised today as one of the greatest albums of all time, and a defining cultural touchstone of the 2000's.",
@@ -52,7 +52,7 @@ export const zones = [
     status: 'confirmed',
     category: 'technology',
     palette: ['#303030', '#0974f8', '#fe81dd', '#ff9000', '#006e15', '#fbd81c', '#608a1a', '#202020', '#e4e6f2'],
-    reference: "Xerox Alto - released in 1973",
+    reference: "Xerox Alto, 1973",
     referenceDetail: "Xerox Alto (1973)",
     description:
       "The Alto zone references the highly influential early PC developed at Xerox PARC. The Alto pioneered many aspects of modern computing we take for granted today, including the graphical user interface (GUI), computer mouse, and Ethernet networking. Whilst the Alto itself was not a commercial success, it influenced many in Silicon Valley at the time. This included Steve Jobs, who after vising PARC in 1979 integrated many of the Alto's ideas into the Lisa and Macintosh systems.",
@@ -78,7 +78,7 @@ export const zones = [
     status: 'confirmed',
     category: 'animeFilm',
     palette: ['#e84629', '#272c38', '#e8e1df', '#a482b9', '#eee8e1', '#1e2833'],
-    reference: "Neon Genesis Evangelion (1995)",
+    reference: "Neon Genesis Evangelion, 1995",
     referenceDetail: "新世紀エヴァンゲリオン - Gainax",
     description:
       "The Mecha zone references Neon Genesis Evangelion (新世紀エヴァンゲリオン), a Japanese anime television series produced by Gainax and Tatsunoko Production.",
@@ -129,7 +129,7 @@ export const zones = [
     status: 'confirmed',
     category: 'videoGame',
     palette: ['#c1c6cc', '#bbac69', '#e24e32', '#262523', '#e04f34', '#beaf6e'],
-    reference: "Mother 1+2 GBA Box Set (Japan, 2003)",
+    reference: "Mother 1+2 GBA Box Set, Japan, 2003",
     referenceDetail: "Game Boy Advance / Nintendo - Japan exclusive",
     description:
       "Palace, with its distinctive orange colours, is a reference to the Game Boy Advance box set Mother 1+2, released exclusively in Japan in 2003.",
@@ -169,7 +169,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cardGame',
     palette: ['#078e56', '#b14e39', '#03643b', '#cf553d', '#284356', '#e05534', '#f7e7c6', '#282c2f', '#0a8b3b', '#171717'],
-    reference: "Magic: The Gathering - Juzam Djinn, Arabian Nights (1993)",
+    reference: "Magic: The Gathering - Juzam Djinn, Arabian Nights, 1993",
     referenceDetail: "MTG Arabian Nights set",
     description:
       "Ouallada references the Juzam Djinn card from Magic: The Gathering's Arabian Nights expansion (1993) - one of the most iconic and valuable cards in MTG history.",
@@ -229,7 +229,7 @@ export const zones = [
     status: 'confirmed',
     category: 'videoGame',
     palette: ['#6db217', '#fde023', '#fd122c', '#fe2a95', '#0a2131'],
-    reference: "Seiken Densetsu 3 (1995)",
+    reference: "Seiken Densetsu 3, 1995",
     referenceDetail: "Nintendo SNES",
     description:
       "Also known as Trials of Mana, this action role-playing game was developed and published by Square for the Super Nintendo Entertainment System console. The vibrant green, pink, and yellow palette echoes the iconic graphics of this classic JRPG.",
@@ -282,7 +282,7 @@ export const zones = [
     status: 'confirmed',
     category: 'animeFilm',
     palette: ['#e9e3d5', '#e3b0bc', '#171717', '#da709a', '#db759d', '#c01d10', '#c72612'],
-    reference: "Akira (1988 film) - Tetsuo",
+    reference: "Akira, 1988",
     referenceDetail: "Character: Tetsuo Shima",
     description:
       "In 1988, Akira was released. Often cited as one of the greatest films of all time, pivotal in cyberpunk and anime aesthetics. The main antagonist is named Tetsuo. The Tetsu zone pays homage to this character.",
@@ -295,7 +295,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cryptoArt',
     palette: ['#62d840', '#bed002', '#ff2e1e', '#70d0ce', '#3cb4e0', '#04b2b9', '#ff6c03', '#f4bcb4', '#fdec00', '#eeeeee'],
-    reference: "James Jean - Aurelians (2016)",
+    reference: "James Jean - Aurelians, 2016",
     referenceDetail: "Artwork by James Jean",
     description:
       "The Radiant zone takes its colours from @JamesJeanArt's work, \"Aurelians\" (2016). Discovering James Jean's practice was a happy consequence of going down this rabbit hole.",
@@ -321,7 +321,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cardGame',
     palette: ['#322c41', '#312c41', '#89a8b9', '#84488b', '#453747', '#392236', '#4a6189', '#2e2a39'],
-    reference: "Magic: The Gathering - Liliana, Dreadhorde General",
+    reference: "Magic: The Gathering - Liliana, Dreadhorde General, 2019",
     referenceDetail: "Art by Yoshitaka Amano",
     description:
       "The Dread zone references the Magic: The Gathering card Liliana, Dreadhorde General, with art by Yoshitaka Amano. The purple-black palette mirrors the card's dark, otherworldly aesthetic.",
@@ -335,7 +335,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cryptoArt',
     palette: ['#a9df4f', '#3dddb0', '#ebeceb', '#302f30'],
-    reference: "XCOPY - Guzzler (2021)",
+    reference: "XCOPY - Guzzler, 2021",
     referenceDetail: "Edition artwork by XCOPY",
     description:
       "For the @XCOPYART fans, the Aetherking zone is for you. This palette was inspired by Guzzler, a 2021 edition from the artist. The neon green and teal on black is unmistakably XCOPY.",
@@ -360,7 +360,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cardGame',
     palette: ['#6b3b77', '#2b2b2b', '#cda254', '#92609d', '#aa4a4e', '#7a5986', '#d0d5db'],
-    reference: "Magic: The Gathering - Shahrazad, Arabian Nights (1993)",
+    reference: "Magic: The Gathering - Shahrazad, Arabian Nights, 1993",
     referenceDetail: "Art by Kaja Foglio - rarest zone, 10 parcels",
     description:
       "Shahra is the rarest zone, with only 10 parcels. It references Shahrazad - a sorcery card from Magic: The Gathering's Arabian Nights set (1993), illustrated by Kaja Foglio, itself referencing the legendary storyteller of One Thousand and One Nights.",
@@ -377,7 +377,7 @@ export const zones = [
     status: 'uncertain',
     category: null,
     palette: ['#f6d903', '#eceff2', '#ff6650', '#f3b2e0', '#83dbf7', '#06917e', '#e0f2fa', '#cbeddf', '#e7e9ef', '#0dcdee'],
-    guess: "TempleOS - Terry Davis (2003–2019)",
+    guess: "TempleOS - Terry Davis, 2003-2019",
     description: "Community theory: 'Angel' maps directly to Terry Davis's theology - he claimed God spoke to him and directed him to build TempleOS, with angels as divine messengers. The 10-colour palette of bright saturated primaries (yellow, red, cyan, pink, teal, green) echoes the VGA 16-colour limitation that TempleOS famously runs at (640×480, 16 colours). Davis specified these constraints because he believed God mandated them.",
     images: { zone: null, reference: '/images/TempleOS-reference.webp' },
   },
@@ -397,7 +397,7 @@ export const zones = [
     status: 'uncertain',
     category: null,
     palette: ['#eb4034', '#eeeeee', '#202020'],
-    guess: "BloodRayne (2002)?",
+    guess: "BloodRayne, 2002?",
     description: "BloodRayne is a cult-classic action-adventure video game franchise originating in 2002, featuring a dhampir (half-human, half-vampire) protagonist named Rayne who hunts Nazis and supernatural threats.",
     images: { zone: null, reference: '/images/Bloodrayne-reference.jpg' },
   },
@@ -407,7 +407,7 @@ export const zones = [
     status: 'uncertain',
     category: null,
     palette: ['#399c42', '#307d39', '#005d1a', '#369e40', '#1a5425', '#00300f', '#33953e', '#1a1814'],
-    guess: "Famicom Bunko: Hajimari no Mori (1999)?",
+    guess: "Famicom Bunko: Hajimari no Mori, 1999?",
     description: "Community theory: an obscure Super Famicom game, possibly involving a forest setting. Candidates include a Bunko-style title or a Labyrinth game.\nWe have, for the moment, chosen Famicom Bunko: Hajimari no Mori (1999)\nThis adventure video game was developed in 1999 by Pax Softnica and released by Nintendo for the Super Famicom exclusively in Japan.",
     images: { zone: null, reference: '/images/Famicom%20Bunko-%20Hajimari%20no%20Mori-reference.webp' },
   },
@@ -530,7 +530,7 @@ export const zones = [
     status: 'llm',
     category: 'videoGame',
     palette: ['#ffe596', '#ffad3b', '#c57938', '#975330', '#574729', '#313638'],
-    suggestion: "Kairo (2012 indie game by Richard Perrin)",
+    suggestion: "Kairo, 2012 - indie game by Richard Perrin",
     description:
       "Claude suggestion: exact name match to Kairo, a 2012 indie exploration game set in brutalist architecture with Egyptian influences. The warm amber-to-dark gradient (#ffe596 → #313638) maps to the game's sunlit sandstone environments fading into shadow.\n\nThe name also resonates with Kairos - the ancient Greek concept of the \"right\" or \"opportune\" moment in time. Unlike Chronos (sequential, measured time), Kairos is qualitative: the appointed moment, the window that must be seized. As a fully on-chain artwork built to last 10,000 years, Terraforms is deeply concerned with time - and Kairo may quietly gesture at this philosophical thread running through the whole project.",
     images: { zone: null, reference: '/images/kairo-reference.jpg' },
@@ -564,7 +564,7 @@ export const zones = [
     status: 'llm',
     category: 'animeFilm',
     palette: ['#f4d35e', '#ee964b', '#f95738', '#083d77', '#ebebd3'],
-    suggestion: "FLCL (Fooly Cooly) - Gainax anime (2000)",
+    suggestion: "FLCL (Fooly Cooly) - Gainax anime, 2000",
     description:
       "Claude suggestion: 'Antenna' is a central motif in FLCL - robots emerge from protagonist Naota's head through an N.O. channel, like antennas. The warm yellows (#f4d35e), oranges (#ee964b, #f95738), deep blue (#083d77), and cream (#ebebd3) match the anime's vibrant palette, especially Haruko's yellow Vespa and red jacket against blue skies.",
     images: { zone: null, reference: '/images/antenna-reference.jpg' },
@@ -575,7 +575,7 @@ export const zones = [
     status: 'llm',
     category: 'videoGame',
     palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'],
-    suggestion: "WipEout 2097 - Psygnosis / Warp Records (1996)",
+    suggestion: "WipEout 2097 - Psygnosis / Warp Records, 1996",
     description:
       "Claude suggestion: 'Warp' points to WipEout 2097, the iconic PS1 racing game whose soundtrack was curated entirely by Warp Records - Aphex Twin, The Chemical Brothers, Fluke, and Leftfield. The purple (#8b3ede) and red (#e5291e) directly echo the game's cover palette, and the Warp Records label branding was displayed in-game, making it one of the most celebrated music/game crossovers of the 1990s.",
     images: { zone: null, reference: '/images/warprecords-reference.jpg' },
@@ -608,7 +608,7 @@ export const zones = [
     status: 'llm',
     category: 'videoGame',
     palette: ['#ec5526', '#f7f4e2', '#9ebbc1', '#f4ac12', '#1e1b1e'],
-    suggestion: "Arc System Works - Guilty Gear Strive (2021)",
+    suggestion: "Arc System Works - Guilty Gear Strive, 2021",
     description:
       "Claude suggestion: Arc System Works is the developer behind Guilty Gear Strive. The signature orange-red (#ec5526), amber (#f4ac12), cream (#f7f4e2), slate blue (#9ebbc1), and near-black (#1e1b1e) directly echo GGS's iconic visual identity - the game's UI, character select screen, and promotional art all use this exact colour system. 'Arc' is also the studio abbreviation used by fans.",
     images: { zone: null, reference: '/images/guiltygear-reference.jpg' },
@@ -619,7 +619,7 @@ export const zones = [
     status: 'llm',
     category: 'videoGame',
     palette: ['#404040', '#29af3f', '#dcc729', '#26abd4', '#c3c3c3'],
-    suggestion: "SimCity (1989) - Will Wright / Maxis",
+    suggestion: "SimCity - Will Wright / Maxis, 1989",
     description:
       "Claude suggestion: 'Linosim' reads as 'lino-sim' - a linear / zoning simulation. The five colours are a direct match to SimCity's classic zoning system: green (#29af3f) = residential, yellow (#dcc729) = industrial, blue (#26abd4) = commercial, dark grey (#404040) = roads, light grey (#c3c3c3) = empty terrain. SimCity (1989) invented this colour-coded zoning language, which has been copied by every city-builder since.",
     images: { zone: null, reference: '/images/simcity-reference.webp' },
@@ -652,7 +652,7 @@ export const zones = [
     status: 'llm',
     category: 'animeFilm',
     palette: ['#93d1de', '#718dbc', '#f9a4cb', '#dad7cc', '#f8fefe', '#f6e518', '#ec7e15', '#292726'],
-    suggestion: "Aria the Animation (2005 anime) - set on terraformed Mars",
+    suggestion: "Aria the Animation - set on terraformed Mars, 2005",
     description:
       "Claude suggestion: 'Aria' is the exact title of the 2005 iyashikei anime set in Neo-Venezia, a recreation of Venice on Aqua - a terraformed Mars. The palette maps precisely to the show's visual identity: canal blues #93d1de and #718dbc match the lagoon and reflected sky; pink #f9a4cb matches the undine gondoliers' uniforms; cream #dad7cc matches Neo-Venezia's stone architecture; near-white #f8fefe matches gondola hulls; warm yellow #f6e518 and orange #ec7e15 match the signature Venetian sunset glow; deep #292726 matches evening shadow. The terraforming setting is also a direct thematic echo of Terraforms itself.",
     images: { zone: null, reference: '/images/aria-reference.jpg' },
@@ -674,7 +674,7 @@ export const zones = [
     status: 'llm',
     category: 'videoGame',
     palette: ['#8e918c', '#eff1f4'],
-    suggestion: "CUR2 - White Magic spell, Final Fantasy (NES, 1987)",
+    suggestion: "CUR2 - White Magic spell, Final Fantasy, NES, 1987",
     description:
       "Claude suggestion: [CUR2] is the exact abbreviated name of the Cure 2 healing spell from the original Final Fantasy (NES, 1987). The NES used truncated 4-character spell names due to memory constraints - CURE became CUR, CURE2 became CUR2. The two-colour palette of warm grey (#8e918c) and near-white (#eff1f4) maps directly to the White Magic spell UI: clinical, light, healing tones. Sits alongside [MENU] (Final Fantasy III) as another Final Fantasy bracket-notation reference.",
     images: { zone: null, reference: '/images/FF1%20white%20mage.webp' },
