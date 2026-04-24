@@ -67,8 +67,9 @@ export default function Home() {
               const isActive = categoryFilter === key;
               return (
                 <button key={key} onClick={() => setCategoryFilter(key)}
-                  className="text-xs px-4 py-1.5 btn-text"
+                  className="text-xs btn-text"
                   style={{
+                    padding: '6px 14px',
                     border: `1px solid ${isActive && cat ? cat.color : 'rgba(232,232,232,0.2)'}`,
                     color: isActive && cat ? cat.color : 'rgba(232,232,232,0.5)',
                     opacity: isActive ? 1 : 0.6,
