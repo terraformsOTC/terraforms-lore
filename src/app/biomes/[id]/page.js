@@ -28,7 +28,7 @@ export default async function BiomePage({ params }) {
   const biome = biomes.find((b) => b.id === id);
   if (!biome || biome.status === 'unknown') notFound();
 
-  const isTheory = biome.status === 'guess';
+  const isTheory = biome.status === 'uncertain';
   const cat = BIOME_CATEGORIES[biome.category];
   const ref = biome.guess || biome.reference;
   const displayTitle = biome.nickname ? `${biome.name} - ${biome.nickname}` : biome.name;

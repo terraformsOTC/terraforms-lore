@@ -5,14 +5,14 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ItemCard from '@/components/ItemCard';
 import SubmitForm from '@/components/SubmitForm';
-import { zones, confirmedZones, guessZones, suggestionZones, unknownZones, CATEGORIES } from '@/data/zones';
+import { zones, confirmedZones, uncertainZones, llmZones, unknownZones, CATEGORIES } from '@/data/zones';
 
 const FILTERS = [
-  { key: 'all',        label: 'all' },
-  { key: 'confirmed',  label: 'confirmed' },
-  { key: 'suggestion', label: 'claude suggestions' },
-  { key: 'guess',      label: 'community theories' },
-  { key: 'unknown',    label: 'unknown' },
+  { key: 'all',       label: 'all' },
+  { key: 'confirmed', label: 'confirmed' },
+  { key: 'llm',       label: 'LLM suggestions' },
+  { key: 'uncertain', label: 'uncertain' },
+  { key: 'unknown',   label: 'unknown' },
 ];
 
 const CATEGORY_FILTERS = [
@@ -46,7 +46,7 @@ export default function Home() {
           The Terraforms creators embedded a rich mix of pop culture, media, and artistic references into the collection&apos;s zones and biomes. The community has been cataloguing these Easter Eggs for years, and much remains undiscovered. We have used LLMs to aggregate what we already know and extend the search. Some plausible suggestions have been included here.
         </p>
         <p className="text-sm mb-10 dim-35">
-          {confirmedZones.length} confirmed &nbsp;·&nbsp; {suggestionZones.length} claude suggestions &nbsp;·&nbsp; {guessZones.length} theories &nbsp;·&nbsp; {unknownZones.length} unknown &nbsp;·&nbsp; 75 total zones
+          {confirmedZones.length} confirmed &nbsp;·&nbsp; {llmZones.length} LLM suggestions &nbsp;·&nbsp; {uncertainZones.length} uncertain &nbsp;·&nbsp; {unknownZones.length} unknown &nbsp;·&nbsp; 75 total zones
         </p>
 
         {/* Status filter */}

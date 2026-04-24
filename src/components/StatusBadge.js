@@ -10,7 +10,7 @@ export default function StatusBadge({ status, category, twin, className = '' }) 
     </span>
   ) : null;
 
-  if (status === 'suggestion') {
+  if (status === 'llm') {
     return (
       <div className="flex gap-1 flex-wrap justify-end">
         {twinBadge}
@@ -18,13 +18,13 @@ export default function StatusBadge({ status, category, twin, className = '' }) 
           className={`text-xs px-1 shrink-0 ${className}`}
           style={{ color: 'var(--badge-suggestion)', border: '1px solid var(--badge-suggestion-border)' }}
         >
-          claude suggestion
+          LLM suggestion
         </span>
       </div>
     );
   }
 
-  if (status === 'guess') {
+  if (status === 'uncertain') {
     return (
       <div className="flex gap-1 flex-wrap justify-end">
         {twinBadge}
@@ -32,7 +32,7 @@ export default function StatusBadge({ status, category, twin, className = '' }) 
           className={`text-xs px-1 shrink-0 ${className}`}
           style={{ color: 'var(--badge-theory)', border: '1px solid var(--badge-theory-border)' }}
         >
-          community theory
+          uncertain
         </span>
       </div>
     );

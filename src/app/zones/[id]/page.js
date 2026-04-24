@@ -86,7 +86,7 @@ export default async function ZonePage({ params }) {
   const zone = zones.find((z) => z.id === id);
   if (!zone || zone.status === 'unknown') notFound();
 
-  const isTheory = zone.status === 'guess' || zone.status === 'suggestion';
+  const isTheory = zone.status === 'uncertain' || zone.status === 'llm';
   const cat = CATEGORIES[zone.category];
   const ref = zone.suggestion || zone.guess || zone.reference;
   const parcelIds = ZONE_PARCEL_IDS[id] || null;
