@@ -65,7 +65,7 @@ export const zones = [
     status: 'confirmed',
     category: 'printMedia',
     palette: ['#ff474a', '#3a3e94', '#ff363b', '#dadadd'],
-    reference: "Risograph printing",
+    reference: "Risograph printing, 1980s",
     referenceDetail: "Riso Kagaku Corporation, Japan (1980)",
     description:
       "Riso zone references Risograph printing - a brand of digital duplicators manufactured by the Riso Kagaku Corporation, released in Japan in 1980. Designed for high-volume photocopying, it became beloved by zine and comic artists for its vivid, layered ink printing.",
@@ -196,7 +196,7 @@ export const zones = [
     category: 'animeFilm',
     twin: true,
     palette: ['#1e1e1e', '#d0daeb', '#f6afbc', '#eae6df', '#b0d6fa'],
-    reference: "Re:Zero - Rem & Ram (Dark Mode), 2012",
+    reference: "Re:Zero - Rem & Ram, 2012",
     referenceDetail: "Re:Zero − Starting Life in Another World",
     description:
       "The Uwo zone is the dark mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Gemina, is the light mode.",
@@ -209,7 +209,7 @@ export const zones = [
     category: 'animeFilm',
     twin: true,
     palette: ['#1e1e1e', '#d0daeb', '#f6afbc', '#eae6df', '#b0d6fa', '#e6e8e5'],
-    reference: "Re:Zero - Rem & Ram (Light Mode), 2012",
+    reference: "Re:Zero - Rem & Ram, 2012",
     referenceDetail: "Re:Zero − Starting Life in Another World (originally named Twinmade)",
     description:
       "Gemina (originally named Twinmade) is the light mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Uwo, is the dark mode.",
@@ -221,7 +221,7 @@ export const zones = [
     status: 'confirmed',
     category: 'videoGame',
     palette: ['#ffe401', '#fe0000', '#fa7eb9', '#fb7dba', '#062d8d', '#feeae8', '#151515'],
-    reference: "Ms. Pac-Man - integer overflow glitch, 1982",
+    reference: "Ms. Pac-Man, 1982",
     referenceDetail: "Pac-Man kill screen / Map 256 glitch",
     description:
       "Killscreen references Ms. Pac-Man and a specific integer overflow glitch in the Pac-Man series. When Pac-Man reaches level 256, the counter overflows, corrupting half the screen - the infamous \"kill screen\".",
@@ -261,7 +261,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cryptoArt',
     palette: ['#543e2e', '#fcd265', '#db4f54', '#7ca9bf', '#faf8f5', '#e67d32', '#ebe4d8'],
-    reference: "Tyler Hobbs - Fidenza \"Rad\" palette, 2021",
+    reference: "Tyler Hobbs - Fidenza, 2021",
     referenceDetail: "Fidenza on Art Blocks",
     description:
       "Few know that the Avidana zone is a direct reference to the \"Rad\" palette in @tylerxhobbs' Fidenza - the landmark long-form generative art release on Art Blocks.",
@@ -301,7 +301,7 @@ export const zones = [
     status: 'confirmed',
     category: 'music',
     palette: ['#ffaa00', '#222222'],
-    reference: "My Bloody Valentine - Soon, 1991",
+    reference: "My Bloody Valentine - Loveless, 1991",
     referenceDetail: "Track from Loveless (1991)",
     description:
       "[SOON] is a reference to \"Soon\" by My Bloody Valentine - the closing track of their landmark 1991 album Loveless. The gauzy pinks echo the hazy, distorted beauty of shoegaze.",
@@ -339,7 +339,7 @@ export const zones = [
     id: 'kippsunn',
     name: 'Kippsunn',
     status: 'uncertain',
-    category: 'special',
+    category: null,
     twin: true,
     palette: ['#045939', '#e2b8d1', '#6390b5', '#fff4c0', '#60a278', '#b1becd', '#66aeb6', '#a0a9b8', '#081612'],
     reference: "Special private / personal reference",
@@ -351,7 +351,7 @@ export const zones = [
     id: 'greysunn',
     name: 'Greysunn',
     status: 'uncertain',
-    category: 'special',
+    category: null,
     twin: true,
     palette: ['#bbbbbb', '#282828', '#292929', '#242424', '#393939', '#323232', '#313131', '#343434', '#202020'],
     reference: "Special private / personal reference",
@@ -557,9 +557,9 @@ export const zones = [
     status: 'llm',
     category: 'videoGame',
     palette: ['#ffe596', '#ffad3b', '#c57938', '#975330', '#574729', '#313638'],
-    suggestion: "Kairo, 2012 - indie game by Richard Perrin",
+    suggestion: "Kairo, 2012",
     description:
-      "Claude suggestion: exact name match to Kairo, a 2012 indie exploration game set in brutalist architecture with Egyptian influences. The warm amber-to-dark gradient (#ffe596 → #313638) maps to the game's sunlit sandstone environments fading into shadow.\n\nThe name also resonates with Kairos - the ancient Greek concept of the \"right\" or \"opportune\" moment in time. Unlike Chronos (sequential, measured time), Kairos is qualitative: the appointed moment, the window that must be seized. As a fully on-chain artwork built to last 10,000 years, Terraforms is deeply concerned with time - and Kairo may quietly gesture at this philosophical thread running through the whole project.",
+      "Claude suggestion: The zone name matches Kairo, a 2012 indie exploration game by Richard Perrin set in brutalist architecture with Egyptian influences. The warm amber-to-dark gradient (#ffe596 → #313638) maps to the game's sunlit sandstone environments fading into shadow.\n\nThe name also resonates with Kairos - the ancient Greek concept of the \"right\" or \"opportune\" moment in time. Unlike Chronos (sequential, measured time), Kairos is qualitative: the appointed moment, the window that must be seized. As a fully on-chain artwork built to last 10,000 years, Terraforms is deeply concerned with time - and Kairo may quietly gesture at this philosophical thread running through the whole project.",
     images: { zone: null, reference: '/images/kairo-reference.jpg' },
     referencedBy: [
       {
@@ -679,7 +679,7 @@ export const zones = [
     status: 'llm',
     category: 'animeFilm',
     palette: ['#93d1de', '#718dbc', '#f9a4cb', '#dad7cc', '#f8fefe', '#f6e518', '#ec7e15', '#292726'],
-    suggestion: "Aria the Animation - set on terraformed Mars, 2005",
+    suggestion: "Aria the Animation, 2005",
     description:
       "Claude suggestion: 'Aria' is the exact title of the 2005 iyashikei anime set in Neo-Venezia, a recreation of Venice on Aqua - a terraformed Mars. The palette maps precisely to the show's visual identity: canal blues #93d1de and #718dbc match the lagoon and reflected sky; pink #f9a4cb matches the undine gondoliers' uniforms; cream #dad7cc matches Neo-Venezia's stone architecture; near-white #f8fefe matches gondola hulls; warm yellow #f6e518 and orange #ec7e15 match the signature Venetian sunset glow; deep #292726 matches evening shadow. The terraforming setting is also a direct thematic echo of Terraforms itself.",
     images: { zone: null, reference: '/images/aria-reference.jpg' },
