@@ -14,6 +14,26 @@ function isLightColor(hex) {
   return (r * 299 + g * 587 + b * 114) / 1000 > 128;
 }
 
+// Minimal inline renderer for markdown-style [text](url) links in descriptions.
+function renderWithLinks(text) {
+  if (!text) return text;
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const out = [];
+  let last = 0;
+  let m;
+  while ((m = regex.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    out.push(
+      <a key={m.index} href={m[2]} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', textUnderlineOffset: '2px' }}>
+        {m[1]}
+      </a>
+    );
+    last = regex.lastIndex;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
 export async function generateStaticParams() {
   return zones.filter((z) => z.status !== 'unknown').map((z) => ({ id: z.id }));
 }
@@ -125,7 +145,7 @@ export default async function ZonePage({ params }) {
 
         <p className="text-sm dim-40 mb-4">mathcastles reference</p>
         <p className="text-sm mb-8" style={{ opacity: isTheory ? 0.65 : 0.85 }}>{ref}</p>
-        <p className="text-sm mb-10 dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{zone.description}</p>
+        <p className="text-sm mb-10 dim-80" style={{ lineHeight: '1.8', whiteSpace: 'pre-line' }}>{renderWithLinks(zone.description)}</p>
 
         {/* Parcel + reference image side by side */}
         {(parcelIds || hasReference) && (
@@ -152,9 +172,7 @@ export default async function ZonePage({ params }) {
 
         {!isTheory && (
           <MetadataTable rows={[
-            { label: 'reference', value: zone.referenceDetail },
             { label: 'rarity', value: zone.rarity },
-            { label: 'identified by', value: zone.creditTo },
           ]} />
         )}
 
