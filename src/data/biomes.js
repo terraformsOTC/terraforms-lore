@@ -49,7 +49,7 @@ function bid(n) {
   return `biome-${n}`;
 }
 
-// status: 'confirmed' | 'guess' | 'unknown'
+// status: 'confirmed' | 'uncertain' | 'unknown'
 // All 92 biomes (0–91)
 export const biomes = [
 
@@ -60,7 +60,7 @@ export const biomes = [
     number: 69,
     name: 'Biome 69',
     nickname: 'Net Art',
-    status: 'guess',
+    status: 'uncertain',
     category: 'art',
     rarity: rarity(69),
     reference: null,
@@ -171,6 +171,6 @@ export const biomes = [
 ];
 
 export const confirmedBiomes = biomes.filter(b => b.status === 'confirmed');
-export const guessBiomes     = biomes.filter(b => b.status === 'guess');
+export const uncertainBiomes  = biomes.filter(b => b.status === 'uncertain');
 export const unknownBiomes   = biomes.filter(b => b.status === 'unknown');
 

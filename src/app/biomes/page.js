@@ -5,12 +5,12 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ItemCard from '@/components/ItemCard';
 import SubmitForm from '@/components/SubmitForm';
-import { biomes, confirmedBiomes, guessBiomes, unknownBiomes, BIOME_CATEGORIES } from '@/data/biomes';
+import { biomes, confirmedBiomes, uncertainBiomes, unknownBiomes, BIOME_CATEGORIES } from '@/data/biomes';
 
 const FILTERS = [
   { key: 'all',       label: 'all' },
   { key: 'confirmed', label: 'confirmed' },
-  { key: 'guess',     label: 'community theories' },
+  { key: 'uncertain', label: 'uncertain' },
   { key: 'unknown',   label: 'unknown' },
 ];
 
@@ -38,7 +38,7 @@ export default function BiomesPage() {
           We know far less about Terraform biome character set references. Maybe there are just fewer, or maybe they haven't yet gotten as much attention as the zones.
         </p>
         <p className="text-sm mb-10 dim-35">
-          {confirmedBiomes.length} confirmed &nbsp;·&nbsp; {guessBiomes.length} theories &nbsp;·&nbsp; {unknownBiomes.length} unknown &nbsp;·&nbsp; 92 total biomes
+          {confirmedBiomes.length} confirmed &nbsp;·&nbsp; {uncertainBiomes.length} uncertain &nbsp;·&nbsp; {unknownBiomes.length} unknown &nbsp;·&nbsp; 92 total biomes
         </p>
 
         <div className="flex flex-wrap gap-3 mb-5">
