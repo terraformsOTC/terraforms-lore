@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StatusBadge from '@/components/StatusBadge';
-import { ImageGrid, MetadataTable, ExternalLinks } from '@/components/DetailSections';
+import { ImageGrid, ExternalLinks } from '@/components/DetailSections';
 import { biomes, BIOME_CATEGORIES } from '@/data/biomes';
 
 export async function generateStaticParams() {
@@ -80,13 +80,6 @@ export default async function BiomePage({ params }) {
         <p className="text-sm mb-10 dim-65" style={{ lineHeight: '1.8' }}>{biome.description}</p>
 
         <ImageGrid images={biome.images} name={biome.name} altText={ref} isTheory={isTheory} sampleLabel="biome sample" />
-
-        {!isTheory && (
-          <MetadataTable rows={[
-            { label: 'reference', value: biome.referenceDetail },
-            { label: 'identified by', value: biome.creditTo },
-          ]} />
-        )}
 
         <ExternalLinks
           referenceLink={biome.referenceLink}
