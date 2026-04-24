@@ -91,7 +91,7 @@ export const zones = [
     status: 'confirmed',
     category: 'videoGame',
     palette: ['#f8f7ff', '#000084'],
-    reference: "Final Fantasy III",
+    reference: "Final Fantasy III, 1990",
     referenceDetail: "Final Fantasy III (NES, 1990)",
     description:
       "The blue [MENU] zone is a reference to the iconic deep-blue menu interface of Final Fantasy III.",
@@ -105,7 +105,7 @@ export const zones = [
     status: 'confirmed',
     category: 'architecture',
     palette: ['#303030', '#ffc800'],
-    reference: "HYperCAstle",
+    reference: "HYperCAstle, 2021",
     referenceDetail: "Abbreviation confirmed by @0x113d",
     description:
       "[HYCA] stands for HYperCAstle. This self-referential zone palette refers to the 3D aggregate structure that emerges when the entire Terraforms work is rendered as a single object in cyberspace.",
@@ -177,18 +177,6 @@ export const zones = [
     images: { zone: null, reference: '/images/jadeite-reference.jpg' },
   },
   {
-    id: 'blushing',
-    name: 'Blushing',
-    status: 'uncertain',
-    category: 'animeFilm',
-    palette: ['#9c89b8', '#f0a6ca', '#efc3e6', '#b8bedd', '#f0e6ef'],
-    reference: "Classic anime / isekai - ~2 decades before Re:Zero",
-    referenceDetail: "Early 2000s anime / isekai genre",
-    description:
-      "We know this about the Blushing zone, it is a reference to a classic isekai anime work, which was released 2 decades before the well known Re:Zero anime series.\n\nClaude has identified Fushigi Yûgi (1995-1996) as the most plausible contender: it is an isekai work, released almost exactly 20 years before Re:Zero, with a visual identity heavily built around pinks, roses, and lilacs.\n\nGiven the uncertainty, there are other contenders:\n· Magic Knight Rayearth - 1994-1995\n· El-Hazard: The Wanderers - 1995-1996\n· The Vision of Escaflowne - 1996\n· Revolutionary Girl Utena - 1997\n· Now and Then, Here and There - 1999\n· Cardcaptor Sakura - 1998-2000\n· Haibane Renmei - 2002\n· The Twelve Kingdoms - 2002-2003\n· Texhnolyze - 2003",
-    images: { zone: null, reference: '/images/Fushigi-Yugi-reference.jpg' },
-  },
-  {
     id: 'promiselands',
     name: 'Promiselands',
     status: 'confirmed',
@@ -208,7 +196,7 @@ export const zones = [
     category: 'animeFilm',
     twin: true,
     palette: ['#1e1e1e', '#d0daeb', '#f6afbc', '#eae6df', '#b0d6fa'],
-    reference: "Re:Zero - Rem & Ram (Dark Mode)",
+    reference: "Re:Zero - Rem & Ram (Dark Mode), 2012",
     referenceDetail: "Re:Zero − Starting Life in Another World",
     description:
       "The Uwo zone is the dark mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Gemina, is the light mode.",
@@ -221,7 +209,7 @@ export const zones = [
     category: 'animeFilm',
     twin: true,
     palette: ['#1e1e1e', '#d0daeb', '#f6afbc', '#eae6df', '#b0d6fa', '#e6e8e5'],
-    reference: "Re:Zero - Rem & Ram (Light Mode)",
+    reference: "Re:Zero - Rem & Ram (Light Mode), 2012",
     referenceDetail: "Re:Zero − Starting Life in Another World (originally named Twinmade)",
     description:
       "Gemina (originally named Twinmade) is the light mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Uwo, is the dark mode.",
@@ -233,7 +221,7 @@ export const zones = [
     status: 'confirmed',
     category: 'videoGame',
     palette: ['#ffe401', '#fe0000', '#fa7eb9', '#fb7dba', '#062d8d', '#feeae8', '#151515'],
-    reference: "Ms. Pac-Man - integer overflow glitch",
+    reference: "Ms. Pac-Man - integer overflow glitch, 1982",
     referenceDetail: "Pac-Man kill screen / Map 256 glitch",
     description:
       "Killscreen references Ms. Pac-Man and a specific integer overflow glitch in the Pac-Man series. When Pac-Man reaches level 256, the counter overflows, corrupting half the screen - the infamous \"kill screen\".",
@@ -273,7 +261,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cryptoArt',
     palette: ['#543e2e', '#fcd265', '#db4f54', '#7ca9bf', '#faf8f5', '#e67d32', '#ebe4d8'],
-    reference: "Tyler Hobbs - Fidenza \"Rad\" palette",
+    reference: "Tyler Hobbs - Fidenza \"Rad\" palette, 2021",
     referenceDetail: "Fidenza on Art Blocks",
     description:
       "Few know that the Avidana zone is a direct reference to the \"Rad\" palette in @tylerxhobbs' Fidenza - the landmark long-form generative art release on Art Blocks.",
@@ -313,7 +301,7 @@ export const zones = [
     status: 'confirmed',
     category: 'music',
     palette: ['#ffaa00', '#222222'],
-    reference: "My Bloody Valentine - Soon",
+    reference: "My Bloody Valentine - Soon, 1991",
     referenceDetail: "Track from Loveless (1991)",
     description:
       "[SOON] is a reference to \"Soon\" by My Bloody Valentine - the closing track of their landmark 1991 album Loveless. The gauzy pinks echo the hazy, distorted beauty of shoegaze.",
@@ -394,6 +382,18 @@ export const zones = [
     description:
       "Treasure is the dark mode twin of Shiro. The two zones form a paired set - dark and light versions of the same palette.",
     images: null,
+  },
+  {
+    id: 'blushing',
+    name: 'Blushing',
+    status: 'uncertain',
+    category: 'animeFilm',
+    palette: ['#9c89b8', '#f0a6ca', '#efc3e6', '#b8bedd', '#f0e6ef'],
+    reference: "Classic anime / isekai - ~2 decades before Re:Zero",
+    referenceDetail: "Early 2000s anime / isekai genre",
+    description:
+      "We know this about the Blushing zone, it is a reference to a classic isekai anime work, which was released 2 decades before the well known Re:Zero anime series.\n\nClaude has identified Fushigi Yûgi (1995-1996) as the most plausible contender: it is an isekai work, released almost exactly 20 years before Re:Zero, with a visual identity heavily built around pinks, roses, and lilacs.\n\nGiven the uncertainty, there are other contenders:\n· Magic Knight Rayearth - 1994-1995\n· El-Hazard: The Wanderers - 1995-1996\n· The Vision of Escaflowne - 1996\n· Revolutionary Girl Utena - 1997\n· Now and Then, Here and There - 1999\n· Cardcaptor Sakura - 1998-2000\n· Haibane Renmei - 2002\n· The Twelve Kingdoms - 2002-2003\n· Texhnolyze - 2003",
+    images: { zone: null, reference: '/images/Fushigi-Yugi-reference.jpg' },
   },
 
   // ─── UNCERTAIN (continued) ─────────────────────────────────────────────
