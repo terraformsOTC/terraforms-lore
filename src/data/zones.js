@@ -86,17 +86,6 @@ export const zones = [
     images: { zone: null, reference: '/images/neongenesis-reference.jpeg' },
   },
   {
-    id: 'grove',
-    name: 'Grove',
-    status: 'uncertain',
-    category: 'uncertain',
-    palette: ['#fb8b01', '#399c42', '#0b704e', '#f34509', '#6f9d80', '#fb7712', '#10151b'],
-    reference: "Uncertain",
-    description:
-      "113 has commented on this zone in the past, saying \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\".",
-    images: null,
-  },
-  {
     id: 'menu',
     name: '[MENU]',
     status: 'confirmed',
@@ -174,30 +163,6 @@ export const zones = [
     description:
       "Ouallada references the Juzam Djinn card from Magic: The Gathering's Arabian Nights expansion (1993) - one of the most iconic and valuable cards in MTG history.",
     images: { zone: null, reference: '/images/ouallada-reference.jpg' },
-  },
-  {
-    id: 'kippsunn',
-    name: 'Kippsunn',
-    status: 'uncertain',
-    category: 'special',
-    twin: true,
-    palette: ['#045939', '#e2b8d1', '#6390b5', '#fff4c0', '#60a278', '#b1becd', '#66aeb6', '#a0a9b8', '#081612'],
-    reference: "Special private / personal reference",
-    description:
-      "Kippsunn contains a special private reference made for a very early collector of Terraforms. The specific reference has not been made public. There appears to be a connection with the Greysunn zone as they both share the same suffix.",
-    images: null,
-  },
-  {
-    id: 'greysunn',
-    name: 'Greysunn',
-    status: 'uncertain',
-    category: 'special',
-    twin: true,
-    palette: ['#bbbbbb', '#282828', '#292929', '#242424', '#393939', '#323232', '#313131', '#343434', '#202020'],
-    reference: "Special private / personal reference",
-    description:
-      "Greysunn contains a special private reference made for a very early collector of Terraforms. The specific reference has not been made public. There appears to be a connection with the Kippsunn zone as they both share the same suffix.\n\nSome in the community have speculated that it may refer to The Black Sun, an exclusive, high-tech nightclub located within the Metaverse of Neal Stephenson's 1992 novel Snow Crash.",
-    images: null,
   },
   {
     id: 'jadeite',
@@ -369,7 +334,69 @@ export const zones = [
     images: { zone: null, reference: '/images/shahra-reference.png' },
   },
 
-  // ─── COMMUNITY GUESSES ───────────────────────────────────────────────────
+  // ─── UNCERTAIN ──────────────────────────────────────────────────────────
+
+  {
+    id: 'grove',
+    name: 'Grove',
+    status: 'uncertain',
+    category: 'uncertain',
+    palette: ['#fb8b01', '#399c42', '#0b704e', '#f34509', '#6f9d80', '#fb7712', '#10151b'],
+    reference: "Uncertain",
+    description:
+      "113 has commented on this zone in the past, saying \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\".",
+    images: null,
+  },
+  {
+    id: 'kippsunn',
+    name: 'Kippsunn',
+    status: 'uncertain',
+    category: 'special',
+    twin: true,
+    palette: ['#045939', '#e2b8d1', '#6390b5', '#fff4c0', '#60a278', '#b1becd', '#66aeb6', '#a0a9b8', '#081612'],
+    reference: "Special private / personal reference",
+    description:
+      "Kippsunn contains a special private reference made for a very early collector of Terraforms. The specific reference has not been made public. There appears to be a connection with the Greysunn zone as they both share the same suffix.",
+    images: null,
+  },
+  {
+    id: 'greysunn',
+    name: 'Greysunn',
+    status: 'uncertain',
+    category: 'special',
+    twin: true,
+    palette: ['#bbbbbb', '#282828', '#292929', '#242424', '#393939', '#323232', '#313131', '#343434', '#202020'],
+    reference: "Special private / personal reference",
+    description:
+      "Greysunn contains a special private reference made for a very early collector of Terraforms. The specific reference has not been made public. There appears to be a connection with the Kippsunn zone as they both share the same suffix.\n\nSome in the community have speculated that it may refer to The Black Sun, an exclusive, high-tech nightclub located within the Metaverse of Neal Stephenson's 1992 novel Snow Crash.",
+    images: null,
+  },
+  {
+    id: 'shiro',
+    name: 'Shiro',
+    status: 'uncertain',
+    category: 'twinPalette',
+    palette: ['#7ffcc4', '#ffe481', '#ffcfb7', '#505050', '#f2e7ea'],
+    reference: "Twin palette - light mode of Treasure",
+    referenceDetail: "Paired with zone: Treasure",
+    description:
+      "Shiro is the light mode twin of Treasure. The two zones form a paired set - light and dark versions of the same palette. Shiro (白) means \"white\" in Japanese.",
+    images: null,
+  },
+  {
+    id: 'treasure',
+    name: 'Treasure',
+    status: 'uncertain',
+    category: 'twinPalette',
+    palette: ['#323232', '#ffadde', '#7ffcc4', '#ffe481'],
+    reference: "Twin palette - dark mode of Shiro",
+    referenceDetail: "Paired with zone: Shiro",
+    description:
+      "Treasure is the dark mode twin of Shiro. The two zones form a paired set - dark and light versions of the same palette.",
+    images: null,
+  },
+
+  // ─── UNCERTAIN (continued) ─────────────────────────────────────────────
 
   {
     id: 'angel',
@@ -442,7 +469,7 @@ export const zones = [
     images: { zone: null, reference: '/images/rocketpop-reference.jpg' },
   },
 
-  // ─── CLAUDE SUGGESTIONS ──────────────────────────────────────────────────
+  // ─── LLM SUGGESTIONS ────────────────────────────────────────────────────
 
   {
     id: 'first-earth',
@@ -682,30 +709,6 @@ export const zones = [
 
   // ─── TWIN PALETTES ───────────────────────────────────────────────────────
 
-  {
-    id: 'shiro',
-    name: 'Shiro',
-    status: 'uncertain',
-    category: 'twinPalette',
-    palette: ['#7ffcc4', '#ffe481', '#ffcfb7', '#505050', '#f2e7ea'],
-    reference: "Twin palette - light mode of Treasure",
-    referenceDetail: "Paired with zone: Treasure",
-    description:
-      "Shiro is the light mode twin of Treasure. The two zones form a paired set - light and dark versions of the same palette. Shiro (白) means \"white\" in Japanese.",
-    images: null,
-  },
-  {
-    id: 'treasure',
-    name: 'Treasure',
-    status: 'uncertain',
-    category: 'twinPalette',
-    palette: ['#323232', '#ffadde', '#7ffcc4', '#ffe481'],
-    reference: "Twin palette - dark mode of Shiro",
-    referenceDetail: "Paired with zone: Shiro",
-    description:
-      "Treasure is the dark mode twin of Shiro. The two zones form a paired set - dark and light versions of the same palette.",
-    images: null,
-  },
   {
     id: 'moon',
     name: '[MOON]',

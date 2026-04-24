@@ -25,9 +25,18 @@ export default function StatusBadge({ status, category, twin, className = '' }) 
   }
 
   if (status === 'uncertain') {
+    const catBadge = category && category.label !== 'uncertain' ? (
+      <span
+        className={`text-xs px-1 shrink-0 ${className}`}
+        style={{ color: category.color, border: `1px solid ${category.color}`, opacity: 0.85 }}
+      >
+        {category.label}
+      </span>
+    ) : null;
     return (
       <div className="flex gap-1 flex-wrap justify-end">
         {twinBadge}
+        {catBadge}
         <span
           className={`text-xs px-1 shrink-0 ${className}`}
           style={{ color: 'var(--badge-theory)', border: '1px solid var(--badge-theory-border)' }}
