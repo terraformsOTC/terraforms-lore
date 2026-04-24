@@ -79,7 +79,6 @@ export default function AdminPage() {
   if (!token) {
     return (
       <>
-        <meta name="robots" content="noindex, nofollow" />
         <div className="content-wrapper">
           <main
             className="flex-1 px-6 flex items-center justify-center"
@@ -132,7 +131,6 @@ export default function AdminPage() {
   // Submissions view
   return (
     <>
-      <meta name="robots" content="noindex, nofollow" />
       <div className="content-wrapper">
         <main className="flex-1 px-6" style={{ maxWidth: '900px' }}>
           <div
