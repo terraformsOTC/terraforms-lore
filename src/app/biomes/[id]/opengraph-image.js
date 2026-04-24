@@ -6,6 +6,15 @@ import { biomes } from '@/data/biomes';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
+// Cache font buffers for the container lifetime (avoids re-reading on every request)
+let _fontData, _fontData2, _monoData;
+function getFonts() {
+  if (!_fontData)  _fontData  = readFileSync(join(process.cwd(), 'public/fonts/NotoSansSymbols2-Regular.ttf'));
+  if (!_fontData2) _fontData2 = readFileSync(join(process.cwd(), 'public/fonts/NotoSansMono-Regular.ttf'));
+  if (!_monoData)  _monoData  = readFileSync(join(process.cwd(), 'public/fonts/SpaceMono-Regular.ttf'));
+  return { fontData: _fontData, fontData2: _fontData2, monoData: _monoData };
+}
+
 export function generateStaticParams() {
   return biomes.filter((b) => b.status !== 'unknown').map((b) => ({ id: b.id }));
 }
@@ -14,9 +23,7 @@ export default function Image({ params }) {
   const biome = biomes.find((b) => b.id === params.id);
   if (!biome) return new ImageResponse(<div>Not found</div>, { ...size });
 
-  const fontData  = readFileSync(join(process.cwd(), 'public/fonts/NotoSansSymbols2-Regular.ttf'));
-  const fontData2 = readFileSync(join(process.cwd(), 'public/fonts/NotoSansMono-Regular.ttf'));
-  const monoData  = readFileSync(join(process.cwd(), 'public/fonts/SpaceMono-Regular.ttf'));
+  const { fontData, fontData2, monoData } = getFonts();
 
   const chars = biome.characterSet ?? '';
   const label = biome.name;
