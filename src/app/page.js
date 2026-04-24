@@ -43,7 +43,7 @@ export default function Home() {
       <main className="flex-1 px-6">
         <h1 className="text-3xl mb-2">zone references</h1>
         <p className="text-sm mb-2 dim-70" style={{ lineHeight: '1.6' }}>
-          The Terraforms creators embedded a rich mix of pop culture, media, and artistic references into the collection&apos;s zones and biomes. The community has been cataloging these Easter Eggs for years, and much remains undiscovered. We have used LLMs to catalog what we already know, and to extend that search. Some plausible suggestions have been included here.
+          The Terraforms creators embedded a rich mix of pop culture, media, and artistic references into the collection&apos;s zones and biomes. The community has been cataloguing these Easter Eggs for years, and much remains undiscovered. We have used LLMs to aggregate what we already know and extend the search. Some plausible suggestions have been included here.
         </p>
         <p className="text-sm mb-10 dim-35">
           {confirmedZones.length} confirmed &nbsp;·&nbsp; {suggestionZones.length} claude suggestions &nbsp;·&nbsp; {guessZones.length} theories &nbsp;·&nbsp; {unknownZones.length} unknown &nbsp;·&nbsp; 75 total zones
@@ -67,7 +67,7 @@ export default function Home() {
               const isActive = categoryFilter === key;
               return (
                 <button key={key} onClick={() => setCategoryFilter(key)}
-                  className="text-xs px-3 py-1 btn-text"
+                  className="text-xs px-4 py-1.5 btn-text"
                   style={{
                     border: `1px solid ${isActive && cat ? cat.color : 'rgba(232,232,232,0.2)'}`,
                     color: isActive && cat ? cat.color : 'rgba(232,232,232,0.5)',
