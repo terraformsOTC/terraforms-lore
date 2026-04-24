@@ -13,7 +13,7 @@ const BIOME_OPTIONS = [
   ...biomes
     .slice()
     .sort((a, b) => a.number - b.number)
-    .map((b) => ({ value: b.name, label: b.nickname ? `${b.name} — ${b.nickname}` : b.name })),
+    .map((b) => ({ value: b.name, label: b.nickname ? `${b.name} - ${b.nickname}` : b.name })),
   { value: 'Other / Not listed', label: 'Other / Not listed' },
 ];
 
@@ -68,7 +68,7 @@ export default function SubmitForm({ type = 'zone' }) {
 
       <p className="text-sm mb-8 dim-50" style={{ lineHeight: '1.6' }}>
         There are {totalCount} {itemLabel}s in total. {isBiome ? 'Most' : 'Many'} references are still unidentified.
-        If you have a theory — confirmed or speculative — submit it here.
+        If you have a theory - confirmed or speculative - submit it here.
         Accepted submissions will be added to the catalog.
       </p>
 

@@ -22,18 +22,18 @@ function isRateLimitedLocal(ip) {
   return false;
 }
 
-// KV-backed rate limiter — survives cold starts; uses Redis INCR + EXPIRE
+// KV-backed rate limiter - survives cold starts; uses Redis INCR + EXPIRE
 async function isRateLimitedKv(ip, kv) {
   const key = `rl:${ip}`;
   const count = await kv.incr(key);
   if (count === 1) {
-    // First hit in this window — set the TTL
+    // First hit in this window - set the TTL
     await kv.expire(key, RATE_WINDOW_SECS);
   }
   return count > RATE_LIMIT;
 }
 
-// Max POST body: 8 KB — more than enough for a reference submission
+// Max POST body: 8 KB - more than enough for a reference submission
 const MAX_BODY_BYTES = 8 * 1024;
 
 // Allowed origins for CSRF protection
@@ -49,7 +49,7 @@ async function getKv() {
   return kv;
 }
 
-// Local dev fallback — write to submissions.json
+// Local dev fallback - write to submissions.json
 async function saveLocally(entry) {
   const { writeFile, readFile } = await import('fs/promises');
   const { default: path } = await import('path');
