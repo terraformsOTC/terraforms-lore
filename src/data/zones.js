@@ -11,10 +11,11 @@ export const CATEGORIES = {
   technology:   { label: 'technology',    color: '#38bdf8' },
   twinPalette:  { label: 'twin palette',  color: '#d4d4d4' },
   special:      { label: 'private ref',   color: '#a3a3a3' },
+  uncertain:    { label: 'uncertain',     color: '#9ca3af' },
 };
 
 // status: 'confirmed' | 'guess' | 'suggestion' | 'unknown'
-// All 75 zones — 29 confirmed, 22 suggestions, 7 community guesses, 17 unknown
+// All 75 zones - 29 confirmed, 22 suggestions, 7 community guesses, 17 unknown
 export const zones = [
 
   // ─── CONFIRMED ───────────────────────────────────────────────────────────
@@ -25,7 +26,7 @@ export const zones = [
     status: 'confirmed',
     category: 'music',
     palette: ['#e40513', '#fefefe', '#c9cdc3', '#0173b8', '#272022', '#1a1a1a'],
-    reference: "Radiohead — Kid A",
+    reference: "Radiohead - Kid A",
     referenceDetail: "Kid A album art (2000)",
     description:
       "The red, blue, white, and black palette is a direct reference to Radiohead's Kid A album art.",
@@ -38,7 +39,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cryptoArt',
     palette: ['#00684e', '#efd4fd', '#2b358e', '#ffdae4', '#2a358f', '#383e9c', '#9c58af', '#036242', '#fedff1', '#1c1e2b'],
-    reference: "David Rudnick — Stem NFT, 2021",
+    reference: "David Rudnick - Stem NFT, 2021",
     referenceDetail: "Artwork by David Rudnick",
     description:
       "Nightrose is a reference to an [artwork](https://x.com/David_Rudnick/status/1361183679582773248?) by @David_Rudnick, sold in 2021 on Zora to celebrate Valentine's day.",
@@ -52,7 +53,7 @@ export const zones = [
     status: 'confirmed',
     category: 'technology',
     palette: ['#303030', '#0974f8', '#fe81dd', '#ff9000', '#006e15', '#fbd81c', '#608a1a', '#202020', '#e4e6f2'],
-    reference: "Xerox Alto — released in 1973",
+    reference: "Xerox Alto - released in 1973",
     referenceDetail: "Xerox Alto (1973)",
     description:
       "The Alto zone references the highly influential early PC developed at Xerox PARC. The Alto pioneered many aspects of modern computing we take for granted today, including the graphical user interface (GUI), computer mouse, and Ethernet networking. Whilst the Alto itself was not a commercial success, it influenced many in Silicon Valley at the time. This included Steve Jobs, who after vising PARC in 1979 integrated many of the Alto's ideas into the Lisa and Macintosh systems.",
@@ -68,7 +69,7 @@ export const zones = [
     reference: "Risograph printing",
     referenceDetail: "Riso Kagaku Corporation, Japan (1980)",
     description:
-      "Riso zone references Risograph printing — a brand of digital duplicators manufactured by the Riso Kagaku Corporation, released in Japan in 1980. Designed for high-volume photocopying, it became beloved by zine and comic artists for its vivid, layered ink printing.",
+      "Riso zone references Risograph printing - a brand of digital duplicators manufactured by the Riso Kagaku Corporation, released in Japan in 1980. Designed for high-volume photocopying, it became beloved by zine and comic artists for its vivid, layered ink printing.",
     creditTo: '@neon_dao',
     images: { zone: null, reference: '/images/riso-reference.jpg' },
   },
@@ -79,9 +80,9 @@ export const zones = [
     category: 'animeFilm',
     palette: ['#e84629', '#272c38', '#e8e1df', '#a482b9', '#eee8e1', '#1e2833'],
     reference: "Neon Genesis Evangelion (1995)",
-    referenceDetail: "新世紀エヴァンゲリオン — Gainax",
+    referenceDetail: "新世紀エヴァンゲリオン - Gainax",
     description:
-      "The Mecha zone references Neon Genesis Evangelion (新世紀エヴァンゲリオン). The creator confirmed this as a \"retroactive yes\" — the warm red-orange palette against dark tones echoes EVA's iconic visual identity.",
+      "The Mecha zone references Neon Genesis Evangelion (新世紀エヴァンゲリオン), a Japanese anime television series produced by Gainax and Tatsunoko Production.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     images: { zone: null, reference: '/images/neongenesis-reference.jpeg' },
   },
@@ -89,12 +90,11 @@ export const zones = [
     id: 'grove',
     name: 'Grove',
     status: 'confirmed',
-    category: 'nature',
+    category: 'uncertain',
     palette: ['#fb8b01', '#399c42', '#0b704e', '#f34509', '#6f9d80', '#fb7712', '#10151b'],
-    reference: "Photo or online palette",
-    referenceDetail: "Creator note: sourced from a photo or palette online",
+    reference: "Uncertain",
     description:
-      "The creator noted: \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\". The specific source is uncertain, but the natural greens suggest a forest or woodland reference.",
+      "113 in the past has commented on this zone, saying \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\".",
     images: null,
   },
   {
@@ -103,10 +103,10 @@ export const zones = [
     status: 'confirmed',
     category: 'videoGame',
     palette: ['#f8f7ff', '#000084'],
-    reference: "Final Fantasy III — blue menu screen",
+    reference: "Final Fantasy III",
     referenceDetail: "Final Fantasy III (NES, 1990)",
     description:
-      "The blue [MENU] zone is a reference to the iconic deep-blue menu interface of Final Fantasy III. Credit to @null_lines for identifying this reference.",
+      "The blue [MENU] zone is a reference to the iconic deep-blue menu interface of Final Fantasy III.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     creditTo: '@null_lines',
     images: { zone: null, reference: '/images/menu-reference.png' },
@@ -120,7 +120,7 @@ export const zones = [
     reference: "HYperCAstle",
     referenceDetail: "Abbreviation confirmed by @0x113d",
     description:
-      "[HYCA] stands for HYperCAstle.",
+      "[HYCA] stands for HYperCAstle. This self-referential zone palette refers to the 3D aggregate structure that emerges when the entire Terraforms work is rendered as a single object in cyberspace.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     images: { zone: null, reference: '/images/Hypercastle-reference.png' },
   },
@@ -131,9 +131,9 @@ export const zones = [
     category: 'videoGame',
     palette: ['#c1c6cc', '#bbac69', '#e24e32', '#262523', '#e04f34', '#beaf6e'],
     reference: "Mother 1+2 GBA Box Set (Japan, 2003)",
-    referenceDetail: "Game Boy Advance / Nintendo — Japan exclusive",
+    referenceDetail: "Game Boy Advance / Nintendo - Japan exclusive",
     description:
-      "Palace, with its distinctive orange colours, is a reference to the Game Boy Advance box set Mother 1+2, released exclusively in Japan in 2003. The bold orange palette of the box art maps directly to the zone's colour scheme.",
+      "Palace, with its distinctive orange colours, is a reference to the Game Boy Advance box set Mother 1+2, released exclusively in Japan in 2003.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     creditTo: '@neon_dao',
     images: { zone: null, reference: '/images/palace-reference.png' },
@@ -144,10 +144,10 @@ export const zones = [
     status: 'confirmed',
     category: 'cryptoArt',
     palette: ['#ff0e0e', '#fbf0df', '#2f3635', '#52665c', '#688679', '#fff0ee', '#1a1e1d'],
-    reference: "gremplin — CrypToadz",
+    reference: "GREMPLIN - CrypToadz, 2021",
     referenceDetail: "CrypToadz PFP collection",
     description:
-      "A reference to @gremplin's CrypToadz pfp series. The dark, gritty colour palette — black, grey, red, and white — mirrors the distinctive visual language of the CrypToadz collection.",
+      "A reference to GREMPLIN's well known [pfp series](https://www.cryptoadz.io/).",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     images: { zone: '/images/wastelands-zone.jpg', reference: '/images/wastelands-reference.jpg' },
   },
@@ -160,7 +160,7 @@ export const zones = [
     reference: "The Everglades, Florida",
     referenceDetail: "Natural wetland, Florida USA",
     description:
-      "Some references are more literal. Everglades is inspired by the Everglades in Florida — one of the most distinctive natural landscapes in the US, known for its subtropical wetlands and diverse ecosystem.",
+      "Some references are more literal. Everglades is inspired by the Everglades in Florida - one of the most distinctive natural landscapes in the US, known for its subtropical wetlands and diverse ecosystem.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     images: { zone: '/images/everglades-zone.jpg', reference: '/images/everglades-reference.jpg' },
   },
@@ -170,10 +170,10 @@ export const zones = [
     status: 'confirmed',
     category: 'cardGame',
     palette: ['#078e56', '#b14e39', '#03643b', '#cf553d', '#284356', '#e05534', '#f7e7c6', '#282c2f', '#0a8b3b', '#171717'],
-    reference: "Magic: The Gathering — Juzam Djinn, Arabian Nights (1993)",
+    reference: "Magic: The Gathering - Juzam Djinn, Arabian Nights (1993)",
     referenceDetail: "MTG Arabian Nights set",
     description:
-      "Ouallada references the Juzam Djinn card from Magic: The Gathering's Arabian Nights expansion (1993) — one of the most iconic and valuable cards in MTG history.",
+      "Ouallada references the Juzam Djinn card from Magic: The Gathering's Arabian Nights expansion (1993) - one of the most iconic and valuable cards in MTG history.",
     images: { zone: null, reference: '/images/ouallada-reference.jpg' },
   },
   {
@@ -206,10 +206,10 @@ export const zones = [
     status: 'confirmed',
     category: 'nature',
     palette: ['#5f9644', '#32523a', '#c4a675', '#7bb03e', '#cad795', '#e2dfd4'],
-    reference: "Jadeite — mineral / kitchenware",
+    reference: "Jadeite - mineral / kitchenware",
     referenceDetail: "Jadeite jade mineral",
     description:
-      "The Jadeite zone references jadeite — a pyroxene mineral and one of the two types of jade, prized for its vivid greens. Jadeite is also associated with vintage jadeite glass kitchenware, which shares the zone's cool green palette.",
+      "The Jadeite zone references jadeite - a pyroxene mineral and one of the two types of jade, prized for its vivid greens. Jadeite is also associated with vintage jadeite glass kitchenware, which shares the zone's cool green palette.",
     images: { zone: null, reference: '/images/jadeite-reference.jpg' },
   },
   {
@@ -218,10 +218,10 @@ export const zones = [
     status: 'guess',
     category: 'animeFilm',
     palette: ['#9c89b8', '#f0a6ca', '#efc3e6', '#b8bedd', '#f0e6ef'],
-    reference: "Classic anime / isekai — ~2 decades before Re:Zero",
+    reference: "Classic anime / isekai - ~2 decades before Re:Zero",
     referenceDetail: "Early 2000s anime / isekai genre",
     description:
-      "The creator confirmed Blushing derives from something in a similar genre to Re:Zero, but approximately two decades older — pointing to a classic early-2000s anime or isekai title. The specific work has not been identified.\n\nClaude has identified Fushigi Yûgi (1995–1996) as the most plausible contender: it is a direct isekai (a girl pulled into a magical book), released almost exactly 20 years before Re:Zero, with a visual identity heavily built around pinks, roses, and lilacs — and the name 'Blushing' maps cleanly onto its romantic core.\n\nOther contenders:\n· Magic Knight Rayearth — 1994–1995\n· El-Hazard: The Wanderers — 1995–1996\n· The Vision of Escaflowne — 1996\n· Revolutionary Girl Utena — 1997\n· Now and Then, Here and There — 1999\n· Cardcaptor Sakura — 1998–2000\n· Haibane Renmei — 2002\n· The Twelve Kingdoms — 2002–2003\n· Texhnolyze — 2003",
+      "The creator confirmed Blushing derives from something in a similar genre to Re:Zero, but approximately two decades older - pointing to a classic early-2000s anime or isekai title. The specific work has not been identified.\n\nClaude has identified Fushigi Yûgi (1995–1996) as the most plausible contender: it is a direct isekai (a girl pulled into a magical book), released almost exactly 20 years before Re:Zero, with a visual identity heavily built around pinks, roses, and lilacs - and the name 'Blushing' maps cleanly onto its romantic core.\n\nOther contenders:\n· Magic Knight Rayearth - 1994–1995\n· El-Hazard: The Wanderers - 1995–1996\n· The Vision of Escaflowne - 1996\n· Revolutionary Girl Utena - 1997\n· Now and Then, Here and There - 1999\n· Cardcaptor Sakura - 1998–2000\n· Haibane Renmei - 2002\n· The Twelve Kingdoms - 2002–2003\n· Texhnolyze - 2003",
     images: { zone: null, reference: '/images/Fushigi-Yugi-reference.jpg' },
   },
   {
@@ -244,7 +244,7 @@ export const zones = [
     category: 'animeFilm',
     twin: true,
     palette: ['#1e1e1e', '#d0daeb', '#f6afbc', '#eae6df', '#b0d6fa'],
-    reference: "Re:Zero — Rem & Ram (Dark Mode)",
+    reference: "Re:Zero - Rem & Ram (Dark Mode)",
     referenceDetail: "Re:Zero − Starting Life in Another World",
     description:
       "The Uwo zone is the dark mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Gemina, is the light mode.",
@@ -257,7 +257,7 @@ export const zones = [
     category: 'animeFilm',
     twin: true,
     palette: ['#1e1e1e', '#d0daeb', '#f6afbc', '#eae6df', '#b0d6fa', '#e6e8e5'],
-    reference: "Re:Zero — Rem & Ram (Light Mode)",
+    reference: "Re:Zero - Rem & Ram (Light Mode)",
     referenceDetail: "Re:Zero − Starting Life in Another World (originally named Twinmade)",
     description:
       "Gemina (originally named Twinmade) is the light mode of the Rem & Ram palette from Re:Zero − Starting Life in Another World. Its twin, Uwo, is the dark mode.",
@@ -269,10 +269,10 @@ export const zones = [
     status: 'confirmed',
     category: 'videoGame',
     palette: ['#ffe401', '#fe0000', '#fa7eb9', '#fb7dba', '#062d8d', '#feeae8', '#151515'],
-    reference: "Ms. Pac-Man — integer overflow glitch",
+    reference: "Ms. Pac-Man - integer overflow glitch",
     referenceDetail: "Pac-Man kill screen / Map 256 glitch",
     description:
-      "Killscreen references Ms. Pac-Man and a specific integer overflow glitch in the Pac-Man series. When Pac-Man reaches level 256, the counter overflows, corrupting half the screen — the infamous \"kill screen\".",
+      "Killscreen references Ms. Pac-Man and a specific integer overflow glitch in the Pac-Man series. When Pac-Man reaches level 256, the counter overflows, corrupting half the screen - the infamous \"kill screen\".",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     referenceLink: 'https://pacman.fandom.com/wiki/Map_256_Glitch',
     images: { zone: null, reference: '/images/killscreen-reference.png' },
@@ -283,7 +283,7 @@ export const zones = [
     status: 'confirmed',
     category: 'animeFilm',
     palette: ['#e9e3d5', '#e3b0bc', '#171717', '#da709a', '#db759d', '#c01d10', '#c72612'],
-    reference: "Akira (1988 film) — Tetsuo",
+    reference: "Akira (1988 film) - Tetsuo",
     referenceDetail: "Character: Tetsuo Shima",
     description:
       "In 1988, Akira was released. Often cited as one of the greatest films of all time, pivotal in cyberpunk and anime aesthetics. The main antagonist is named Tetsuo. The Tetsu zone pays homage to this character.",
@@ -296,7 +296,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cryptoArt',
     palette: ['#62d840', '#bed002', '#ff2e1e', '#70d0ce', '#3cb4e0', '#04b2b9', '#ff6c03', '#f4bcb4', '#fdec00', '#eeeeee'],
-    reference: "James Jean — Aurelians (2016)",
+    reference: "James Jean - Aurelians (2016)",
     referenceDetail: "Artwork by James Jean",
     description:
       "The Radiant zone takes its colours from @JamesJeanArt's work, \"Aurelians\" (2016). Discovering James Jean's practice was a happy consequence of going down this rabbit hole.",
@@ -309,10 +309,10 @@ export const zones = [
     status: 'confirmed',
     category: 'cryptoArt',
     palette: ['#543e2e', '#fcd265', '#db4f54', '#7ca9bf', '#faf8f5', '#e67d32', '#ebe4d8'],
-    reference: "Tyler Hobbs — Fidenza \"Rad\" palette",
+    reference: "Tyler Hobbs - Fidenza \"Rad\" palette",
     referenceDetail: "Fidenza on Art Blocks",
     description:
-      "Few know that the Avidana zone is a direct reference to the \"Rad\" palette in @tylerxhobbs' Fidenza — the landmark long-form generative art release on Art Blocks.",
+      "Few know that the Avidana zone is a direct reference to the \"Rad\" palette in @tylerxhobbs' Fidenza - the landmark long-form generative art release on Art Blocks.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
     images: { zone: '/images/avidana-zone.jpg', reference: '/images/avidana-reference.jpg' },
   },
@@ -322,7 +322,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cardGame',
     palette: ['#322c41', '#312c41', '#89a8b9', '#84488b', '#453747', '#392236', '#4a6189', '#2e2a39'],
-    reference: "Magic: The Gathering — Liliana, Dreadhorde General",
+    reference: "Magic: The Gathering - Liliana, Dreadhorde General",
     referenceDetail: "Art by Yoshitaka Amano",
     description:
       "The Dread zone references the Magic: The Gathering card Liliana, Dreadhorde General, with art by Yoshitaka Amano. The purple-black palette mirrors the card's dark, otherworldly aesthetic.",
@@ -336,7 +336,7 @@ export const zones = [
     status: 'confirmed',
     category: 'cryptoArt',
     palette: ['#a9df4f', '#3dddb0', '#ebeceb', '#302f30'],
-    reference: "XCOPY — Guzzler (2021)",
+    reference: "XCOPY - Guzzler (2021)",
     referenceDetail: "Edition artwork by XCOPY",
     description:
       "For the @XCOPYART fans, the Aetherking zone is for you. This palette was inspired by Guzzler, a 2021 edition from the artist. The neon green and teal on black is unmistakably XCOPY.",
@@ -349,10 +349,10 @@ export const zones = [
     status: 'confirmed',
     category: 'music',
     palette: ['#ffaa00', '#222222'],
-    reference: "My Bloody Valentine — Soon",
+    reference: "My Bloody Valentine - Soon",
     referenceDetail: "Track from Loveless (1991)",
     description:
-      "[SOON] is a reference to \"Soon\" by My Bloody Valentine — the closing track of their landmark 1991 album Loveless. The gauzy pinks echo the hazy, distorted beauty of shoegaze.",
+      "[SOON] is a reference to \"Soon\" by My Bloody Valentine - the closing track of their landmark 1991 album Loveless. The gauzy pinks echo the hazy, distorted beauty of shoegaze.",
     images: { zone: null, reference: '/images/soon-reference.png' },
   },
   {
@@ -361,12 +361,12 @@ export const zones = [
     status: 'confirmed',
     category: 'cardGame',
     palette: ['#6b3b77', '#2b2b2b', '#cda254', '#92609d', '#aa4a4e', '#7a5986', '#d0d5db'],
-    reference: "Magic: The Gathering — Shahrazad, Arabian Nights (1993)",
-    referenceDetail: "Art by Kaja Foglio — rarest zone, 10 parcels",
+    reference: "Magic: The Gathering - Shahrazad, Arabian Nights (1993)",
+    referenceDetail: "Art by Kaja Foglio - rarest zone, 10 parcels",
     description:
-      "Shahra is the rarest zone, with only 10 parcels. It references Shahrazad — a sorcery card from Magic: The Gathering's Arabian Nights set (1993), illustrated by Kaja Foglio, itself referencing the legendary storyteller of One Thousand and One Nights.",
+      "Shahra is the rarest zone, with only 10 parcels. It references Shahrazad - a sorcery card from Magic: The Gathering's Arabian Nights set (1993), illustrated by Kaja Foglio, itself referencing the legendary storyteller of One Thousand and One Nights.",
     sourceUrl: 'https://x.com/TerraformsOTC/status/1954986097617871261',
-    rarity: 'rarest — 10 parcels',
+    rarity: 'rarest - 10 parcels',
     images: { zone: null, reference: '/images/shahra-reference.png' },
   },
 
@@ -378,8 +378,8 @@ export const zones = [
     status: 'guess',
     category: null,
     palette: ['#f6d903', '#eceff2', '#ff6650', '#f3b2e0', '#83dbf7', '#06917e', '#e0f2fa', '#cbeddf', '#e7e9ef', '#0dcdee'],
-    guess: "TempleOS — Terry Davis (2003–2019)",
-    description: "Community theory: 'Angel' maps directly to Terry Davis's theology — he claimed God spoke to him and directed him to build TempleOS, with angels as divine messengers. The 10-colour palette of bright saturated primaries (yellow, red, cyan, pink, teal, green) echoes the VGA 16-colour limitation that TempleOS famously runs at (640×480, 16 colours). Davis specified these constraints because he believed God mandated them.",
+    guess: "TempleOS - Terry Davis (2003–2019)",
+    description: "Community theory: 'Angel' maps directly to Terry Davis's theology - he claimed God spoke to him and directed him to build TempleOS, with angels as divine messengers. The 10-colour palette of bright saturated primaries (yellow, red, cyan, pink, teal, green) echoes the VGA 16-colour limitation that TempleOS famously runs at (640×480, 16 colours). Davis specified these constraints because he believed God mandated them.",
     images: { zone: null, reference: '/images/TempleOS-reference.webp' },
   },
   {
@@ -389,7 +389,7 @@ export const zones = [
     category: null,
     palette: ['#f5221f', '#fb72d9', '#f7c4de', '#ffffff', '#f23c19', '#fff21f', '#167833', '#2b24ad'],
     guess: "Bubble Bobble NES boxart / Bubblicious / Hubba Bubba?",
-    description: "Community theories include the Bubble Bobble NES box art, Bubblicious gum, or Hubba Bubba bubble gum packaging.\n\nBubble Bobble is the strongest candidate: the NES box art uses an almost identical combination of red, hot pink, yellow, green, and deep blue — all eight colours in this palette find a direct counterpart in the artwork. The name 'Bubble' seals it.",
+    description: "Community theories include the Bubble Bobble NES box art, Bubblicious gum, or Hubba Bubba bubble gum packaging.\n\nBubble Bobble is the strongest candidate: the NES box art uses an almost identical combination of red, hot pink, yellow, green, and deep blue - all eight colours in this palette find a direct counterpart in the artwork. The name 'Bubble' seals it.",
     images: { zone: null, reference: '/images/Bubblebobble-reference.webp' },
   },
   {
@@ -428,7 +428,7 @@ export const zones = [
     status: 'guess',
     category: null,
     palette: ['#292c34', '#ff9a72'],
-    guess: "Kanye West — The Life of Pablo cover art?",
+    guess: "Kanye West - The Life of Pablo cover art?",
     description: "Community theory: [SUN] may reference the cover art of Kanye West's The Life of Pablo (2016).",
     images: { zone: null, reference: '/images/Lifeofpablo-reference.webp' },
   },
@@ -439,7 +439,7 @@ export const zones = [
     category: null,
     palette: ['#ed1111', '#f8f7ff', '#0012b5', '#30e7ff'],
     guess: "Rocket Pop (ice lolly)?",
-    description: "Possible reference to a Rocket Pop — the classic red/white/blue ice lolly. The tricolour palette supports this theory.",
+    description: "Possible reference to a Rocket Pop - the classic red/white/blue ice lolly. The tricolour palette supports this theory.",
     images: { zone: null, reference: '/images/rocketpop-reference.jpg' },
   },
 
@@ -475,7 +475,7 @@ export const zones = [
     status: 'suggestion',
     category: 'videoGame',
     palette: ['#ff4fe2', '#f8f7ff', '#0000ff'],
-    suggestion: "Minecraft — The End dimension",
+    suggestion: "Minecraft - The End dimension",
     description:
       "Claude suggestion: the magenta #ff4fe2 differs by only 3 hex digits from Minecraft's default end portal particle colour (#ff4ce5). Pure blue #0000ff matches End Crystal beams, and near-white #f8f7ff matches End Stone. The name 'Ender' directly references Enderman, Ender Dragon, and Eye of Ender.",
     referenceLink: 'https://minecraft.wiki/w/Ender_Update',
@@ -509,7 +509,7 @@ export const zones = [
     status: 'suggestion',
     category: 'videoGame',
     palette: ['#f1c8ff', '#000a1d'],
-    suggestion: "Final Fantasy X — Yuna",
+    suggestion: "Final Fantasy X - Yuna",
     description:
       "Claude suggestion: the zone name is an exact match to Yuna, the lead character of Final Fantasy X (2001). The lavender #f1c8ff reflects her purple/lilac design, while the dark navy #000a1d evokes the deep night aesthetic of Spira. FFX would fit alongside the project's other JRPG references.",
     images: { zone: null, reference: '/images/yuna-reference.png' },
@@ -522,7 +522,7 @@ export const zones = [
     palette: ['#f0f6e8', '#93d4b5', '#f0dab1', '#e39aac', '#c45d9f', '#634b7d', '#2ba9b4', '#6461c2', '#221039'],
     suggestion: "Osamu Tezuka / Takarazuka Revue",
     description:
-      "Claude suggestion: 'Mt Zuka' is clearly derived from 'Tezuka' — Osamu Tezuka, the godfather of manga, took his pen name from his hometown Takarazuka. The Takarazuka Revue's troupe division colours (Flower=pink, Cosmos=purple, Snow=green, Star=blue) map directly to the palette gradient.\n\nTakarazuka is also famous for its all-female musical theatre troupe, the Takarazuka Revue, founded in 1913 and still active today. Tezuka grew up attending performances and was profoundly influenced by the troupe's visual style — the large, expressive eyes that became the hallmark of his characters are widely attributed to the heavily stylised stage makeup worn by Revue performers. Without Takarazuka, manga and anime as we know them might look entirely different.",
+      "Claude suggestion: 'Mt Zuka' is clearly derived from 'Tezuka' - Osamu Tezuka, the godfather of manga, took his pen name from his hometown Takarazuka. The Takarazuka Revue's troupe division colours (Flower=pink, Cosmos=purple, Snow=green, Star=blue) map directly to the palette gradient.\n\nTakarazuka is also famous for its all-female musical theatre troupe, the Takarazuka Revue, founded in 1913 and still active today. Tezuka grew up attending performances and was profoundly influenced by the troupe's visual style - the large, expressive eyes that became the hallmark of his characters are widely attributed to the heavily stylised stage makeup worn by Revue performers. Without Takarazuka, manga and anime as we know them might look entirely different.",
     images: { zone: null, reference: '/images/osamu-tezuka.avif' },
   },
   {
@@ -533,11 +533,11 @@ export const zones = [
     palette: ['#ffe596', '#ffad3b', '#c57938', '#975330', '#574729', '#313638'],
     suggestion: "Kairo (2012 indie game by Richard Perrin)",
     description:
-      "Claude suggestion: exact name match to Kairo, a 2012 indie exploration game set in brutalist architecture with Egyptian influences. The warm amber-to-dark gradient (#ffe596 → #313638) maps to the game's sunlit sandstone environments fading into shadow.\n\nThe name also resonates with Kairos — the ancient Greek concept of the \"right\" or \"opportune\" moment in time. Unlike Chronos (sequential, measured time), Kairos is qualitative: the appointed moment, the window that must be seized. As a fully on-chain artwork built to last 10,000 years, Terraforms is deeply concerned with time — and Kairo may quietly gesture at this philosophical thread running through the whole project.",
+      "Claude suggestion: exact name match to Kairo, a 2012 indie exploration game set in brutalist architecture with Egyptian influences. The warm amber-to-dark gradient (#ffe596 → #313638) maps to the game's sunlit sandstone environments fading into shadow.\n\nThe name also resonates with Kairos - the ancient Greek concept of the \"right\" or \"opportune\" moment in time. Unlike Chronos (sequential, measured time), Kairos is qualitative: the appointed moment, the window that must be seized. As a fully on-chain artwork built to last 10,000 years, Terraforms is deeply concerned with time - and Kairo may quietly gesture at this philosophical thread running through the whole project.",
     images: { zone: null, reference: '/images/kairo-reference.jpg' },
     referencedBy: [
       {
-        description: "d347h.eth writes that Terraforms is a profound philosophical artwork about time, human temporality and computational achievement — and that the onchain maximalism and decay lore is just a surface.",
+        description: "d347h.eth writes that Terraforms is a profound philosophical artwork about time, human temporality and computational achievement - and that the onchain maximalism and decay lore is just a surface.",
         sourceLink: 'https://x.com/d347h_eth/status/1950575199063032183',
         handle: '@d347h_eth',
         tweet: {
@@ -554,9 +554,9 @@ export const zones = [
     status: 'suggestion',
     category: 'cryptoArt',
     palette: ['#0012b5', '#fff7f5', '#ffe6fe'],
-    suggestion: "Yves Klein — monochrome trinity (IKB + Monopink + white)",
+    suggestion: "Yves Klein - monochrome trinity (IKB + Monopink + white)",
     description:
-      "Claude suggestion: 'Exduo' means 'from two' in Latin — Klein explored duality between the material and immaterial. The deep blue #0012b5 closely matches International Klein Blue (#002FA7), light pink #ffe6fe matches his Monopink works, and warm white #fff7f5 represents the canvas substrate. Klein's ex-voto at Saint Rita contained exactly these three pigments.",
+      "Claude suggestion: 'Exduo' means 'from two' in Latin - Klein explored duality between the material and immaterial. The deep blue #0012b5 closely matches International Klein Blue (#002FA7), light pink #ffe6fe matches his Monopink works, and warm white #fff7f5 represents the canvas substrate. Klein's ex-voto at Saint Rita contained exactly these three pigments.",
     images: { zone: null, reference: '/images/exduo-reference.jpg' },
   },
   {
@@ -565,9 +565,9 @@ export const zones = [
     status: 'suggestion',
     category: 'animeFilm',
     palette: ['#f4d35e', '#ee964b', '#f95738', '#083d77', '#ebebd3'],
-    suggestion: "FLCL (Fooly Cooly) — Gainax anime (2000)",
+    suggestion: "FLCL (Fooly Cooly) - Gainax anime (2000)",
     description:
-      "Claude suggestion: 'Antenna' is a central motif in FLCL — robots emerge from protagonist Naota's head through an N.O. channel, like antennas. The warm yellows (#f4d35e), oranges (#ee964b, #f95738), deep blue (#083d77), and cream (#ebebd3) match the anime's vibrant palette, especially Haruko's yellow Vespa and red jacket against blue skies.",
+      "Claude suggestion: 'Antenna' is a central motif in FLCL - robots emerge from protagonist Naota's head through an N.O. channel, like antennas. The warm yellows (#f4d35e), oranges (#ee964b, #f95738), deep blue (#083d77), and cream (#ebebd3) match the anime's vibrant palette, especially Haruko's yellow Vespa and red jacket against blue skies.",
     images: { zone: null, reference: '/images/antenna-reference.jpg' },
   },
   {
@@ -576,9 +576,9 @@ export const zones = [
     status: 'suggestion',
     category: 'videoGame',
     palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'],
-    suggestion: "WipEout 2097 — Psygnosis / Warp Records (1996)",
+    suggestion: "WipEout 2097 - Psygnosis / Warp Records (1996)",
     description:
-      "Claude suggestion: 'Warp' points to WipEout 2097, the iconic PS1 racing game whose soundtrack was curated entirely by Warp Records — Aphex Twin, The Chemical Brothers, Fluke, and Leftfield. The purple (#8b3ede) and red (#e5291e) directly echo the game's cover palette, and the Warp Records label branding was displayed in-game, making it one of the most celebrated music/game crossovers of the 1990s.",
+      "Claude suggestion: 'Warp' points to WipEout 2097, the iconic PS1 racing game whose soundtrack was curated entirely by Warp Records - Aphex Twin, The Chemical Brothers, Fluke, and Leftfield. The purple (#8b3ede) and red (#e5291e) directly echo the game's cover palette, and the Warp Records label branding was displayed in-game, making it one of the most celebrated music/game crossovers of the 1990s.",
     images: { zone: null, reference: '/images/warprecords-reference.jpg' },
   },
   {
@@ -587,9 +587,9 @@ export const zones = [
     status: 'suggestion',
     category: 'nature',
     palette: ['#d77c11', '#d3cac3', '#61785c', '#3f5c39', '#332a1d', '#303d2d'],
-    suggestion: "Pepo — botanical term for pumpkin / gourd berries (Cucurbitaceae)",
+    suggestion: "Pepo - botanical term for pumpkin / gourd berries (Cucurbitaceae)",
     description:
-      "Claude suggestion: 'Pepo' is the exact botanical term for the berry type of Cucurbitaceae — pumpkins, gourds, watermelons, and squash. All 6 colours map directly: amber #d77c11 = pumpkin skin, stone grey #d3cac3 = dried gourd shell, forest greens #61785c and #3f5c39 = vine and foliage, warm brown #332a1d = soil, dark #303d2d = shadow. Follows the pattern of Everglades and Jadeite as a nature reference.",
+      "Claude suggestion: 'Pepo' is the exact botanical term for the berry type of Cucurbitaceae - pumpkins, gourds, watermelons, and squash. All 6 colours map directly: amber #d77c11 = pumpkin skin, stone grey #d3cac3 = dried gourd shell, forest greens #61785c and #3f5c39 = vine and foliage, warm brown #332a1d = soil, dark #303d2d = shadow. Follows the pattern of Everglades and Jadeite as a nature reference.",
     images: { zone: null, reference: '/images/Cucurbita-reference.jpg' },
   },
   {
@@ -598,7 +598,7 @@ export const zones = [
     status: 'suggestion',
     category: 'technology',
     palette: ['#303030', '#9f82ff'],
-    suggestion: "Sepolia — Ethereum testnet",
+    suggestion: "Sepolia - Ethereum testnet",
     description:
       "Claude suggestion: [SEP] likely abbreviates Sepolia, Ethereum's primary testnet since Goerli's deprecation. The dark grey #303030 base (shared with [HYCA] and [HOME]) evokes developer tooling, while lavender purple #9f82ff aligns with Ethereum ecosystem branding. A self-referential nod from a fully on-chain Ethereum project to the network's testing infrastructure.",
     images: { zone: null, reference: '/images/sepolia-reference.png' },
@@ -609,9 +609,9 @@ export const zones = [
     status: 'suggestion',
     category: 'videoGame',
     palette: ['#ec5526', '#f7f4e2', '#9ebbc1', '#f4ac12', '#1e1b1e'],
-    suggestion: "Arc System Works — Guilty Gear Strive (2021)",
+    suggestion: "Arc System Works - Guilty Gear Strive (2021)",
     description:
-      "Claude suggestion: Arc System Works is the developer behind Guilty Gear Strive. The signature orange-red (#ec5526), amber (#f4ac12), cream (#f7f4e2), slate blue (#9ebbc1), and near-black (#1e1b1e) directly echo GGS's iconic visual identity — the game's UI, character select screen, and promotional art all use this exact colour system. 'Arc' is also the studio abbreviation used by fans.",
+      "Claude suggestion: Arc System Works is the developer behind Guilty Gear Strive. The signature orange-red (#ec5526), amber (#f4ac12), cream (#f7f4e2), slate blue (#9ebbc1), and near-black (#1e1b1e) directly echo GGS's iconic visual identity - the game's UI, character select screen, and promotional art all use this exact colour system. 'Arc' is also the studio abbreviation used by fans.",
     images: { zone: null, reference: '/images/guiltygear-reference.jpg' },
   },
   {
@@ -620,9 +620,9 @@ export const zones = [
     status: 'suggestion',
     category: 'videoGame',
     palette: ['#404040', '#29af3f', '#dcc729', '#26abd4', '#c3c3c3'],
-    suggestion: "SimCity (1989) — Will Wright / Maxis",
+    suggestion: "SimCity (1989) - Will Wright / Maxis",
     description:
-      "Claude suggestion: 'Linosim' reads as 'lino-sim' — a linear / zoning simulation. The five colours are a direct match to SimCity's classic zoning system: green (#29af3f) = residential, yellow (#dcc729) = industrial, blue (#26abd4) = commercial, dark grey (#404040) = roads, light grey (#c3c3c3) = empty terrain. SimCity (1989) invented this colour-coded zoning language, which has been copied by every city-builder since.",
+      "Claude suggestion: 'Linosim' reads as 'lino-sim' - a linear / zoning simulation. The five colours are a direct match to SimCity's classic zoning system: green (#29af3f) = residential, yellow (#dcc729) = industrial, blue (#26abd4) = commercial, dark grey (#404040) = roads, light grey (#c3c3c3) = empty terrain. SimCity (1989) invented this colour-coded zoning language, which has been copied by every city-builder since.",
     images: { zone: null, reference: '/images/simcity-reference.webp' },
   },
   {
@@ -631,9 +631,9 @@ export const zones = [
     status: 'suggestion',
     category: 'videoGame',
     palette: ['#ffa8ee', '#eceb80', '#008080', '#ffe330', '#72b802', '#e85bcc', '#a28ef4', '#ff0e0e', '#b0e111', '#8ac163'],
-    suggestion: "Toad — Super Mario Bros. (Nintendo)",
+    suggestion: "Toad - Super Mario Bros. (Nintendo)",
     description:
-      "Claude suggestion: Toad is a core Mario franchise character. The 10-colour palette maps to every known Toad variant: pink (#ffa8ee, #e85bcc) = Pink Toad, yellow (#eceb80, #ffe330) = Yellow Toad, teal (#008080) = Toad Brigade Captain, red (#ff0e0e) = classic Red-capped Toad, greens (#72b802, #b0e111, #8ac163) = Green Toad variants, lavender (#a28ef4) = Purple Toad. This breadth — covering all official colour variants — is consistent with how Terraforms references entire visual systems rather than single images.",
+      "Claude suggestion: Toad is a core Mario franchise character. The 10-colour palette maps to every known Toad variant: pink (#ffa8ee, #e85bcc) = Pink Toad, yellow (#eceb80, #ffe330) = Yellow Toad, teal (#008080) = Toad Brigade Captain, red (#ff0e0e) = classic Red-capped Toad, greens (#72b802, #b0e111, #8ac163) = Green Toad variants, lavender (#a28ef4) = Purple Toad. This breadth - covering all official colour variants - is consistent with how Terraforms references entire visual systems rather than single images.",
     images: { zone: null, reference: '/images/toads-reference.png' },
   },
   {
@@ -642,9 +642,9 @@ export const zones = [
     status: 'suggestion',
     category: 'nature',
     palette: ['#453687', '#4899c4', '#b771b9', '#3c2b71', '#82c1c6', '#095474', '#96c7ce', '#f9fbd4', '#abe291'],
-    suggestion: "Aquilegia (columbine flower) — Ranunculaceae",
+    suggestion: "Aquilegia (columbine flower) - Ranunculaceae",
     description:
-      "Claude suggestion: 'Akileaf' is a portmanteau of 'Aquilegia' (the botanical genus) + 'leaf'. Aquilegia (columbine) produces distinctive spurred flowers in purple, violet, blue, pink, and cream — the exact colour palette of this zone. The 9 colours map to: deep violet (#453687, #3c2b71) = dark petal base, cornflower blues (#4899c4, #095474) = blue varieties, mauve (#b771b9) = pink-purple hybrid, ice blues (#82c1c6, #96c7ce) = pale blue cultivars, pale cream (#f9fbd4) = white columbine, sage (#abe291) = leaf and stem. Follows the pattern of Everglades and Jadeite as a botanical/nature reference.",
+      "Claude suggestion: 'Akileaf' is a portmanteau of 'Aquilegia' (the botanical genus) + 'leaf'. Aquilegia (columbine) produces distinctive spurred flowers in purple, violet, blue, pink, and cream - the exact colour palette of this zone. The 9 colours map to: deep violet (#453687, #3c2b71) = dark petal base, cornflower blues (#4899c4, #095474) = blue varieties, mauve (#b771b9) = pink-purple hybrid, ice blues (#82c1c6, #96c7ce) = pale blue cultivars, pale cream (#f9fbd4) = white columbine, sage (#abe291) = leaf and stem. Follows the pattern of Everglades and Jadeite as a botanical/nature reference.",
     images: { zone: null, reference: '/images/aquilegia-reference.jpeg' },
   },
   {
@@ -653,9 +653,9 @@ export const zones = [
     status: 'suggestion',
     category: 'animeFilm',
     palette: ['#93d1de', '#718dbc', '#f9a4cb', '#dad7cc', '#f8fefe', '#f6e518', '#ec7e15', '#292726'],
-    suggestion: "Aria the Animation (2005 anime) — set on terraformed Mars",
+    suggestion: "Aria the Animation (2005 anime) - set on terraformed Mars",
     description:
-      "Claude suggestion: 'Aria' is the exact title of the 2005 iyashikei anime set in Neo-Venezia, a recreation of Venice on Aqua — a terraformed Mars. The palette maps precisely to the show's visual identity: canal blues #93d1de and #718dbc match the lagoon and reflected sky; pink #f9a4cb matches the undine gondoliers' uniforms; cream #dad7cc matches Neo-Venezia's stone architecture; near-white #f8fefe matches gondola hulls; warm yellow #f6e518 and orange #ec7e15 match the signature Venetian sunset glow; deep #292726 matches evening shadow. The terraforming setting is also a direct thematic echo of Terraforms itself.",
+      "Claude suggestion: 'Aria' is the exact title of the 2005 iyashikei anime set in Neo-Venezia, a recreation of Venice on Aqua - a terraformed Mars. The palette maps precisely to the show's visual identity: canal blues #93d1de and #718dbc match the lagoon and reflected sky; pink #f9a4cb matches the undine gondoliers' uniforms; cream #dad7cc matches Neo-Venezia's stone architecture; near-white #f8fefe matches gondola hulls; warm yellow #f6e518 and orange #ec7e15 match the signature Venetian sunset glow; deep #292726 matches evening shadow. The terraforming setting is also a direct thematic echo of Terraforms itself.",
     images: { zone: null, reference: '/images/aria-reference.jpg' },
   },
   {
@@ -664,9 +664,9 @@ export const zones = [
     status: 'suggestion',
     category: 'animeFilm',
     palette: ['#303030', '#ff4538'],
-    suggestion: "V for Vendetta — Guy Fawkes Night (November 5th)",
+    suggestion: "V for Vendetta - Guy Fawkes Night (November 5th)",
     description:
-      "Claude suggestion: [NOV] almost certainly abbreviates November — specifically November 5th, Guy Fawkes Night. The two-colour palette is striking in its precision: deep charcoal (#303030) evokes the shadows and anonymity of V's world, while the single blood red (#ff4538) is the iconic colour of V for Vendetta's rose, cape lining, and propaganda imagery. 'Remember, remember, the fifth of November' — the name [NOV] is the bracket-notation hint.",
+      "Claude suggestion: [NOV] almost certainly abbreviates November - specifically November 5th, Guy Fawkes Night. The two-colour palette is striking in its precision: deep charcoal (#303030) evokes the shadows and anonymity of V's world, while the single blood red (#ff4538) is the iconic colour of V for Vendetta's rose, cape lining, and propaganda imagery. 'Remember, remember, the fifth of November' - the name [NOV] is the bracket-notation hint.",
     images: { zone: null, reference: '/images/vvendetta-reference.jpg' },
   },
   {
@@ -675,9 +675,9 @@ export const zones = [
     status: 'suggestion',
     category: 'videoGame',
     palette: ['#8e918c', '#eff1f4'],
-    suggestion: "CUR2 — White Magic spell, Final Fantasy (NES, 1987)",
+    suggestion: "CUR2 - White Magic spell, Final Fantasy (NES, 1987)",
     description:
-      "Claude suggestion: [CUR2] is the exact abbreviated name of the Cure 2 healing spell from the original Final Fantasy (NES, 1987). The NES used truncated 4-character spell names due to memory constraints — CURE became CUR, CURE2 became CUR2. The two-colour palette of warm grey (#8e918c) and near-white (#eff1f4) maps directly to the White Magic spell UI: clinical, light, healing tones. Sits alongside [MENU] (Final Fantasy III) as another Final Fantasy bracket-notation reference.",
+      "Claude suggestion: [CUR2] is the exact abbreviated name of the Cure 2 healing spell from the original Final Fantasy (NES, 1987). The NES used truncated 4-character spell names due to memory constraints - CURE became CUR, CURE2 became CUR2. The two-colour palette of warm grey (#8e918c) and near-white (#eff1f4) maps directly to the White Magic spell UI: clinical, light, healing tones. Sits alongside [MENU] (Final Fantasy III) as another Final Fantasy bracket-notation reference.",
     images: { zone: null, reference: '/images/FF1%20white%20mage.webp' },
   },
 
@@ -689,10 +689,10 @@ export const zones = [
     status: 'confirmed',
     category: 'twinPalette',
     palette: ['#7ffcc4', '#ffe481', '#ffcfb7', '#505050', '#f2e7ea'],
-    reference: "Twin palette — light mode of Treasure",
+    reference: "Twin palette - light mode of Treasure",
     referenceDetail: "Paired with zone: Treasure",
     description:
-      "Shiro is the light mode twin of Treasure. The two zones form a paired set — light and dark versions of the same palette. Shiro (白) means \"white\" in Japanese.",
+      "Shiro is the light mode twin of Treasure. The two zones form a paired set - light and dark versions of the same palette. Shiro (白) means \"white\" in Japanese.",
     images: null,
   },
   {
@@ -701,10 +701,10 @@ export const zones = [
     status: 'confirmed',
     category: 'twinPalette',
     palette: ['#323232', '#ffadde', '#7ffcc4', '#ffe481'],
-    reference: "Twin palette — dark mode of Shiro",
+    reference: "Twin palette - dark mode of Shiro",
     referenceDetail: "Paired with zone: Shiro",
     description:
-      "Treasure is the dark mode twin of Shiro. The two zones form a paired set — dark and light versions of the same palette.",
+      "Treasure is the dark mode twin of Shiro. The two zones form a paired set - dark and light versions of the same palette.",
     images: null,
   },
   {
@@ -713,9 +713,9 @@ export const zones = [
     status: 'suggestion',
     category: 'twinPalette',
     palette: ['#9cb7d4', '#35443b'],
-    suggestion: "Twin palette with [NEON] — moonlight over dark green",
+    suggestion: "Twin palette with [NEON] - moonlight over dark green",
     description:
-      "Claude suggestion: [MOON] and [NEON] are mathematically precise twins — they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (blue 211° vs green 133°). This mirrors the confirmed Shiro/Treasure twin pair. The soft blue #9cb7d4 evokes moonlight.",
+      "Claude suggestion: [MOON] and [NEON] are mathematically precise twins - they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (blue 211° vs green 133°). This mirrors the confirmed Shiro/Treasure twin pair. The soft blue #9cb7d4 evokes moonlight.",
     images: null,
   },
   {
@@ -724,9 +724,9 @@ export const zones = [
     status: 'suggestion',
     category: 'twinPalette',
     palette: ['#9cd4a8', '#35443b'],
-    suggestion: "Twin palette with [MOON] — neon glow over dark green",
+    suggestion: "Twin palette with [MOON] - neon glow over dark green",
     description:
-      "Claude suggestion: [NEON] and [MOON] are mathematically precise twins — they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (green 133° vs blue 211°). This mirrors the confirmed Shiro/Treasure twin pair. The mint green #9cd4a8 evokes a neon sign glow.",
+      "Claude suggestion: [NEON] and [MOON] are mathematically precise twins - they share the exact same dark green (#35443b) and their light colours have identical saturation (39%) and lightness (72%) in HSL, differing only in hue (green 133° vs blue 211°). This mirrors the confirmed Shiro/Treasure twin pair. The mint green #9cd4a8 evokes a neon sign glow.",
     images: null,
   },
 

@@ -1,4 +1,4 @@
-// Biome rarity tiers — sourced from TerraformsEstimator pricing model
+// Biome rarity tiers - sourced from TerraformsEstimator pricing model
 export const BIOME_RARITIES = {
   mythical:  { label: 'mythical',  color: '#e879f9' },
   rare:      { label: 'rare',      color: '#60a5fa' },
@@ -66,12 +66,12 @@ export const biomes = [
     reference: null,
     referenceDetail: null,
     description:
-      'Community theory: the character set used in Biome 69 may reference the Simple Net Art Diagram — a 1997 work by MTAA (T.Whid and M.River) that reduces the entire concept of net art to a single image: two computers connected by a wire, with the annotation "The art happens here" pointing to the network between them. One of the most iconic and widely reproduced works of early internet art.',
+      'Community theory: the character set used in Biome 69 may reference the Simple Net Art Diagram - a 1997 work by MTAA (T.Whid and M.River) that reduces the entire concept of net art to a single image: two computers connected by a wire, with the annotation "The art happens here" pointing to the network between them. One of the most iconic and widely reproduced works of early internet art.',
     images: { zone: null, reference: '/images/biome69-reference.gif' },
     sourceUrl: null,
     creditTo: null,
     referenceLink: 'https://anthology.rhizome.org/simple-net-art-diagram',
-    guess: 'Simple Net Art Diagram — MTAA (1997)',
+    guess: 'Simple Net Art Diagram - MTAA (1997)',
     characterSet: '🖳══════🖳🖳',
   },
 
