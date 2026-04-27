@@ -332,7 +332,7 @@ export const zones = [
     palette: ['#fb8b01', '#399c42', '#0b704e', '#f34509', '#6f9d80', '#fb7712', '#10151b'],
     reference: "Potentially lost",
     description:
-      "Potentially lost\n\n113 has commented on this zone in the past, saying \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\".",
+      "113 has commented on this zone in the past, saying \"Grove I think was sourced from a photo? or maybe even a palette online. I don't recall 100%\".",
     images: null,
   },
   {
@@ -716,7 +716,7 @@ export const zones = [
     suggestion: "Pokémon TCG holographic foil",
     description:
       "Claude suggestion: 'Holo' is TCG slang for the holographic foil treatment on rare Pokémon cards. The ten-colour saturated rainbow palette mirrors the kinetic chromatic shifts produced by the micro-etched diffraction grating used on holo cards as they catch the light.",
-    images: null,
+    images: { zone: null, reference: '/images/Holo-reference.jpg' },
   },
   {
     id: 'hyphae',
@@ -727,7 +727,7 @@ export const zones = [
     suggestion: "Nervous System - Hyphae",
     description:
       "Claude suggestion: Hyphae is a well-known generative algorithm by Nervous System studio (Jessica Rosenkrantz and Jesse Louis-Rosenberg, founded 2007), originally a leaf-vein / auxin-flux simulation rendered as 3D-printed lamps, jewellery, and sculpture. The minimal blue / orange / white palette is consistent with how Hyphae renders are typically presented.",
-    images: null,
+    images: { zone: null, reference: '/images/Hyphae-reference.jpg' },
   },
   {
     id: 'dark',
@@ -738,18 +738,7 @@ export const zones = [
     suggestion: "Dark, 2017",
     description:
       "Claude suggestion: Dark (Netflix, 2017-2020), directed by Baran bo Odar, is known for its stark monochrome visual identity. The two-tone near-white-on-near-black palette exactly matches the show's title cards, posters, and crushed-blacks cinematography.",
-    images: null,
-  },
-  {
-    id: 'cradle',
-    name: 'Cradle',
-    status: 'llm',
-    category: 'videoGame',
-    palette: ['#efc201', '#104d28', '#e0632b', '#cec4be', '#43882f', '#90ad27', '#ffe7d3', '#de797d'],
-    suggestion: "Cradle, 2015",
-    description:
-      "Claude suggestion: Cradle (2015), developed by Flying Cafe for Semianimals, is a first-person adventure game set on the Mongolian steppe. The palette - sandy yellow, deep grasslands green, orange sunset, peach sky, dusty rose dawn - reads as a steppe sunset over the game's atmospheric setting.",
-    images: null,
+    images: { zone: null, reference: '/images/Dark-reference.jpg' },
   },
   {
     id: 'blood',
@@ -760,18 +749,7 @@ export const zones = [
     suggestion: "Blood, 1997",
     description:
       "Claude suggestion: Blood (1997), developed by Monolith Productions on the Build engine, is a cult horror FPS following Caleb's revenge against the demon Tchernobog. The minimal red-on-black palette matches the game's iconic logo and visual identity.",
-    images: null,
-  },
-  {
-    id: 'boss',
-    name: '[BOSS]',
-    status: 'llm',
-    category: 'printMedia',
-    palette: ['#f8f7ff', '#ee0000'],
-    suggestion: "Suntory BOSS Coffee, 1992",
-    description:
-      "Claude suggestion: BOSS, marketed as Suntory BOSS Coffee, is one of Japan's most recognisable canned coffee brands. The white-and-red branding, paired with the long-running Tommy Lee Jones 'Alien Jones' campaign (continuously airing since 2006), is a fixture of Japanese pop culture.",
-    images: null,
+    images: { zone: null, reference: '/images/Blood-reference.jpg' },
   },
   {
     id: 'mould',
@@ -782,7 +760,7 @@ export const zones = [
     suggestion: "C-MOULD microbial art collection",
     description:
       "Claude suggestion: C-MOULD, curated by the late Simon Park (1964-2021) at the University of Surrey, is the world's largest collection of pigmented bacteria and fungi for use in art (50+ species). The palette maps closely to real microbial pigments: Vogesella indigofera (blue / purple), Serratia marcescens (red / magenta), Chromobacterium violaceum (purple), Pseudomonas (greens), Kocuria (yellow). Reads as a Petri-dish painting.",
-    images: null,
+    images: { zone: null, reference: '/images/Mould-reference.jpeg' },
   },
   {
     id: 'zerinia',
@@ -804,7 +782,7 @@ export const zones = [
     suggestion: "The Matrix, 1999",
     description:
       "Claude suggestion: lime-green on grey-and-black is the canonical aesthetic of The Matrix (1999) digital rain. The palette family matches the green-phosphor terminal / code-rain look, and 'Xleph' reads as a hacker handle from that universe. The lime here (#9ff240) is brighter than the film's official Matrix green (#03A062), but the family is unmistakable.",
-    images: null,
+    images: { zone: null, reference: '/images/Xleph-reference.jpg' },
   },
   {
     id: 'mori',
@@ -815,7 +793,7 @@ export const zones = [
     suggestion: "Mori - Japanese forest",
     description:
       "Claude suggestion: 'Mori' (森) is Japanese for 'forest'. The yellow sunlight, dusty cherry-pink, forest greens, water teal, and near-black shadow read as a forest tableau. Could specifically reference Studio Ghibli forest scenes (Totoro, Princess Mononoke) or the 'Mori girl' (森ガール) Japanese fashion subculture that emerged from a Mixi community in 2006, oriented around a 'girl who lives in the forest' aesthetic.",
-    images: null,
+    images: { zone: null, reference: '/images/Mori-reference.png' },
   },
   {
     id: 'blossom',
@@ -826,18 +804,7 @@ export const zones = [
     suggestion: "Yozakura - cherry blossom at night",
     description:
       "Claude suggestion: pinks and magenta layered over deep navy and near-black is the canonical yozakura (夜桜, night cherry-blossom) palette - lit blossoms against a night sky during hanami. The exact pink-and-violet-on-dark-blue combination appears in Cardcaptor Sakura's official 'Violet Cherry Blossom Night' merchandise line.",
-    images: null,
-  },
-  {
-    id: 'home',
-    name: '[HOME]',
-    status: 'llm',
-    category: null,
-    palette: ['#303030', '#fff5e6'],
-    suggestion: "Hearth - lamp-lit interior",
-    description:
-      "Claude suggestion: the warm cream #fff5e6 (papaya whip) against deep grey reads as lamplight in a darkened room - a quiet 'cosy at home at night' aesthetic. The two-tone minimalism doesn't obviously target a specific work; the palette functions as pure mood.",
-    images: null,
+    images: { zone: null, reference: '/images/Blossom-reference.jpg' },
   },
   {
     id: 'calyx',
@@ -848,7 +815,7 @@ export const zones = [
     suggestion: "Calyx - Greek for flower bud",
     description:
       "Claude suggestion: kalyx (κάλυξ) is Ancient Greek for 'husk' or 'flower bud' - the cup of sepals at the base of a flower. The mixed petal-tone palette (cyan, coral, teal, pink, lavender, cream, near-black) reads as a varied floral study. Less likely alternate: Calyx the British drum-and-bass producer (Larry Cons, Moving Shadow / Metalheadz), but the palette doesn't strongly suggest that musical context.",
-    images: null,
+    images: { zone: null, reference: '/images/Calyx-reference.jpg' },
   },
   {
     id: 'muxtai-x1',
@@ -859,7 +826,7 @@ export const zones = [
     suggestion: "Sharp X1, 1982",
     description:
       "Claude suggestion: the Sharp X1 is a Japanese 8-bit home computer released by Sharp Corporation in 1982 (CZ-800C, produced through 1988). Its first model came in distinctive red - documented in retro-computing communities as 'beauty in red'. The X1 originated from Sharp's television division and uniquely featured a built-in TV tuner that allowed superimposing computer output onto live broadcasts. The pink, navy, red, cream, and bright cyan palette is consistent with early-80s Japanese consumer-electronics advertising.",
-    images: null,
+    images: { zone: null, reference: '/images/Muxtaix1-reference.jpg' },
   },
   // ─── TWIN PALETTES ───────────────────────────────────────────────────────
 
@@ -889,6 +856,9 @@ export const zones = [
   },
 
   // ─── UNKNOWN ─────────────────────────────────────────────────────────────
+  { id: 'boss',   name: '[BOSS]',  status: 'unknown', category: null, palette: ['#f8f7ff', '#ee0000'], images: null },
+  { id: 'home',   name: '[HOME]',  status: 'unknown', category: null, palette: ['#303030', '#fff5e6'], images: null },
+  { id: 'cradle', name: 'Cradle',  status: 'unknown', category: null, palette: ['#efc201', '#104d28', '#e0632b', '#cec4be', '#43882f', '#90ad27', '#ffe7d3', '#de797d'], images: null },
   { id: 'wen',         name: '[WEN]',         status: 'unknown', category: null, palette: ['#fffdf0', '#1e1c32'], images: null },
   { id: 'dynacrypts',   name: 'Dynacrypts',    status: 'unknown', category: null, palette: ['#f98284', '#feaae4', '#b0a9e4', '#accce4', '#b3e3da', '#b0eb93', '#fff7a0', '#ffc384', '#dea38b', '#28282e'], images: null },
   { id: 'pfpfpfpbbx80', name: 'Pfpfpfpbbx80', status: 'unknown', category: null, palette: ['#f772b5', '#435d5a', '#5a7b70', '#e83b3b', '#ccdf6d', '#aede6a', '#ffffff', '#e4dde7'], images: null },
