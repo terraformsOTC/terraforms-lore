@@ -774,17 +774,6 @@ export const zones = [
     images: null,
   },
   {
-    id: 'wen',
-    name: '[WEN]',
-    status: 'llm',
-    category: null,
-    palette: ['#fffdf0', '#1e1c32'],
-    suggestion: "WEN - crypto self reference",
-    description:
-      "Claude suggestion: 'WEN' is universal NFT-Twitter shorthand for 'when' (as in 'wen moon', 'wen lambo'), a self-deprecating crypto-culture meme about timeline anxiety. The deliberately minimal two-tone branding reads as the project winking at the wider crypto vernacular it exists within.",
-    images: null,
-  },
-  {
     id: 'mould',
     name: 'Mould',
     status: 'llm',
@@ -861,6 +850,17 @@ export const zones = [
       "Claude suggestion: kalyx (κάλυξ) is Ancient Greek for 'husk' or 'flower bud' - the cup of sepals at the base of a flower. The mixed petal-tone palette (cyan, coral, teal, pink, lavender, cream, near-black) reads as a varied floral study. Less likely alternate: Calyx the British drum-and-bass producer (Larry Cons, Moving Shadow / Metalheadz), but the palette doesn't strongly suggest that musical context.",
     images: null,
   },
+  {
+    id: 'muxtai-x1',
+    name: 'Muxtai X1',
+    status: 'llm',
+    category: 'technology',
+    palette: ['#ffcad5', '#082496', '#ed0e0a', '#f5f2e3', '#30a5ff'],
+    suggestion: "Sharp X1, 1982",
+    description:
+      "Claude suggestion: the Sharp X1 is a Japanese 8-bit home computer released by Sharp Corporation in 1982 (CZ-800C, produced through 1988). Its first model came in distinctive red - documented in retro-computing communities as 'beauty in red'. The X1 originated from Sharp's television division and uniquely featured a built-in TV tuner that allowed superimposing computer output onto live broadcasts. The pink, navy, red, cream, and bright cyan palette is consistent with early-80s Japanese consumer-electronics advertising.",
+    images: null,
+  },
   // ─── TWIN PALETTES ───────────────────────────────────────────────────────
 
   {
@@ -889,9 +889,9 @@ export const zones = [
   },
 
   // ─── UNKNOWN ─────────────────────────────────────────────────────────────
+  { id: 'wen',         name: '[WEN]',         status: 'unknown', category: null, palette: ['#fffdf0', '#1e1c32'], images: null },
   { id: 'dynacrypts',   name: 'Dynacrypts',    status: 'unknown', category: null, palette: ['#f98284', '#feaae4', '#b0a9e4', '#accce4', '#b3e3da', '#b0eb93', '#fff7a0', '#ffc384', '#dea38b', '#28282e'], images: null },
   { id: 'pfpfpfpbbx80', name: 'Pfpfpfpbbx80', status: 'unknown', category: null, palette: ['#f772b5', '#435d5a', '#5a7b70', '#e83b3b', '#ccdf6d', '#aede6a', '#ffffff', '#e4dde7'], images: null },
-  { id: 'muxtai-x1',    name: 'Muxtai X1',     status: 'unknown', category: null, palette: ['#ffcad5', '#082496', '#ed0e0a', '#f5f2e3', '#30a5ff'], images: null },
   { id: 'valeria',      name: 'Valeria',       status: 'unknown', category: null, palette: ['#fe004f', '#04a15c', '#fd8901', '#2c2827'], images: null },
 ];
 
