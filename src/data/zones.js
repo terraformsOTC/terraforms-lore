@@ -604,7 +604,7 @@ export const zones = [
     palette: ['#e5291e', '#d3d3d3', '#8b3ede', '#dfdfdf'],
     suggestion: "Warp Records",
     description:
-      "Warp Records\n\nClaude suggestion: Warp Records is a British independent record label founded in Sheffield in 1989 by Steve Beckett, Robert Mitchell and Robert Gordon. It specialises in electronic, indie rock and experimental music, and has released records by acts including Aphex Twin, Autechre, Boards of Canada, Squarepusher, and Brian Eno.",
+      "Claude suggestion: Warp Records is a British independent record label founded in Sheffield in 1989 by Steve Beckett, Robert Mitchell and Robert Gordon. It specialises in electronic, indie rock and experimental music, and has released records by acts including Aphex Twin, Autechre, Boards of Canada, Squarepusher, and Brian Eno.",
     images: { zone: null, reference: '/images/warprecords-reference.jpg' },
   },
   {
@@ -707,6 +707,160 @@ export const zones = [
     images: { zone: null, reference: '/images/FF1%20white%20mage.webp' },
   },
 
+  {
+    id: 'holo',
+    name: 'Holo',
+    status: 'llm',
+    category: 'cardGame',
+    palette: ['#fc5602', '#f2d601', '#1182c0', '#fb71c9', '#761fa5', '#256006', '#0577bd', '#fcdf02', '#fc6e03', '#eee8de'],
+    suggestion: "Pokémon TCG holographic foil",
+    description:
+      "Claude suggestion: 'Holo' is TCG slang for the holographic foil treatment on rare Pokémon cards. The ten-colour saturated rainbow palette mirrors the kinetic chromatic shifts produced by the micro-etched diffraction grating used on holo cards as they catch the light.",
+    images: null,
+  },
+  {
+    id: 'hyphae',
+    name: 'Hyphae',
+    status: 'llm',
+    category: 'cryptoArt',
+    palette: ['#328dfd', '#f0f0f0', '#e65700'],
+    suggestion: "Nervous System - Hyphae",
+    description:
+      "Claude suggestion: Hyphae is a well-known generative algorithm by Nervous System studio (Jessica Rosenkrantz and Jesse Louis-Rosenberg, founded 2007), originally a leaf-vein / auxin-flux simulation rendered as 3D-printed lamps, jewellery, and sculpture. The minimal blue / orange / white palette is consistent with how Hyphae renders are typically presented.",
+    images: null,
+  },
+  {
+    id: 'dark',
+    name: '[DARK]',
+    status: 'llm',
+    category: 'animeFilm',
+    palette: ['#eeeeee', '#303030'],
+    suggestion: "Dark, 2017",
+    description:
+      "Claude suggestion: Dark (Netflix, 2017-2020), directed by Baran bo Odar, is known for its stark monochrome visual identity. The two-tone near-white-on-near-black palette exactly matches the show's title cards, posters, and crushed-blacks cinematography.",
+    images: null,
+  },
+  {
+    id: 'cradle',
+    name: 'Cradle',
+    status: 'llm',
+    category: 'videoGame',
+    palette: ['#efc201', '#104d28', '#e0632b', '#cec4be', '#43882f', '#90ad27', '#ffe7d3', '#de797d'],
+    suggestion: "Cradle, 2015",
+    description:
+      "Claude suggestion: Cradle (2015), developed by Flying Cafe for Semianimals, is a first-person adventure game set on the Mongolian steppe. The palette - sandy yellow, deep grasslands green, orange sunset, peach sky, dusty rose dawn - reads as a steppe sunset over the game's atmospheric setting.",
+    images: null,
+  },
+  {
+    id: 'blood',
+    name: '[BLOOD]',
+    status: 'llm',
+    category: 'videoGame',
+    palette: ['#ee0000', '#202020'],
+    suggestion: "Blood, 1997",
+    description:
+      "Claude suggestion: Blood (1997), developed by Monolith Productions on the Build engine, is a cult horror FPS following Caleb's revenge against the demon Tchernobog. The minimal red-on-black palette matches the game's iconic logo and visual identity.",
+    images: null,
+  },
+  {
+    id: 'boss',
+    name: '[BOSS]',
+    status: 'llm',
+    category: 'printMedia',
+    palette: ['#f8f7ff', '#ee0000'],
+    suggestion: "Suntory BOSS Coffee, 1992",
+    description:
+      "Claude suggestion: BOSS, marketed as Suntory BOSS Coffee, is one of Japan's most recognisable canned coffee brands. The white-and-red branding, paired with the long-running Tommy Lee Jones 'Alien Jones' campaign (continuously airing since 2006), is a fixture of Japanese pop culture.",
+    images: null,
+  },
+  {
+    id: 'wen',
+    name: '[WEN]',
+    status: 'llm',
+    category: null,
+    palette: ['#fffdf0', '#1e1c32'],
+    suggestion: "WEN - crypto self reference",
+    description:
+      "Claude suggestion: 'WEN' is universal NFT-Twitter shorthand for 'when' (as in 'wen moon', 'wen lambo'), a self-deprecating crypto-culture meme about timeline anxiety. The deliberately minimal two-tone branding reads as the project winking at the wider crypto vernacular it exists within.",
+    images: null,
+  },
+  {
+    id: 'mould',
+    name: 'Mould',
+    status: 'llm',
+    category: 'nature',
+    palette: ['#87e899', '#e2efed', '#edf6f7', '#ac7167', '#e93e5b', '#4c26c6', '#ff63e9', '#fefe82', '#4dcb7e', '#252525'],
+    suggestion: "C-MOULD microbial art collection",
+    description:
+      "Claude suggestion: C-MOULD, curated by the late Simon Park (1964-2021) at the University of Surrey, is the world's largest collection of pigmented bacteria and fungi for use in art (50+ species). The palette maps closely to real microbial pigments: Vogesella indigofera (blue / purple), Serratia marcescens (red / magenta), Chromobacterium violaceum (purple), Pseudomonas (greens), Kocuria (yellow). Reads as a Petri-dish painting.",
+    images: null,
+  },
+  {
+    id: 'zerinia',
+    name: 'Zerinia',
+    status: 'llm',
+    category: null,
+    palette: ['#e6ceac', '#cdba94', '#bda583', '#a48d6a', '#8b7d62', '#73654a', '#524839', '#292418'],
+    suggestion: "Zarin - Persian for golden",
+    description:
+      "Claude suggestion: 'Zerinia' echoes the Persian root zarin (زرین), meaning 'golden', also rendered as Zerina or Zarina in Slavic / Balkan onomastics. The eight-step linear gradient from light cream-gold (#e6ceac) through deep shadow (#292418) is a literal golden colour ramp.",
+    images: null,
+  },
+  {
+    id: 'xleph',
+    name: 'Xleph',
+    status: 'llm',
+    category: 'animeFilm',
+    palette: ['#c7c7c7', '#9ff240', '#6c6c6c', '#c9c9c9', '#202020'],
+    suggestion: "The Matrix, 1999",
+    description:
+      "Claude suggestion: lime-green on grey-and-black is the canonical aesthetic of The Matrix (1999) digital rain. The palette family matches the green-phosphor terminal / code-rain look, and 'Xleph' reads as a hacker handle from that universe. The lime here (#9ff240) is brighter than the film's official Matrix green (#03A062), but the family is unmistakable.",
+    images: null,
+  },
+  {
+    id: 'mori',
+    name: 'Mori',
+    status: 'llm',
+    category: 'nature',
+    palette: ['#eac802', '#daa7ac', '#329160', '#3db7a9', '#16160f'],
+    suggestion: "Mori - Japanese forest",
+    description:
+      "Claude suggestion: 'Mori' (森) is Japanese for 'forest'. The yellow sunlight, dusty cherry-pink, forest greens, water teal, and near-black shadow read as a forest tableau. Could specifically reference Studio Ghibli forest scenes (Totoro, Princess Mononoke) or the 'Mori girl' (森ガール) Japanese fashion subculture that emerged from a Mixi community in 2006, oriented around a 'girl who lives in the forest' aesthetic.",
+    images: null,
+  },
+  {
+    id: 'blossom',
+    name: 'Blossom',
+    status: 'llm',
+    category: 'nature',
+    palette: ['#ef5ea1', '#efeded', '#a2b0e5', '#b65293', '#c7bfe3', '#2c3a8d', '#ca579e', '#4d334c', '#48358f', '#171717'],
+    suggestion: "Yozakura - cherry blossom at night",
+    description:
+      "Claude suggestion: pinks and magenta layered over deep navy and near-black is the canonical yozakura (夜桜, night cherry-blossom) palette - lit blossoms against a night sky during hanami. The exact pink-and-violet-on-dark-blue combination appears in Cardcaptor Sakura's official 'Violet Cherry Blossom Night' merchandise line.",
+    images: null,
+  },
+  {
+    id: 'home',
+    name: '[HOME]',
+    status: 'llm',
+    category: null,
+    palette: ['#303030', '#fff5e6'],
+    suggestion: "Hearth - lamp-lit interior",
+    description:
+      "Claude suggestion: the warm cream #fff5e6 (papaya whip) against deep grey reads as lamplight in a darkened room - a quiet 'cosy at home at night' aesthetic. The two-tone minimalism doesn't obviously target a specific work; the palette functions as pure mood.",
+    images: null,
+  },
+  {
+    id: 'calyx',
+    name: 'Calyx',
+    status: 'llm',
+    category: 'nature',
+    palette: ['#90f1ef', '#ed553f', '#419c87', '#f1bdd4', '#82cdef', '#20201e', '#846daf', '#fef9f5'],
+    suggestion: "Calyx - Greek for flower bud",
+    description:
+      "Claude suggestion: kalyx (κάλυξ) is Ancient Greek for 'husk' or 'flower bud' - the cup of sepals at the base of a flower. The mixed petal-tone palette (cyan, coral, teal, pink, lavender, cream, near-black) reads as a varied floral study. Less likely alternate: Calyx the British drum-and-bass producer (Larry Cons, Moving Shadow / Metalheadz), but the palette doesn't strongly suggest that musical context.",
+    images: null,
+  },
   // ─── TWIN PALETTES ───────────────────────────────────────────────────────
 
   {
@@ -735,25 +889,10 @@ export const zones = [
   },
 
   // ─── UNKNOWN ─────────────────────────────────────────────────────────────
-
-  { id: 'holo',         name: 'Holo',          status: 'unknown', category: null, palette: ['#fc5602', '#f2d601', '#1182c0', '#fb71c9', '#761fa5', '#256006', '#0577bd', '#fcdf02', '#fc6e03', '#eee8de'], images: null },
-  { id: 'hyphae',       name: 'Hyphae',        status: 'unknown', category: null, palette: ['#328dfd', '#f0f0f0', '#e65700'], images: null },
   { id: 'dynacrypts',   name: 'Dynacrypts',    status: 'unknown', category: null, palette: ['#f98284', '#feaae4', '#b0a9e4', '#accce4', '#b3e3da', '#b0eb93', '#fff7a0', '#ffc384', '#dea38b', '#28282e'], images: null },
-  { id: 'blood',        name: '[BLOOD]',       status: 'unknown', category: null, palette: ['#ee0000', '#202020'], images: null },
-  { id: 'dark',         name: '[DARK]',        status: 'unknown', category: null, palette: ['#eeeeee', '#303030'], images: null },
-  { id: 'boss',         name: '[BOSS]',        status: 'unknown', category: null, palette: ['#f8f7ff', '#ee0000'], images: null },
-  { id: 'zerinia',      name: 'Zerinia',       status: 'unknown', category: null, palette: ['#e6ceac', '#cdba94', '#bda583', '#a48d6a', '#8b7d62', '#73654a', '#524839', '#292418'], images: null },
-  { id: 'calyx',        name: 'Calyx',         status: 'unknown', category: null, palette: ['#90f1ef', '#ed553f', '#419c87', '#f1bdd4', '#82cdef', '#20201e', '#846daf', '#fef9f5'], images: null },
-  { id: 'home',         name: '[HOME]',        status: 'unknown', category: null, palette: ['#303030', '#fff5e6'], images: null },
   { id: 'pfpfpfpbbx80', name: 'Pfpfpfpbbx80', status: 'unknown', category: null, palette: ['#f772b5', '#435d5a', '#5a7b70', '#e83b3b', '#ccdf6d', '#aede6a', '#ffffff', '#e4dde7'], images: null },
   { id: 'muxtai-x1',    name: 'Muxtai X1',     status: 'unknown', category: null, palette: ['#ffcad5', '#082496', '#ed0e0a', '#f5f2e3', '#30a5ff'], images: null },
-  { id: 'blossom',      name: 'Blossom',       status: 'unknown', category: null, palette: ['#ef5ea1', '#efeded', '#a2b0e5', '#b65293', '#c7bfe3', '#2c3a8d', '#ca579e', '#4d334c', '#48358f', '#171717'], images: null },
-  { id: 'xleph',        name: 'Xleph',         status: 'unknown', category: null, palette: ['#c7c7c7', '#9ff240', '#6c6c6c', '#c9c9c9', '#202020'], images: null },
-  { id: 'cradle',       name: 'Cradle',        status: 'unknown', category: null, palette: ['#efc201', '#104d28', '#e0632b', '#cec4be', '#43882f', '#90ad27', '#ffe7d3', '#de797d'], images: null },
-  { id: 'mould',        name: 'Mould',         status: 'unknown', category: null, palette: ['#87e899', '#e2efed', '#edf6f7', '#ac7167', '#e93e5b', '#4c26c6', '#ff63e9', '#fefe82', '#4dcb7e', '#252525'], images: null },
   { id: 'valeria',      name: 'Valeria',       status: 'unknown', category: null, palette: ['#fe004f', '#04a15c', '#fd8901', '#2c2827'], images: null },
-  { id: 'mori',         name: 'Mori',          status: 'unknown', category: null, palette: ['#eac802', '#daa7ac', '#329160', '#3db7a9', '#16160f'], images: null },
-  { id: 'wen',          name: '[WEN]',         status: 'unknown', category: null, palette: ['#fffdf0', '#1e1c32'], images: null },
 ];
 
 export const confirmedZones  = zones.filter(z => z.status === 'confirmed');
