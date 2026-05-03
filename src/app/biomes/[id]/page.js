@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StatusBadge from '@/components/StatusBadge';
 import { ImageGrid, ExternalLinks } from '@/components/DetailSections';
-import { biomes, BIOME_CATEGORIES } from '@/data/biomes';
+import { biomes, BIOME_CATEGORIES, BIOME_SETS } from '@/data/biomes';
 
 export async function generateStaticParams() {
   return biomes.filter((b) => b.status !== 'unknown').map((b) => ({ id: b.id }));
@@ -30,6 +30,7 @@ export default async function BiomePage({ params }) {
 
   const isTheory = biome.status === 'uncertain';
   const cat = BIOME_CATEGORIES[biome.category];
+  const biomeSet = BIOME_SETS[biome.set];
   const ref = biome.guess || biome.reference;
   const displayTitle = biome.nickname ? `${biome.name} - ${biome.nickname}` : biome.name;
 
@@ -70,7 +71,7 @@ export default async function BiomePage({ params }) {
 
         <div className="flex justify-between items-start gap-4 mb-6">
           <h1 className="text-3xl">{displayTitle}</h1>
-          <StatusBadge status={biome.status} category={cat} className="mt-2" />
+          <StatusBadge status={biome.status} category={cat} set={biomeSet} className="mt-2" />
         </div>
 
         <hr style={{ border: 'none', borderTop: '1px solid rgba(232,232,232,0.12)', marginBottom: '24px' }} />

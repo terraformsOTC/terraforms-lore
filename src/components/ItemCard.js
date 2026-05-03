@@ -11,7 +11,7 @@ import StatusBadge from './StatusBadge';
  *   subtitle  - optional secondary text next to the name (e.g. biome nickname)
  *   palette   - optional hex array to render as a color swatch bar
  */
-export default function ItemCard({ item, href, category, subtitle, palette }) {
+export default function ItemCard({ item, href, category, subtitle, palette, set }) {
   if (item.status === 'unknown') {
     return (
       <div className="card-border p-4 flex items-center justify-between">
@@ -19,11 +19,19 @@ export default function ItemCard({ item, href, category, subtitle, palette }) {
           <span className="text-sm dim-40">{item.name}</span>
           {subtitle && <span className="text-xs ml-2 dim-20">- {subtitle}</span>}
         </div>
-        {!subtitle && (
-          <span className="text-xs px-1 dim-20" style={{ border: '1px solid var(--border-dim)' }}>
-            unidentified
-          </span>
-        )}
+        <div className="flex gap-1 flex-wrap justify-end">
+          {set && (
+            <span className="text-xs px-1 shrink-0"
+              style={{ color: set.color, border: `1px solid ${set.color}`, opacity: 0.85 }}>
+              {set.label}
+            </span>
+          )}
+          {!subtitle && (
+            <span className="text-xs px-1 dim-20" style={{ border: '1px solid var(--border-dim)' }}>
+              unidentified
+            </span>
+          )}
+        </div>
       </div>
     );
   }
@@ -46,7 +54,7 @@ export default function ItemCard({ item, href, category, subtitle, palette }) {
             <span className="text-sm">{item.name}</span>
             {subtitle && <span className="text-xs ml-2 dim-35">- {subtitle}</span>}
           </div>
-          <StatusBadge status={item.status} category={category} twin={item.twin} />
+          <StatusBadge status={item.status} category={category} twin={item.twin} set={set} />
         </div>
 
         <p className="text-xs mt-1 dim-65">{ref}</p>

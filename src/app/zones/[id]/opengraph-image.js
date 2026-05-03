@@ -10,8 +10,9 @@ export function generateStaticParams() {
   return zones.filter((z) => z.status !== 'unknown').map((z) => ({ id: z.id }));
 }
 
-export default function Image({ params }) {
-  const zone = zones.find((z) => z.id === params.id);
+export default async function Image({ params }) {
+  const { id } = await params;
+  const zone = zones.find((z) => z.id === id);
   if (!zone) return new ImageResponse(<div>Not found</div>, { ...size });
 
   const fontData = readFileSync(join(process.cwd(), 'public/fonts/SpaceMono-Regular.ttf'));

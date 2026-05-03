@@ -12,7 +12,7 @@ export default function ParcelViewer({ parcelIds, zoneName }) {
   useEffect(() => {
     const id = parcelIds[Math.floor(Math.random() * parcelIds.length)];
     setTokenId(id);
-  }, []);
+  }, [parcelIds]);
 
   return (
     <div>

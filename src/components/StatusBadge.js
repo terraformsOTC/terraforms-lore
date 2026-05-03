@@ -1,6 +1,15 @@
 const TWIN_COLOR = '#d4d4d4';
 
-export default function StatusBadge({ status, category, twin, className = '' }) {
+export default function StatusBadge({ status, category, twin, set, className = '' }) {
+  const setBadge = set ? (
+    <span
+      className={`text-xs px-1 shrink-0 ${className}`}
+      style={{ color: set.color, border: `1px solid ${set.color}`, opacity: 0.85 }}
+    >
+      {set.label}
+    </span>
+  ) : null;
+
   const twinBadge = twin ? (
     <span
       className={`text-xs px-1 shrink-0 ${className}`}
@@ -13,6 +22,7 @@ export default function StatusBadge({ status, category, twin, className = '' }) 
   if (status === 'llm') {
     return (
       <div className="flex gap-1 flex-wrap justify-end">
+        {setBadge}
         {twinBadge}
         <span
           className={`text-xs px-1 shrink-0 ${className}`}
@@ -35,6 +45,7 @@ export default function StatusBadge({ status, category, twin, className = '' }) 
     ) : null;
     return (
       <div className="flex gap-1 flex-wrap justify-end">
+        {setBadge}
         {twinBadge}
         {catBadge}
         <span
@@ -50,6 +61,7 @@ export default function StatusBadge({ status, category, twin, className = '' }) 
   if (category) {
     return (
       <div className="flex gap-1 flex-wrap justify-end">
+        {setBadge}
         {twinBadge}
         <span
           className={`text-xs px-1 shrink-0 ${className}`}
@@ -61,5 +73,8 @@ export default function StatusBadge({ status, category, twin, className = '' }) 
     );
   }
 
-  return twinBadge;
+  if (setBadge || twinBadge) {
+    return <div className="flex gap-1 flex-wrap justify-end">{setBadge}{twinBadge}</div>;
+  }
+  return null;
 }

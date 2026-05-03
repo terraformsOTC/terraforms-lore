@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ItemCard from '@/components/ItemCard';
 import SubmitForm from '@/components/SubmitForm';
-import { biomes, confirmedBiomes, uncertainBiomes, unknownBiomes, BIOME_CATEGORIES } from '@/data/biomes';
+import { biomes, confirmedBiomes, uncertainBiomes, unknownBiomes, BIOME_CATEGORIES, BIOME_SETS } from '@/data/biomes';
 
 const FILTERS = [
   { key: 'all',       label: 'all' },
@@ -22,7 +22,7 @@ export default function BiomesPage() {
     return biomes.filter((b) => {
       if (filter !== 'all' && b.status !== filter) return false;
       if (search) {
-        const searchable = `${b.name} ${b.nickname || ''} ${b.reference || ''} ${b.guess || ''}`.toLowerCase();
+        const searchable = `${b.name} ${b.nickname || ''} ${b.reference || ''} ${b.guess || ''} ${b.set || ''}`.toLowerCase();
         if (!searchable.includes(search.toLowerCase())) return false;
       }
       return true;
@@ -62,7 +62,8 @@ export default function BiomesPage() {
         <div className="grid-border" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
           {filtered.map((biome) => (
             <ItemCard key={biome.id} item={biome} href={`/biomes/${biome.id}`}
-              category={BIOME_CATEGORIES[biome.category]} subtitle={biome.nickname} />
+              category={BIOME_CATEGORIES[biome.category]} subtitle={biome.nickname}
+              set={BIOME_SETS[biome.set]} />
           ))}
         </div>
 
