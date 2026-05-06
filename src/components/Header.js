@@ -23,6 +23,13 @@ export default function Header() {
             [estimator ↗]
           </a>
           <a
+            href="https://terraformmandala.xyz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [mandala generator ↗]
+          </a>
+          <a
             href="https://terraformexplorer.xyz"
             target="_blank"
             rel="noopener noreferrer"
