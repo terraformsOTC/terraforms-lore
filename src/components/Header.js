@@ -27,7 +27,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            [mandala generator ↗]
+            [mandala tool ↗]
           </a>
           <a
             href="https://terraformexplorer.xyz"
