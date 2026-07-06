@@ -326,8 +326,8 @@ const transcripts = [
     dateSort: '2026-05',
     source: null,
     blurb:
-      'A ~2.5-hour Twitter Space: 113 on the word “art” as crypto’s original sin, reclaiming ' +
-      '“NFTs”, Beeple as party favours, novelty as emergent phenomena, and exiting art entirely.',
+      'A 6+hour Twitter Space: 113 on physical trading cards, macaroni pictures, and ' +
+      'excommunicating oneself from “art” entirely.',
     turns: parseMay2026(fs.readFileSync(SRC.may2026, 'utf8')),
   },
 ];
