@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import TranscriptAudio from '@/components/TranscriptAudio';
 import { getTranscript, transcriptSlugs } from '@/data/transcripts';
 
 export function generateStaticParams() {
@@ -38,10 +39,11 @@ export default async function TranscriptPage({ params }) {
           </p>
           <h1 className="text-3xl mb-4">{t.title}</h1>
           {t.blurb && (
-            <p className="text-sm dim-70" style={{ lineHeight: '1.6' }}>
+            <p className="text-sm dim-70 mb-6" style={{ lineHeight: '1.6' }}>
               {t.blurb}
             </p>
           )}
+          <TranscriptAudio audio={t.audio} slug={t.slug} />
           {t.source && (
             <p className="text-xs mt-4 dim-50">
               source:{' '}
@@ -65,7 +67,7 @@ export default async function TranscriptPage({ params }) {
 
         <article style={{ maxWidth: '680px' }}>
           {t.turns.map((turn, ti) => (
-            <div key={ti} className="mb-7">
+            <div key={ti} id={`t${ti}`} className="mb-7" style={{ scrollMarginTop: '80px' }}>
               {turn.speaker && (
                 <p
                   className={`text-xs mb-2 ${
