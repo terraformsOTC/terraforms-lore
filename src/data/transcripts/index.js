@@ -25,10 +25,12 @@ const audioBySlug = {
   'net-society-ep21': {
     external: { label: 'transistor.fm', url: 'https://share.transistor.fm/s/4cdc9190' },
   },
+  // ?v=2 busts Cloudflare's edge cache after the same-key re-upload of the
+  // silence-trimmed file (CF caches on the full URL incl. query string).
   'twitter-spaces-may-2026': {
-    mp3: 'https://media.terraformlore.xyz/113-spaces-may-2026.mp3',
-    sizeLabel: '181 MB',
-    durationLabel: '6h 18m',
+    mp3: 'https://media.terraformlore.xyz/113-spaces-may-2026.mp3?v=2',
+    sizeLabel: '180 MB',
+    durationLabel: '6h 14m',
   },
 };
 
