@@ -9,6 +9,7 @@
 import hivemind from './hivemind-june-2024.json';
 import netSociety from './net-society-ep21.json';
 import may2026 from './twitter-spaces-may-2026.json';
+import may23_2026 from './twitter-spaces-may-23-2026.json';
 
 // Audio availability per transcript, keyed by slug. Kept HERE (never in the
 // generated JSON) so re-running scripts/normalize-transcripts.mjs can't clobber
@@ -32,12 +33,19 @@ const audioBySlug = {
     sizeLabel: '180 MB',
     durationLabel: '6h 14m',
   },
+  // 64k mono, dead-air-trimmed (3h50m). Upload 113-spaces-may-23-2026.mp3 to the
+  // R2 bucket; no ?v= needed on first upload (cache-bust only matters on re-upload).
+  'twitter-spaces-may-23-2026': {
+    mp3: 'https://media.terraformlore.xyz/113-spaces-may-23-2026.mp3',
+    sizeLabel: '111 MB',
+    durationLabel: '3h 50m',
+  },
 };
 
 const withAudio = (t) => ({ ...t, audio: audioBySlug[t.slug] || null });
 
 // Ordered oldest → newest to match the 113isms index.
-export const transcripts = [hivemind, netSociety, may2026]
+export const transcripts = [hivemind, netSociety, may2026, may23_2026]
   .map(withAudio)
   .sort((a, b) => a.dateSort.localeCompare(b.dateSort));
 

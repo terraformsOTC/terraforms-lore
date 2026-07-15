@@ -28,6 +28,10 @@ const SRC = {
     VAULT,
     '113spacesMay2026Trading_cards,_NFTs,_collectibles,_think_piece_simulacra_utterance.txt'
   ),
+  // The May 23 2026 space. Auto-transcribed locally (mlx-whisper large-v3),
+  // then assembled/de-looped into a single prose blob — no diarization, so it
+  // is parsed like Hivemind (one speaker: null stream reflowed to paragraphs).
+  may23_2026: path.join(VAULT, '113spacesMay23_2026.txt'),
 };
 
 // ---------------------------------------------------------------------------
@@ -323,12 +327,29 @@ const transcripts = [
     title: 'Trading Cards, NFTs, Collectibles & “Think-Piece” Simulacra',
     kind: 'Twitter Spaces',
     date: 'May 2026',
-    dateSort: '2026-05',
+    // Dated a few days after the May 23 space below (it came first); a full-day
+    // sort key keeps the two May 2026 spaces in chronological order.
+    dateSort: '2026-05-27',
     source: null,
     blurb:
       'A 6+hour Twitter Space: 113 on physical trading cards, macaroni pictures, and ' +
       'excommunicating oneself from “art” entirely.',
     turns: parseMay2026(fs.readFileSync(SRC.may2026, 'utf8')),
+  },
+  {
+    slug: 'twitter-spaces-may-23-2026',
+    title: 'Art as a Loser Interface',
+    kind: 'Twitter Spaces',
+    date: 'May 23, 2026',
+    dateSort: '2026-05-23',
+    source: null,
+    blurb:
+      'A ~4-hour Twitter Space: 113 on why 2021 won’t come back, art as a “loser ' +
+      'interface,” the collapse of the expert class, and why illustration cultures ' +
+      '(Magic: The Gathering, Pokémon) and Xerox PARC — not “digital art” — are the ' +
+      'real models worth stealing from.',
+    // Undiarized prose (no speaker labels): parsed like Hivemind.
+    turns: parseHivemind(fs.readFileSync(SRC.may23_2026, 'utf8')),
   },
 ];
 
