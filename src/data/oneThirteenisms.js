@@ -27,7 +27,7 @@ export const quoteGroups = [
     source: 'tf 4th birthday twitter spaces · 17 dec 2025',
     items: [
       { type: 'quote', text: 'I like to think of myself as pre-literate in the medium of computing' },
-      { type: 'quote', text: 'How can you make an artwork when you can tell that hurricanes of obsolescence are going to crash into your context' },
+      { type: 'quote', text: 'How can you make an artwork when you can tell that hurricanes of obsolescence are going to crash into your context?' },
       { type: 'quote', text: 'The NFT space is a chalk sigil, you can just step outside of it' },
       { type: 'quote', text: 'Nobody here has yet cleaved the century in half… and you could.' },
     ],

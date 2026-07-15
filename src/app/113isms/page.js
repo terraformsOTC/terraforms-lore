@@ -115,7 +115,7 @@ export default function OneThirteenismsPage() {
           <section className="mb-16">
             <SectionHeading
               label="other materials"
-              blurb="Talks and essays 113 points to as influences on their thinking and on Terraforms."
+              blurb="Talks from others 113 has cited as influences on their thinking."
             />
             <ul className="flex flex-col">
               {otherMaterials.map((m) => (
