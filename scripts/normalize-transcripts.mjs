@@ -326,10 +326,10 @@ const transcripts = [
     slug: 'twitter-spaces-may-2026',
     title: 'Trading Cards, NFTs, Collectibles & “Think-Piece” Simulacra',
     kind: 'Twitter Spaces',
-    date: 'May 2026',
-    // Dated a few days after the May 23 space below (it came first); a full-day
-    // sort key keeps the two May 2026 spaces in chronological order.
-    dateSort: '2026-05-27',
+    date: 'May 26, 2026',
+    // A few days after the May 23 space below; the day-level sort key keeps the
+    // two May 2026 spaces in chronological order (May 23 → May 26).
+    dateSort: '2026-05-26',
     source: null,
     blurb:
       'A 6+hour Twitter Space: 113 on physical trading cards, macaroni pictures, and ' +
